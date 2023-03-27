@@ -62,6 +62,16 @@ public class User {
 
     public static int BMI;
 
+    /**
+     * Creates the User Object
+     * @param name
+     * @param age
+     * @param height
+     * @param weight
+     * @param goal
+     * Based on this, the workouts tailored to their goal will be created.
+     */
+
     public User(String name, int age, int height, int weight, String goal){
         setName(name);
         setAge(age);
@@ -70,6 +80,13 @@ public class User {
         setGoal(goal);
         BMI = (int) calculateBMI(height,weight);
     }
+
+    /**
+     * Calculates the BMI of the user
+     * @param height
+     * @param weight
+     * @return the BMI value as an Integer for cleanliness
+     */
 
     public static double calculateBMI(int height, int weight){
         double h = height/100.0;

@@ -55,10 +55,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/catis/OneDrive - Menntaský/Documents/Y1 S2/Viðmótsforritun - HBV201G/Bouncing"
+    "last_opened_file_path": "C:/Users/catis/OneDrive - Menntaský/Documents/Y1 S2/Viðmótsforritun - HBV201G/Takeaway"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.FitUApplication">
+    <configuration name="FitUApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="storverkefni3.hbv201gstortverkefni3.vidmot.FitUApplication" />
+      <module name="HBV201GStortVerkefni3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="storverkefni3.hbv201gstortverkefni3.vidmot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="User" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="storverkefni3.hbv201gstortverkefni3.vinnsla.User" />
       <module name="HBV201GStortVerkefni3" />
@@ -74,6 +87,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FitUApplication" />
         <item itemvalue="Application.User" />
       </list>
     </recent_temporary>
