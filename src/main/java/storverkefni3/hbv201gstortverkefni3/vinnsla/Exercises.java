@@ -1,9 +1,7 @@
 package storverkefni3.hbv201gstortverkefni3.vinnsla;
 
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.*;
+
 
 
 public class Exercises {
@@ -12,6 +10,8 @@ public class Exercises {
     //an exercise has a name and a gif
     private StringProperty name=new SimpleStringProperty();
     private IntegerProperty reps = new SimpleIntegerProperty();
+    private IntegerProperty sets=new SimpleIntegerProperty();
+    private DoubleProperty time = new SimpleDoubleProperty();
 
     public void setName(String name) {
         this.name.set(name);
@@ -28,8 +28,10 @@ public class Exercises {
     }
 
     private void setSets(int sets) {
+        this.sets.set(sets);
     }
 
     private void setTime(double time) {
+        this.time.set(time);
     }
 }
