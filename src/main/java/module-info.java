@@ -4,5 +4,7 @@ module storverkefni3.hbv201gstortverkefni3 {
 
 
     opens storverkefni3.hbv201gstortverkefni3 to javafx.fxml;
-    exports storverkefni3.hbv201gstortverkefni3;
+    exports storverkefni3.hbv201gstortverkefni3.vinnsla;
+    exports storverkefni3.hbv201gstortverkefni3.vidmot;
+    opens storverkefni3.hbv201gstortverkefni3.vidmot to javafx.fxml;
 }

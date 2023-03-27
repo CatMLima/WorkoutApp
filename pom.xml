@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                storverkefni3.hbv201gstortverkefni3/storverkefni3.hbv201gstortverkefni3.HelloApplication
+                                storverkefni3.hbv201gstortverkefni3/storverkefni3.hbv201gstortverkefni3.vidmot.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

@@ -1,4 +1,4 @@
-package storverkefni3.hbv201gstortverkefni3;
+package storverkefni3.hbv201gstortverkefni3.vidmot;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
