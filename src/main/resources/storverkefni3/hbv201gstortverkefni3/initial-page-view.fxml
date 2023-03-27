@@ -12,6 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 
+<?import javafx.scene.image.Image?>
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane layoutX="41.0" layoutY="126.0" prefHeight="285.0" prefWidth="509.0" style="-fx-background-color: #52B2BF;">
@@ -66,7 +67,11 @@
                   <Font name="Gill Sans MT" size="20.0" />
                </font>
             </Button>
-            <ImageView fitHeight="51.0" fitWidth="62.0" layoutX="224.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="51.0" fitWidth="62.0" layoutX="224.0" pickOnBounds="true" preserveRatio="true">
+
+            </ImageView>
+
+
          </children>
       </Pane>
       <Pane layoutY="-2.0" prefHeight="130.0" prefWidth="600.0" style="-fx-background-color: #F17829;">
