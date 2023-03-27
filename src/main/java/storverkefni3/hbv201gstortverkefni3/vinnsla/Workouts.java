@@ -2,7 +2,6 @@ package storverkefni3.hbv201gstortverkefni3.vinnsla;
 
 import javafx.collections.ObservableList;
 
-import java.util.ArrayList;
 
 public class Workouts {
    //Brynjar Steinn worked on this class
