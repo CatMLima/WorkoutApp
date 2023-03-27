@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="renamed helloapplication">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="renamed helloapplication- Fixed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Goal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/FitUApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/FitUApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -70,6 +71,7 @@
     <MESSAGE value="added packages vidmot and vinnsla and classes Exercises, User and Workouts" />
     <MESSAGE value="renamed hellocontroller and added workoutcontroller" />
     <MESSAGE value="renamed helloapplication" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed helloapplication" />
+    <MESSAGE value="renamed helloapplication- Fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="renamed helloapplication- Fixed" />
   </component>
 </project>
