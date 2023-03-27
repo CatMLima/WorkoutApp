@@ -1,7 +1,7 @@
 package storverkefni3.hbv201gstortverkefni3.vinnsla;
 
-public class Workouts {
-    public static void main(String[] args) {
+import java.util.ArrayList;
 
-    }
+public class Workouts {
+   ArrayList workout = new ArrayList<>();
 }
