@@ -24,7 +24,12 @@ public class InitialController implements Initializable {
 
     public User user;
 
+    public Workouts[] workouts;
+
     public void initialize(URL location, ResourceBundle resources) {
+        /*
+        The Confirm button is disabled unless all information is filled and the choice of goals is made
+         */
         fxConfirmButton.disableProperty().bind(Bindings.or(fxName.textProperty().isEmpty(),fxAge.textProperty().isEmpty()));
         fxConfirmButton.disableProperty().bind(Bindings.or(fxHeight.textProperty().isEmpty(), fxWeight.textProperty().isEmpty()));
         fxConfirmButton.disableProperty().bind(fxGoalChoices.getSelectionModel().selectedItemProperty().isNull());
@@ -35,9 +40,15 @@ public class InitialController implements Initializable {
                         "Endurance"
                 );
         fxGoalChoices.setItems(options);
+        workouts = new Workouts[6];
+
 
     }
 
+    /*
+    In case that the user does not want to give up their name, then we can take them to the next screen where they see
+    all possible workouts, not just 6 (2 for each body part).
+     */
 
     public void guestHandler(ActionEvent actionEvent) {
         user = new User("guest", -1,-1,-1,null);
