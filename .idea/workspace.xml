@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added arraylist variable to Workouts.java">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added comment to exercises about what an exercise needs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.java" afterDir="false" />
     </list>
@@ -74,6 +74,7 @@
     <MESSAGE value="renamed helloapplication- Fixed" />
     <MESSAGE value="added Goal enum" />
     <MESSAGE value="added arraylist variable to Workouts.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added arraylist variable to Workouts.java" />
+    <MESSAGE value="added comment to exercises about what an exercise needs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comment to exercises about what an exercise needs" />
   </component>
 </project>
