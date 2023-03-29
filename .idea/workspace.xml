@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="Added getters and a toString method to Exercises and methods to get all Exercises in workouts for weightloss and musclegain">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="removed an un-needed import statement">
+      <change afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/WorkoutGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +59,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/catis/OneDrive - Menntaský/Documents/Y1 S2/Viðmótsforritun - HBV201G/Takeaway&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.FitUApplication">
+  <component name="RunManager" selected="Application.Workouts">
     <configuration name="FitUApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="storverkefni3.hbv201gstortverkefni3.vidmot.FitUApplication" />
       <module name="HBV201GStortVerkefni3" />
@@ -84,8 +86,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Workouts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="storverkefni3.hbv201gstortverkefni3.vinnsla.Workouts" />
+      <module name="HBV201GStortVerkefni3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Workouts" />
         <item itemvalue="Application.FitUApplication" />
         <item itemvalue="Application.User" />
       </list>
@@ -125,6 +135,7 @@
     <MESSAGE value="added comment to workouts" />
     <MESSAGE value="finished setters in Exercises" />
     <MESSAGE value="Added getters and a toString method to Exercises and methods to get all Exercises in workouts for weightloss and musclegain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added getters and a toString method to Exercises and methods to get all Exercises in workouts for weightloss and musclegain" />
+    <MESSAGE value="removed an un-needed import statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed an un-needed import statement" />
   </component>
 </project>
