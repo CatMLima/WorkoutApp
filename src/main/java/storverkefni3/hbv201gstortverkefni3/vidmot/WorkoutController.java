@@ -5,9 +5,12 @@ import javafx.beans.value.*;
 import javafx.collections.*;
 import javafx.event.*;
 import javafx.fxml.*;
+import javafx.scene.*;
 import javafx.scene.control.*;
+import javafx.stage.*;
 import storverkefni3.hbv201gstortverkefni3.vinnsla.*;
 
+import java.io.*;
 import java.net.*;
 import java.util.*;
 
@@ -23,33 +26,20 @@ public class WorkoutController implements Initializable {
 
     @FXML
     Label fxUserLabel;
+    private Parent root;
+    private Stage stage;
+    private Scene scene;
 
     User user;
     private Workouts workoutnames;
 
     ObservableList<Exercises> workoutList;
-    //brynjar steinn worked on this method
-    public void whichtype(String type){
-        switch (type) {
-            case "Weight loss":
-        workoutList = workoutnames.getAllWeightlossExercises();
-        break;
-            case    "Muscle Gain":
-            workoutList = workoutnames.getAllMusclegainExercises();
-            break;
-            case "Endurance":
-                workoutList = workoutnames.getAllWeightlossExercises();
-                break;
-    }
-   // fxWorkoutsListView.setItems(workoutnames);
-        }
-
 
     public void initialize(URL location, ResourceBundle resources) {
         user = new User();
         workoutnames = new Workouts();
         fxUserLabel.setText("Hi, " + user.getName());
-        whichtype(user.getGoal());
+        workoutnames.getAllWorkouts(user.getGoal());
         fxWorkoutsListView.setItems(workoutList);
         /*
         Bind fxExercisesListView to fxWorkoutsListView selected
@@ -62,7 +52,17 @@ public class WorkoutController implements Initializable {
     public void fxStartWorkoutHandler(ActionEvent actionEvent) {
     }
 
-    public void fxLogOutHandler(ActionEvent actionEvent) {
+    public void fxLogOutHandler(ActionEvent actionEvent) throws IOException{
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/initial-page-view")));
+            stage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            user.setName("");
+            user.setAge(-1);
+            user.setHeight(-1);
+            user.setWeight(-1);
+            user.setGoal(null);
+            stage.show();
 
     }
 
