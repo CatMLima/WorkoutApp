@@ -1,6 +1,7 @@
 package storverkefni3.hbv201gstortverkefni3.vidmot;
 
 import javafx.beans.binding.*;
+import javafx.beans.value.*;
 import javafx.collections.*;
 import javafx.event.*;
 import javafx.fxml.*;
@@ -49,6 +50,24 @@ public class InitialController implements Initializable {
                         "Endurance"
                 );
         fxGoalChoices.setItems(options);
+        user.nameProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observableValue, String s, String t1) {
+                fxName.setText(s);
+            }
+        });
+        user.ageProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
+                fxAge.setText(String.valueOf(number));
+            }
+        });
+        user.heightProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
+                fxHeight.setText(String.valueOf(number));
+            }
+        });
     }
 
     /*
@@ -82,10 +101,6 @@ public class InitialController implements Initializable {
 
     }
     public void switchToWorkout(ActionEvent event) throws IOException{
-        fxName.setText(user.getName());
-        fxAge.setText(String.valueOf(user.getAge()));
-        fxHeight.setText(String.valueOf(user.getHeight()));
-        fxWeight.setText(String.valueOf(user.getWeight()));
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
