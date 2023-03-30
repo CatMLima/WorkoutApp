@@ -8,6 +8,7 @@ public class Workouts {
    public Workouts(){
       workoutNames = FXCollections.observableArrayList();
       musclegain = FXCollections.observableArrayList();
+      weightloss = FXCollections.observableArrayList();
    }
    //Brynjar Steinn worked on this class
    protected ObservableList<WorkoutName> workoutNames;
