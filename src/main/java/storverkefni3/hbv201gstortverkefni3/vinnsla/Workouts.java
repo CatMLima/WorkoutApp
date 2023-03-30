@@ -5,10 +5,11 @@ import javafx.collections.ObservableList;
 
 
 public class Workouts {
-   public Workouts(){workouts = FXCollections.observableArrayList();
+   public Workouts(){
+      workoutNames = FXCollections.observableArrayList();
    }
    //Brynjar Steinn worked on this class
-   protected ObservableList<WorkoutGenerator> workouts;
+   protected ObservableList<WorkoutGenerator> workoutNames;
    protected ObservableList<Exercises> weightloss;
 protected ObservableList<Exercises> musclegainarms;
 
@@ -23,8 +24,8 @@ return this.musclegainarms;
       return weightloss;
    }
    public ObservableList<WorkoutGenerator> getAllMusclegainWorkouts() {
-      workouts.add(new WorkoutGenerator("Arms"));
-      return workouts;
+      workoutNames.add(new WorkoutGenerator("Arms"));
+      return workoutNames;
    }
    public static void main(String[] args) {
 Workouts w = new Workouts();
