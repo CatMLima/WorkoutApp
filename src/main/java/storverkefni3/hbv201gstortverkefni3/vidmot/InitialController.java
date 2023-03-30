@@ -4,13 +4,19 @@ import javafx.beans.binding.*;
 import javafx.collections.*;
 import javafx.event.*;
 import javafx.fxml.*;
+import javafx.scene.*;
 import javafx.scene.control.*;
 import javafx.scene.image.*;
+import javafx.stage.*;
 import storverkefni3.hbv201gstortverkefni3.vinnsla.*;
 
 import java.io.*;
 import java.net.*;
 import java.util.*;
+
+/*
+Author: Catarina Martins Sousa Lima
+ */
 
 public class InitialController implements Initializable {
     public ImageView fxUserImage;
@@ -22,9 +28,12 @@ public class InitialController implements Initializable {
     public Button fxConfirmButton;
     public Button fxGuestButton;
 
-    public User user;
+    private Parent root;
+    private Stage stage;
+    private Scene scene;
 
-    public Workouts[] workouts;
+
+    public User user;
 
     public void initialize(URL location, ResourceBundle resources) {
         /*
@@ -40,9 +49,6 @@ public class InitialController implements Initializable {
                         "Endurance"
                 );
         fxGoalChoices.setItems(options);
-        workouts = new Workouts[6];
-
-
     }
 
     /*
@@ -54,11 +60,20 @@ public class InitialController implements Initializable {
         user = new User("guest", -1,-1,-1,null);
     }
 
-    public void confirmHandler(ActionEvent actionEvent) {
+    public void confirmHandler(ActionEvent actionEvent) throws IOException {
         int age = Integer.parseInt(fxAge.getText());
         int height = Integer.parseInt(fxHeight.getText());
         int weight = Integer.parseInt(fxWeight.getText());
         String goal = fxGoalChoices.getSelectionModel().getSelectedItem().toString();
         user = new User(fxName.getText(), age, height, weight, goal);
+        switchToWorkout(actionEvent);
+
+    }
+    public void switchToWorkout(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }
