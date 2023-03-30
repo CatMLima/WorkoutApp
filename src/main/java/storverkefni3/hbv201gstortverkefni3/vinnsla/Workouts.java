@@ -7,17 +7,18 @@ import javafx.collections.ObservableList;
 public class Workouts {
    public Workouts(){
       workoutNames = FXCollections.observableArrayList();
+      musclegain = FXCollections.observableArrayList();
    }
    //Brynjar Steinn worked on this class
    protected ObservableList<WorkoutGenerator> workoutNames;
    protected ObservableList<Exercises> weightloss;
-protected ObservableList<Exercises> musclegainarms;
+protected ObservableList<Exercises> musclegain;
 
    public ObservableList<Exercises> getAllMusclegainExercises() {
       //exercise(name,time,sets,reps)
-musclegainarms.add(new Exercises("Curls",0.0,3,10 ));
-      musclegainarms.add(new Exercises("Squats",0.0,3,10 ));
-return musclegainarms;
+musclegain.add(new Exercises("Curls",0.0,3,10 ));
+      musclegain.add(new Exercises("Squats",0.0,3,10 ));
+return musclegain;
    }
    public ObservableList<Exercises> getAllWeightlossExercises() {
       //exercise(name,time,sets,reps)
