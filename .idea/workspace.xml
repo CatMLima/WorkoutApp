@@ -61,6 +61,13 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/catis/OneDrive - Menntaský/Documents/Y1 S2/Viðmótsforritun - HBV201G/Takeaway"
+  },
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Application.FitUApplication">
