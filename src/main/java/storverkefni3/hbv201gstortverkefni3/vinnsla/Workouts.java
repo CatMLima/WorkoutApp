@@ -22,6 +22,15 @@ workout.add(new Exercises("Muscle Gain","Arms","Curls",0.0,3,10 ));
       workout.add(new Exercises("Weight loss","Whole","Jumping jacks",30.0,0,0 ));
 return workout;
    }
+   public ObservableList<Exercises> filterExercises(String goal) {
+      Workouts w= new Workouts();
+      ObservableList<Exercises> wlist;
+      w.getAllExercises();
+
+
+
+      return wlist;
+   }
 
    public ObservableList<WorkoutName> getAllWorkouts(String type) {
       switch (type) {
