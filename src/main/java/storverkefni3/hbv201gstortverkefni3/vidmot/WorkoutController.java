@@ -48,7 +48,4 @@ public class WorkoutController implements Initializable {
     public void fxChangeGoalsHandler(ActionEvent actionEvent) {
     }
 
-    public static void main(String[] args) {
-
-    }
 }

@@ -13,12 +13,6 @@ public class FitUApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(FitUApplication.class.getResource("/storverkefni3/hbv201gstortverkefni3/initial-page-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        /*
-        Maybe I will be able to implement the view switcher feature later.
-         */
-        //var scene = new Scene(new Pane());
-        //ViewSwitcher.setScene(scene);
-        //ViewSwitcher.switchTo(View.MAIN);
         stage.setScene(scene);
         stage.setTitle("Fit-U Application");
         stage.show();
