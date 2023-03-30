@@ -3,6 +3,9 @@ package storverkefni3.hbv201gstortverkefni3.vinnsla;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Workouts {
    public Workouts(){
@@ -26,21 +29,17 @@ workout.add(new Exercises("Muscle Gain","Arms","Curls",0.0,3,10 ));
 return workout;
    }
    public ObservableList<Exercises> filterExercises(String goal) {
-      Workouts w= new Workouts();
-      int count = 0;
-      Exercises [] exercise = new Exercises[count+1];
-
-      ObservableList<Exercises> beingFiltered = w.getAllExercises();
-      for( int i = 0; i < beingFiltered.size(); i++){
-         if (beingFiltered.get(i).getWorkouttype().equals(goal)){
-            exercise[count] = beingFiltered.get(i);
-            count++;
-            if (beingFiltered.get(i).getBodypart().equals("arms") ){
-             arms.add(beingFiltered.get(i));
-             }
+      List<Exercises> exerciseList = new ArrayList<>();
+      ObservableList<Exercises> beingFiltered = getAllExercises();
+      for (Exercises exercise : beingFiltered) {
+         if (exercise.getWorkouttype().equals(goal)) {
+            exerciseList.add(exercise);
+            if (exercise.getBodypart().equals("arms")) {
+               arms.add(exercise);
+            }
          }
       }
-      return FXCollections.observableArrayList(exercise);
+      return FXCollections.observableArrayList(exerciseList);
    }
 
    public ObservableList<WorkoutName> getAllWorkouts(String type) {
