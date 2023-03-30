@@ -41,6 +41,7 @@ public class WorkoutController implements Initializable {
         fxUserLabel.setText("Hi, " + user.getName());
         workoutList = workoutnames.getAllWorkouts(user.getGoal());
         fxWorkoutsListView.setItems(workoutList);
+        workoutnames.filterExercises(user.getGoal());
         /*
         Bind fxExercisesListView to fxWorkoutsListView selected
          */
