@@ -35,7 +35,7 @@ return workout;
          if (beingFiltered.get(i).getBodypart().equals(goal)){
             exercise[count] = beingFiltered.get(i);
             count++;
-            //if (bodypart equals "arms" ){
+            //if (beingFiltered.getbodypart.equals.("arms") ){
             // arms.add(exercise(i)
             // }
          }
