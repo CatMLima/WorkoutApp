@@ -26,6 +26,7 @@ public class WorkoutController implements Initializable {
 
     User user;
     private Workouts workoutnames;
+    //brynjar steinn worked on this method
     public void whichtype(String type){
         switch (type) {
             case "Weight loss":
