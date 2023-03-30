@@ -3,9 +3,9 @@ package storverkefni3.hbv201gstortverkefni3.vinnsla;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-public class WorkoutGenerator {
+public class WorkoutName {
 
-    public WorkoutGenerator(String name) {
+    public WorkoutName(String name) {
         setName(name);
     }
     public void setName(String name) {
