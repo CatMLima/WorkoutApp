@@ -25,7 +25,19 @@ public class WorkoutController implements Initializable {
     Label fxUserLabel;
 
     User user;
-
+    private Workouts workoutnames;
+    public void whichtype(String type){
+        switch (type) {
+            case "Weight loss":
+        workoutnames.getAllWeightlossExercises();
+break;
+            case    "Muscle Gain":
+            workoutnames.getAllMusclegainWorkouts();
+            break;
+            case "Endurance":
+                workoutnames.getAllWeightlossExercises();
+                break;
+    }}
 
 
     public void initialize(URL location, ResourceBundle resources) {
