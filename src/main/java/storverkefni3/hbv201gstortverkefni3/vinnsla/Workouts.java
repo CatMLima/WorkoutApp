@@ -23,7 +23,7 @@ return this.musclegainarms;
       return weightloss;
    }
    public ObservableList<WorkoutGenerator> getAllMusclegainWorkouts() {
-      workouts.add(new WorkoutGenerator("Arms")); //doesnt work
+      workouts.add(new WorkoutGenerator("Arms"));
       return workouts;
    }
    public static void main(String[] args) {

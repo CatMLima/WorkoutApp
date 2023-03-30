@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="removed an un-needed import statement">
-      <change afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/WorkoutGenerator.java" afterDir="false" />
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added workoutGenerator which is mainly to construct a workout unit. like Arms which will be a unit on a workout list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
     </list>
@@ -136,6 +135,7 @@
     <MESSAGE value="finished setters in Exercises" />
     <MESSAGE value="Added getters and a toString method to Exercises and methods to get all Exercises in workouts for weightloss and musclegain" />
     <MESSAGE value="removed an un-needed import statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed an un-needed import statement" />
+    <MESSAGE value="added workoutGenerator which is mainly to construct a workout unit. like Arms which will be a unit on a workout list" />
+    <option name="LAST_COMMIT_MESSAGE" value="added workoutGenerator which is mainly to construct a workout unit. like Arms which will be a unit on a workout list" />
   </component>
 </project>
