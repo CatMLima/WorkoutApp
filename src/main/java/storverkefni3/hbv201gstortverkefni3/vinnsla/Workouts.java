@@ -8,12 +8,15 @@ public class Workouts {
    public Workouts(){
       workoutNames = FXCollections.observableArrayList();
       workout = FXCollections.observableArrayList();
+arms = FXCollections.observableArrayList();
+legs = FXCollections.observableArrayList();
 
    }
    //Brynjar Steinn worked on this class
    protected ObservableList<WorkoutName> workoutNames;
-
+   protected ObservableList<WorkoutName> arms;
 protected ObservableList<Exercises> workout;
+   protected ObservableList<Exercises> legs;
 
    public ObservableList<Exercises> getAllExercises() {
       //exercise(name,time,sets,reps)
