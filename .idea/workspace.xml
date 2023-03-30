@@ -54,15 +54,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/catis/OneDrive - Menntaský/Documents/Y1 S2/Viðmótsforritun - HBV201G/Takeaway&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/catis/OneDrive - Menntaský/Documents/Y1 S2/Viðmótsforritun - HBV201G/HBV201GStortVerkefni3/src/main/resources/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.FitUApplication">
     <configuration name="FitUApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="storverkefni3.hbv201gstortverkefni3.vidmot.FitUApplication" />
@@ -100,8 +100,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.FitUApplication" />
-        <item itemvalue="Application.Workouts" />
         <item itemvalue="Application.User" />
+        <item itemvalue="Application.Workouts" />
       </list>
     </recent_temporary>
   </component>

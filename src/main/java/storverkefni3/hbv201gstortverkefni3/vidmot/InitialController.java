@@ -56,16 +56,27 @@ public class InitialController implements Initializable {
     all possible workouts, not just 6 (2 for each body part).
      */
 
-    public void guestHandler(ActionEvent actionEvent) {
-        user = new User("guest", -1,-1,-1,null);
+    public void guestHandler(ActionEvent actionEvent) throws IOException {
+        user = new User();
+        user.setName("guest");
+        user.setAge(-1);
+        user.setHeight(-1);
+        user.setWeight(-1);
+        user.setGoal(null);
+        switchToWorkout(actionEvent);
     }
 
     public void confirmHandler(ActionEvent actionEvent) throws IOException {
+        user = new User();
         int age = Integer.parseInt(fxAge.getText());
         int height = Integer.parseInt(fxHeight.getText());
         int weight = Integer.parseInt(fxWeight.getText());
         String goal = fxGoalChoices.getSelectionModel().getSelectedItem().toString();
-        user = new User(fxName.getText(), age, height, weight, goal);
+        user.setName(fxName.getText());
+        user.setAge(age);
+        user.setHeight(height);
+        user.setWeight(weight);
+        user.setGoal(goal);
         switchToWorkout(actionEvent);
 
     }
