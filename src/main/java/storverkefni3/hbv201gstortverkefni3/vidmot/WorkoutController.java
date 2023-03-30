@@ -35,7 +35,7 @@ public class WorkoutController implements Initializable {
         workoutList = workoutnames.getAllWeightlossExercises();
         break;
             case    "Muscle Gain":
-            workoutList = workoutnames.getAllMusclegainWorkouts();
+            workoutList = workoutnames.getAllMusclegainExercises();
             break;
             case "Endurance":
                 workoutList = workoutnames.getAllWeightlossExercises();
@@ -47,8 +47,10 @@ public class WorkoutController implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
         user = new User();
+        workoutnames = new Workouts();
         fxUserLabel.setText("Hi, " + user.getName());
         whichtype(user.getGoal());
+        fxWorkoutsListView.setItems(workoutList);
 
 
 
