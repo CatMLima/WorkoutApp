@@ -82,10 +82,15 @@ public class InitialController implements Initializable {
 
     }
     public void switchToWorkout(ActionEvent event) throws IOException{
+        fxName.setText(user.getName());
+        fxAge.setText(String.valueOf(user.getAge()));
+        fxHeight.setText(String.valueOf(user.getHeight()));
+        fxWeight.setText(String.valueOf(user.getWeight()));
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+
     }
 }
