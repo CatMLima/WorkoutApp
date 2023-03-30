@@ -50,24 +50,6 @@ public class InitialController implements Initializable {
                         "Endurance"
                 );
         fxGoalChoices.setItems(options);
-        user.nameProperty().addListener(new ChangeListener<String>() {
-            @Override
-            public void changed(ObservableValue<? extends String> observableValue, String s, String t1) {
-                fxName.setText(s);
-            }
-        });
-        user.ageProperty().addListener(new ChangeListener<Number>() {
-            @Override
-            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
-                fxAge.setText(String.valueOf(number));
-            }
-        });
-        user.heightProperty().addListener(new ChangeListener<Number>() {
-            @Override
-            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
-                fxHeight.setText(String.valueOf(number));
-            }
-        });
     }
 
     /*
