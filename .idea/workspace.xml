@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="merged musclegain exercises into one getter">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="changed name of WorkoutGenerator to WorkoutName">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/WorkoutGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/WorkoutName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,6 +161,7 @@
     <MESSAGE value="added comment to whichtype" />
     <MESSAGE value="added getAllWeightlossWorkouts" />
     <MESSAGE value="merged musclegain exercises into one getter" />
-    <option name="LAST_COMMIT_MESSAGE" value="merged musclegain exercises into one getter" />
+    <MESSAGE value="changed name of WorkoutGenerator to WorkoutName" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed name of WorkoutGenerator to WorkoutName" />
   </component>
 </project>

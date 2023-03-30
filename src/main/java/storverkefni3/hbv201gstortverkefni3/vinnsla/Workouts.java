@@ -16,13 +16,13 @@ protected ObservableList<Exercises> musclegain;
 
    public ObservableList<Exercises> getAllMusclegainExercises() {
       //exercise(name,time,sets,reps)
-musclegain.add(new Exercises("Curls",0.0,3,10 ));
-      musclegain.add(new Exercises("Squats",0.0,3,10 ));
+musclegain.add(new Exercises("Muscle Gain","Curls",0.0,3,10 ));
+      musclegain.add(new Exercises("Muscle Gain","Squats",0.0,3,10 ));
 return musclegain;
    }
    public ObservableList<Exercises> getAllWeightlossExercises() {
       //exercise(name,time,sets,reps)
-      weightloss.add(new Exercises("Jumping jacks",30.0,0,0 ));
+      weightloss.add(new Exercises("Weight loss","Jumping jacks",30.0,0,0 ));
       return weightloss;
    }
    public ObservableList<WorkoutName> getAllMusclegainWorkouts() {
