@@ -13,6 +13,15 @@ public class Exercises {
     private IntegerProperty reps = new SimpleIntegerProperty();
     private IntegerProperty sets=new SimpleIntegerProperty();
     private DoubleProperty time = new SimpleDoubleProperty();
+
+    public String getWorkouttype() {
+        return workouttype.get();
+    }
+
+    public StringProperty workouttypeProperty() {
+        return workouttype;
+    }
+
     private StringProperty workouttype=new SimpleStringProperty();
 
     public String getBodypart() {
