@@ -66,7 +66,13 @@ public class WorkoutController implements Initializable {
             stage.show();
     }
 
-    public void fxChangeGoalsHandler(ActionEvent actionEvent) {
+    public void fxChangeGoalsHandler(ActionEvent actionEvent) throws IOException {
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/change-goals-view.fxml")));
+            stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+
     }
 
 }

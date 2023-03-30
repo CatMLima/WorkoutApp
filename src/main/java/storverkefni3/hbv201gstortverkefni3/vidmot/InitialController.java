@@ -63,7 +63,7 @@ public class InitialController implements Initializable {
         user.setAge(-1);
         user.setHeight(-1);
         user.setWeight(-1);
-        user.setGoal(null);
+        user.setGoal("none");
         switchToWorkout(actionEvent);
     }
 
