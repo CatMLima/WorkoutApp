@@ -43,6 +43,7 @@ public class WorkoutController implements Initializable {
     }
 
     public void fxLogOutHandler(ActionEvent actionEvent) {
+
     }
 
     public void fxChangeGoalsHandler(ActionEvent actionEvent) {

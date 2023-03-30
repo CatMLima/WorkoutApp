@@ -77,6 +77,7 @@ public class InitialController implements Initializable {
         user.setHeight(height);
         user.setWeight(weight);
         user.setGoal(goal);
+
         switchToWorkout(actionEvent);
 
     }
