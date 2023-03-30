@@ -38,7 +38,9 @@ break;
             case "Endurance":
                 workoutnames.getAllWeightlossExercises();
                 break;
-    }}
+    }
+   // fxWorkoutsListView.setItems(workoutnames);
+        }
 
 
     public void initialize(URL location, ResourceBundle resources) {
