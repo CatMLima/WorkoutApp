@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added workouttype to Exercises">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added weightloss to the constructor">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,6 +162,7 @@
     <MESSAGE value="merged musclegain exercises into one getter" />
     <MESSAGE value="changed name of WorkoutGenerator to WorkoutName" />
     <MESSAGE value="added workouttype to Exercises" />
-    <option name="LAST_COMMIT_MESSAGE" value="added workouttype to Exercises" />
+    <MESSAGE value="added weightloss to the constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="added weightloss to the constructor" />
   </component>
 </project>
