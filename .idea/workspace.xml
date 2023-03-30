@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="changed exercises to include bodypart">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="refined comment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +100,10 @@
     <MESSAGE value="made switch type be enhanced switch instead" />
     <MESSAGE value="merged getters for exercises" />
     <MESSAGE value="changed exercises to include bodypart" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed exercises to include bodypart" />
+    <MESSAGE value="started making filterExercises" />
+    <MESSAGE value="added legs and arms as lists in constructor" />
+    <MESSAGE value="added a comment about how we would move forward with filterExercises" />
+    <MESSAGE value="refined comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="refined comment" />
   </component>
 </project>
