@@ -14,6 +14,15 @@ public class Exercises {
     private IntegerProperty sets=new SimpleIntegerProperty();
     private DoubleProperty time = new SimpleDoubleProperty();
     private StringProperty workouttype=new SimpleStringProperty();
+
+    public String getBodypart() {
+        return bodypart.get();
+    }
+
+    public StringProperty bodypartProperty() {
+        return bodypart;
+    }
+
     private StringProperty bodypart=new SimpleStringProperty();
     public void setName(String name) {
         this.name.set(name);

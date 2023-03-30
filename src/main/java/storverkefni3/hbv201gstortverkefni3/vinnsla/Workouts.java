@@ -24,12 +24,17 @@ return workout;
    }
    public ObservableList<Exercises> filterExercises(String goal) {
       Workouts w= new Workouts();
-      ObservableList<Exercises> wlist;
-      w.getAllExercises();
+      int count = 0;
+      Exercises [] exercise = new Exercises[count+1];
 
-
-
-      return wlist;
+      ObservableList<Exercises> beingFiltered = w.getAllExercises();
+      for( int i = 0; i < beingFiltered.size(); i++){
+         if (beingFiltered.get(i).getBodypart().equals(goal)){
+            exercise[count] = beingFiltered.get(i);
+            count++;
+         }
+      }
+      return FXCollections.observableArrayList(exercise);
    }
 
    public ObservableList<WorkoutName> getAllWorkouts(String type) {
