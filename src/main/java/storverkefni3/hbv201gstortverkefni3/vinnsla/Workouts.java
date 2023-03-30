@@ -33,6 +33,10 @@ return musclegainarms;
       workoutNames.add(new WorkoutGenerator("Legs"));
       return workoutNames;
    }
+   public ObservableList<WorkoutGenerator> getAllWeightlossWorkouts() {
+      workoutNames.add(new WorkoutGenerator("Jump Hard"));
+      return workoutNames;
+   }
    public static void main(String[] args) {
 Workouts w = new Workouts();
 w.getAllMusclegainWorkouts();
