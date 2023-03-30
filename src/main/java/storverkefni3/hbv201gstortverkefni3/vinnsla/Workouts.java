@@ -13,15 +13,11 @@ public class Workouts {
    protected ObservableList<Exercises> weightloss;
 protected ObservableList<Exercises> musclegainarms;
 
-   public ObservableList<Exercises> getAllArmsMusclegainExercises() {
+   public ObservableList<Exercises> getAllMusclegainExercises() {
       //exercise(name,time,sets,reps)
 musclegainarms.add(new Exercises("Curls",0.0,3,10 ));
-return musclegainarms;
-   }
-   public ObservableList<Exercises> getAllLegsMusclegainExercises() {
-      //exercise(name,time,sets,reps)
       musclegainarms.add(new Exercises("Squats",0.0,3,10 ));
-      return musclegainarms;
+return musclegainarms;
    }
    public ObservableList<Exercises> getAllWeightlossExercises() {
       //exercise(name,time,sets,reps)
@@ -31,6 +27,10 @@ return musclegainarms;
    public ObservableList<WorkoutGenerator> getAllMusclegainWorkouts() {
       workoutNames.add(new WorkoutGenerator("Arms"));
       workoutNames.add(new WorkoutGenerator("Legs"));
+      return workoutNames;
+   }
+   public ObservableList<WorkoutGenerator> getAllWeightlossWorkouts() {
+      workoutNames.add(new WorkoutGenerator("Jump Hard"));
       return workoutNames;
    }
    public static void main(String[] args) {

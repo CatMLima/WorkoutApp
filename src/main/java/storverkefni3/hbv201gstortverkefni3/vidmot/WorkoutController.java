@@ -40,7 +40,9 @@ public class WorkoutController implements Initializable {
             case "Endurance":
                 workoutList = workoutnames.getAllWeightlossExercises();
                 break;
-    }}
+    }
+   // fxWorkoutsListView.setItems(workoutnames);
+        }
 
 
     public void initialize(URL location, ResourceBundle resources) {
