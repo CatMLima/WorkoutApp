@@ -28,17 +28,13 @@ return workout;
    }
    public ObservableList<WorkoutName> getAllWorkouts(String type) {
       switch (type) {
-         case "Weight loss":
-            workoutNames.add(new WorkoutName("Jump Hard"));
-            break;
-         case    "Muscle Gain":
+         case "Weight loss" -> workoutNames.add(new WorkoutName("Jump Hard"));
+         case "Muscle Gain" -> {
             workoutNames.add(new WorkoutName("Arms"));
             workoutNames.add(new WorkoutName("Legs"));
-            break;
-         case "Endurance":
-            workoutNames.add(new WorkoutName("idnoman"));
-            break;
-   }
+         }
+         case "Endurance" -> workoutNames.add(new WorkoutName("idnoman"));
+      }
       return workoutNames;
    }}
 
