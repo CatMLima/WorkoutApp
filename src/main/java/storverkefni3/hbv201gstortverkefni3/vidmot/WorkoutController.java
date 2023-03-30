@@ -49,7 +49,8 @@ public class WorkoutController implements Initializable {
 
 
 
-    public void fxStartWorkoutHandler(ActionEvent actionEvent) {
+    public void fxStartWorkoutHandler(ActionEvent actionEvent) throws IOException{
+
     }
 
     public void fxLogOutHandler(ActionEvent actionEvent) throws IOException{
@@ -63,7 +64,6 @@ public class WorkoutController implements Initializable {
             user.setWeight(-1);
             user.setGoal(null);
             stage.show();
-
     }
 
     public void fxChangeGoalsHandler(ActionEvent actionEvent) {
