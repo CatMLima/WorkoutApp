@@ -30,7 +30,7 @@ public class WorkoutController implements Initializable {
         switch (type) {
             case "Weight loss":
         workoutnames.getAllWeightlossExercises();
-break;
+        break;
             case    "Muscle Gain":
             workoutnames.getAllMusclegainWorkouts();
             break;
