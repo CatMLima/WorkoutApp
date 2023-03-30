@@ -26,17 +26,19 @@ public class WorkoutController implements Initializable {
 
     User user;
     private Workouts workoutnames;
+
+    ObservableList<Exercises> workoutList;
     //brynjar steinn worked on this method
     public void whichtype(String type){
         switch (type) {
             case "Weight loss":
-        workoutnames.getAllWeightlossExercises();
+        workoutList = workoutnames.getAllWeightlossExercises();
         break;
             case    "Muscle Gain":
-            workoutnames.getAllMusclegainWorkouts();
+            workoutList = workoutnames.getAllMusclegainWorkouts();
             break;
             case "Endurance":
-                workoutnames.getAllWeightlossExercises();
+                workoutList = workoutnames.getAllWeightlossExercises();
                 break;
     }}
 
@@ -44,6 +46,9 @@ public class WorkoutController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         user = new User();
         fxUserLabel.setText("Hi, " + user.getName());
+        whichtype(user.getGoal());
+
+
 
 
 
