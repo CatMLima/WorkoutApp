@@ -14,14 +14,19 @@ public class Exercises {
     private IntegerProperty sets=new SimpleIntegerProperty();
     private DoubleProperty time = new SimpleDoubleProperty();
     private StringProperty workouttype=new SimpleStringProperty();
+    private StringProperty bodypart=new SimpleStringProperty();
     public void setName(String name) {
         this.name.set(name);
     }
     public void setWorkouttype(String workouttype) {
         this.workouttype.set(workouttype);
     }
-    public Exercises(String workouttype, String name, double time, int sets, int reps) {
+    public void setBodypart(String bodypart) {
+        this.bodypart.set(bodypart);
+    }
+    public Exercises(String workouttype, String bodypart, String name, double time, int sets, int reps) {
         setWorkouttype(workouttype);
+        setBodypart(bodypart);
         setName(name);
         setTime(time); //if strength then this is null
         setSets(sets); //is null if not strength

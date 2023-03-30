@@ -17,9 +17,9 @@ protected ObservableList<Exercises> workout;
 
    public ObservableList<Exercises> getAllExercises() {
       //exercise(name,time,sets,reps)
-workout.add(new Exercises("Muscle Gain","Curls",0.0,3,10 ));
-      workout.add(new Exercises("Muscle Gain","Squats",0.0,3,10 ));
-      workout.add(new Exercises("Weight loss","Jumping jacks",30.0,0,0 ));
+workout.add(new Exercises("Muscle Gain","Arms","Curls",0.0,3,10 ));
+      workout.add(new Exercises("Muscle Gain","Legs","Squats",0.0,3,10 ));
+      workout.add(new Exercises("Weight loss","Whole","Jumping jacks",30.0,0,0 ));
 return workout;
    }
 
