@@ -10,7 +10,7 @@ public class Workouts {
       musclegain = FXCollections.observableArrayList();
    }
    //Brynjar Steinn worked on this class
-   protected ObservableList<WorkoutGenerator> workoutNames;
+   protected ObservableList<WorkoutName> workoutNames;
    protected ObservableList<Exercises> weightloss;
 protected ObservableList<Exercises> musclegain;
 
@@ -25,13 +25,13 @@ return musclegain;
       weightloss.add(new Exercises("Jumping jacks",30.0,0,0 ));
       return weightloss;
    }
-   public ObservableList<WorkoutGenerator> getAllMusclegainWorkouts() {
-      workoutNames.add(new WorkoutGenerator("Arms"));
-      workoutNames.add(new WorkoutGenerator("Legs"));
+   public ObservableList<WorkoutName> getAllMusclegainWorkouts() {
+      workoutNames.add(new WorkoutName("Arms"));
+      workoutNames.add(new WorkoutName("Legs"));
       return workoutNames;
    }
-   public ObservableList<WorkoutGenerator> getAllWeightlossWorkouts() {
-      workoutNames.add(new WorkoutGenerator("Jump Hard"));
+   public ObservableList<WorkoutName> getAllWeightlossWorkouts() {
+      workoutNames.add(new WorkoutName("Jump Hard"));
       return workoutNames;
    }
    public static void main(String[] args) {
