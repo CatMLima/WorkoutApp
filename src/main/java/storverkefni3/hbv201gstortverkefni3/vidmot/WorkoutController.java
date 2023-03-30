@@ -33,13 +33,13 @@ public class WorkoutController implements Initializable {
     User user;
     private Workouts workoutnames;
 
-    ObservableList<Exercises> workoutList;
+    ObservableList<WorkoutName> workoutList;
 
     public void initialize(URL location, ResourceBundle resources) {
         user = new User();
         workoutnames = new Workouts();
         fxUserLabel.setText("Hi, " + user.getName());
-        workoutnames.getAllWorkouts(user.getGoal());
+        workoutList = workoutnames.getAllWorkouts(user.getGoal());
         fxWorkoutsListView.setItems(workoutList);
         /*
         Bind fxExercisesListView to fxWorkoutsListView selected
@@ -53,7 +53,7 @@ public class WorkoutController implements Initializable {
     }
 
     public void fxLogOutHandler(ActionEvent actionEvent) throws IOException{
-            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/initial-page-view")));
+            root = FXMLLoader.load((getClass().getResource("/storverkefni3/hbv201gstortverkefni3/initial-page-view.fxml")));
             stage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
