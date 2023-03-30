@@ -26,19 +26,19 @@ return workout;
       workout.add(new Exercises("Weight loss","Jumping jacks",30.0,0,0 ));
       return workout;
    }
-   public ObservableList<WorkoutName> getAllMusclegainWorkouts() {
-      workoutNames.add(new WorkoutName("Arms"));
-      workoutNames.add(new WorkoutName("Legs"));
+   public ObservableList<WorkoutName> getAllWorkouts(String type) {
+      switch (type) {
+         case "Weight loss":
+            workoutNames.add(new WorkoutName("Jump Hard"));
+            break;
+         case    "Muscle Gain":
+            workoutNames.add(new WorkoutName("Arms"));
+            workoutNames.add(new WorkoutName("Legs"));
+            break;
+         case "Endurance":
+            workoutNames.add(new WorkoutName("idnoman"));
+            break;
+   }
       return workoutNames;
-   }
-   public ObservableList<WorkoutName> getAllWeightlossWorkouts() {
-      workoutNames.add(new WorkoutName("Jump Hard"));
-      return workoutNames;
-   }
-   public static void main(String[] args) {
-Workouts w = new Workouts();
-w.getAllMusclegainWorkouts();
-      System.out.println(w);
-   }
-}
+   }}
 
