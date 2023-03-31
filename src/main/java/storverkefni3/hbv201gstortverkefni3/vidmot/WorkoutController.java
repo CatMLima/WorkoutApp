@@ -25,6 +25,8 @@ public class WorkoutController implements Initializable {
     ListView fxExercisesListView;
 
     @FXML
+    Button fxStartButton;
+    @FXML
     Label fxUserLabel;
     private Parent root;
     private Stage stage;
@@ -35,6 +37,9 @@ public class WorkoutController implements Initializable {
 
     ObservableList<WorkoutName> workoutList;
 
+    /*
+    Catarina and Brynjar worked on the initialize method
+     */
     public void initialize(URL location, ResourceBundle resources) {
         user = new User();
         workoutnames = new Workouts();
@@ -51,12 +56,15 @@ public class WorkoutController implements Initializable {
                 if ("Legs".equals(newValue.toString())) {
                     fxExercisesListView.setItems(workoutnames.legs);
             }}});
+        fxStartButton.disableProperty().bind(fxWorkoutsListView.getSelectionModel().selectedItemProperty().isNull());
+
     }
 
 
 
 
     public void fxStartWorkoutHandler(ActionEvent actionEvent) throws IOException{
+
 
     }
 

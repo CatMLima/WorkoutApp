@@ -26,7 +26,7 @@
             </Label>
          </children>
       </Pane>
-      <Button layoutX="360.0" layoutY="314.0" mnemonicParsing="false" onAction="#fxStartWorkoutHandler" prefHeight="51.0" prefWidth="207.0" style="-fx-background-color: #52B2BF;" text="Start">
+      <Button fx:id="fxStartButton" layoutX="360.0" layoutY="314.0" mnemonicParsing="false" onAction="#fxStartWorkoutHandler" prefHeight="51.0" prefWidth="207.0" style="-fx-background-color: #52B2BF;" text="Start">
          <font>
             <Font name="Gill Sans MT" size="30.0" />
          </font>
