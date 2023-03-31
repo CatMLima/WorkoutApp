@@ -17,13 +17,14 @@ legs = FXCollections.observableArrayList();
    }
    //Brynjar Steinn worked on this class
    protected ObservableList<WorkoutName> workoutNames;
-   protected ObservableList<Exercises> arms;
+   public ObservableList<Exercises> arms;
 protected ObservableList<Exercises> workout;
    protected ObservableList<Exercises> legs;
 
    public ObservableList<Exercises> getAllExercises() {
       //exercise(name,time,sets,reps)
 workout.add(new Exercises("Muscle Gain","Arms","Curls",0.0,3,10 ));
+      arms.add(new Exercises ("Muscle Gain","Arms","Hammer Curls",0.0,3,10) );
       workout.add(new Exercises("Muscle Gain","Legs","Squats",0.0,3,10 ));
       workout.add(new Exercises("Weight loss","Whole","Jumping jacks",30.0,0,0 ));
 return workout;
@@ -34,7 +35,7 @@ return workout;
       for (Exercises exercise : beingFiltered) {
          if (exercise.getWorkouttype().equals(goal)) {
             exerciseList.add(exercise);
-            if (exercise.getBodypart().equals("arms")) {
+            if (exercise.getBodypart().equals("Arms")) {
                arms.add(exercise);
             }
          }

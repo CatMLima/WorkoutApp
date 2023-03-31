@@ -40,8 +40,15 @@ public class WorkoutController implements Initializable {
         workoutnames = new Workouts();
         fxUserLabel.setText("Hi, " + user.getName());
         workoutList = workoutnames.getAllWorkouts(user.getGoal());
-        fxWorkoutsListView.setItems(workoutList);
         workoutnames.filterExercises(user.getGoal());
+        fxWorkoutsListView.setItems(workoutList);
+        fxWorkoutsListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            //System.out.println(newValue);
+            if (newValue != null) {
+                if ("Arms".equals(newValue.toString())) {
+                    fxExercisesListView.setItems(workoutnames.arms);
+                }
+            }});
         /*
         Bind fxExercisesListView to fxWorkoutsListView selected
          */
