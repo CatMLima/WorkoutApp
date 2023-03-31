@@ -1,0 +1,1 @@
+change getAllExercises so that it takes in exercises from a text file rather than adding them inside the method

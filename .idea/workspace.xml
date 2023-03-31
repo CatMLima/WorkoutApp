@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/WorkoutName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/WorkoutName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added comments about who worked on WorkoutName and Workouts">
+      <change afterPath="$PROJECT_DIR$/Tasks.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +106,7 @@
     <MESSAGE value="added a comment about how we would move forward with filterExercises" />
     <MESSAGE value="refined comment" />
     <MESSAGE value="added a call to filterExercises" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a call to filterExercises" />
+    <MESSAGE value="added comments about who worked on WorkoutName and Workouts" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments about who worked on WorkoutName and Workouts" />
   </component>
 </project>
