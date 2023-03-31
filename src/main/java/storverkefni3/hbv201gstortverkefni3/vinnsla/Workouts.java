@@ -19,7 +19,7 @@ legs = FXCollections.observableArrayList();
    protected ObservableList<WorkoutName> workoutNames;
    public ObservableList<Exercises> arms;
 protected ObservableList<Exercises> workout;
-   protected ObservableList<Exercises> legs;
+   public ObservableList<Exercises> legs;
 
    public ObservableList<Exercises> getAllExercises() {
       //exercise(name,time,sets,reps)
@@ -38,6 +38,7 @@ return workout;
             if (exercise.getBodypart().equals("Arms")) {
                arms.add(exercise);
             }
+            if (exercise.getBodypart().equals("Legs")) {legs.add(exercise);}
          }
       }
       return FXCollections.observableArrayList(exerciseList);

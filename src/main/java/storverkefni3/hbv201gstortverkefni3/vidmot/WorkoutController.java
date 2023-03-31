@@ -48,7 +48,9 @@ public class WorkoutController implements Initializable {
                 if ("Arms".equals(newValue.toString())) {
                     fxExercisesListView.setItems(workoutnames.arms);
                 }
-            }});
+                if ("Legs".equals(newValue.toString())) {
+                    fxExercisesListView.setItems(workoutnames.legs);
+            }}});
         /*
         Bind fxExercisesListView to fxWorkoutsListView selected
          */

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="fixed filterExercises so it goes through exercises instead of an array list with an incrementing int variable.">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
@@ -109,6 +109,8 @@
     <MESSAGE value="refined comment" />
     <MESSAGE value="added a call to filterExercises" />
     <MESSAGE value="fixed filterExercises so it goes through exercises instead of an array list with an incrementing int variable." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed filterExercises so it goes through exercises instead of an array list with an incrementing int variable." />
+    <MESSAGE value="Added listener to add exercises to fxExercisesListView based on what workout you click" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" />
   </component>
 </project>
