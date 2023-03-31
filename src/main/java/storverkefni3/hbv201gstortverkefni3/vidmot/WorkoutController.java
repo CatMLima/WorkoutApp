@@ -64,6 +64,18 @@ public class WorkoutController implements Initializable {
 
 
     public void fxStartWorkoutHandler(ActionEvent actionEvent) throws IOException{
+        String file = null;
+        switch (user.getGoal()) {
+            case "Weight loss" -> file = "/storverkefni3/hbv201gstortverkefni3/workout-cardio-session.fxml";
+            case "Muscle Gain" -> file = "/storverkefni3/hbv201gstortverkefni3/workout-strength-session.fxml";
+            case "Endurance" -> file = "/storverkefni3/hbv201gstortverkefni3/workout-cardio-session.fxml";
+        }
+        assert file != null;
+        root = FXMLLoader.load((getClass().getResource(file)));
+        stage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
 
 
     }
