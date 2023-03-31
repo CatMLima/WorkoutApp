@@ -6,7 +6,7 @@ import javafx.collections.ObservableList;
 import java.util.ArrayList;
 import java.util.List;
 
-
+//Brynjar Steinn worked on this class
 public class Workouts {
    public Workouts(){
       workoutNames = FXCollections.observableArrayList();
@@ -15,7 +15,7 @@ arms = FXCollections.observableArrayList();
 legs = FXCollections.observableArrayList();
 
    }
-   //Brynjar Steinn worked on this class
+
    protected ObservableList<WorkoutName> workoutNames;
    public ObservableList<Exercises> arms;
 protected ObservableList<Exercises> workout;
