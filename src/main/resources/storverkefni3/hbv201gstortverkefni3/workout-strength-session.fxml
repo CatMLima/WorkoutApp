@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="storverkefni3.hbv201gstortverkefni3.vidmot.StrengthSessionController">
    <children>
       <Pane layoutY="-2.0" prefHeight="130.0" prefWidth="600.0" style="-fx-background-color: #F17829;">
          <children>
-            <Button fx:id="fxQuitButton" layoutX="7.0" layoutY="14.0" mnemonicParsing="false" text="Quit">
+            <Button fx:id="fxQuitButton" layoutX="7.0" layoutY="14.0" mnemonicParsing="false" onAction="#fxQuitWorkoutHandler" text="Quit">
                <font>
                   <Font name="Gill Sans MT" size="15.0" />
                </font>
@@ -31,19 +31,9 @@
       </Pane>
       <Pane layoutX="116.0" layoutY="78.0" prefHeight="348.0" prefWidth="395.0" style="-fx-background-color: #52B2BF;">
          <children>
-            <Button fx:id="fxStartButton" layoutX="103.0" layoutY="296.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" text="Start">
+            <Button fx:id="fxSkipButton" layoutX="153.0" layoutY="263.0" mnemonicParsing="false" onAction="#fxSkipExerciseHandler" prefHeight="57.0" prefWidth="90.0" text="Skip">
                <font>
-                  <Font name="Gill Sans MT" size="15.0" />
-               </font>
-            </Button>
-            <Button fx:id="fxPauseButton" layoutX="165.0" layoutY="286.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="65.0" text="Pause">
-               <font>
-                  <Font name="Gill Sans MT" size="15.0" />
-               </font>
-            </Button>
-            <Button fx:id="fxSkipButton" layoutX="243.0" layoutY="296.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="52.0" text="Skip">
-               <font>
-                  <Font name="Gill Sans MT" size="15.0" />
+                  <Font name="Gill Sans MT" size="25.0" />
                </font>
             </Button>
             <VBox layoutX="42.0" layoutY="9.0" prefHeight="262.0" prefWidth="313.0">
