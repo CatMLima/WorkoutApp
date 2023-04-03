@@ -1,7 +1,7 @@
 package storverkefni3.hbv201gstortverkefni3.vinnsla;
 
 import javafx.beans.property.*;
-
+import javafx.scene.image.Image;
 
 
 public class Exercises {
@@ -13,6 +13,7 @@ public class Exercises {
     private IntegerProperty reps = new SimpleIntegerProperty();
     private IntegerProperty sets=new SimpleIntegerProperty();
     private DoubleProperty time = new SimpleDoubleProperty();
+    private Image gif;
 
     public String getWorkouttype() {
         return workouttype.get();
@@ -42,13 +43,14 @@ public class Exercises {
     public void setBodypart(String bodypart) {
         this.bodypart.set(bodypart);
     }
-    public Exercises(String workouttype, String bodypart, String name, double time, int sets, int reps) {
+    public Exercises(String workouttype, String bodypart, String name, double time, int sets, int reps, Image gif) {
         setWorkouttype(workouttype);
         setBodypart(bodypart);
         setName(name);
         setTime(time); //if strength then this is null
         setSets(sets); //is null if not strength
         setReps(reps); //is null if not strength
+        setGif(gif);
     }
 
     private void setReps(int reps) {
@@ -73,5 +75,9 @@ public class Exercises {
         return getName() + " " + getTime() + " " + getSets()+ " " + getReps();
 
         }
+
+    public void setGif(Image gif) {
+        this.gif = gif;
     }
+}
 
