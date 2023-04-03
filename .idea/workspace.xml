@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added gifs as a string to Exercises">
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/StrengthSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/StrengthSessionController.java" afterDir="false" />
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added set image to setNameRepSets">
+      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +117,7 @@
     <MESSAGE value="removed exerciselist from getTotalTime" />
     <MESSAGE value="added gifs to exercise constructor" />
     <MESSAGE value="added gifs as a string to Exercises" />
-    <option name="LAST_COMMIT_MESSAGE" value="added gifs as a string to Exercises" />
+    <MESSAGE value="added set image to setNameRepSets" />
+    <option name="LAST_COMMIT_MESSAGE" value="added set image to setNameRepSets" />
   </component>
 </project>

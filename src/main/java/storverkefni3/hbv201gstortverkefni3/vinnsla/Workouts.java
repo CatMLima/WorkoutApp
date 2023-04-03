@@ -23,10 +23,10 @@ protected ObservableList<Exercises> workout;
 
    public ObservableList<Exercises> getAllExercises() {
       //exercise(WorkoutType,Bodypart,name,time,sets,reps)
-workout.add(new Exercises("Muscle Gain","Arms","Curls",0.0,3,10,"BicepCurl.gif"));
-      arms.add(new Exercises ("Muscle Gain","Arms","Hammer Curls",0.0,3,10,"HammerCurl.gif"));
-      workout.add(new Exercises("Muscle Gain","Legs","Squats",0.0,3,10,"Squats.gif" ));
-      workout.add(new Exercises("Weight loss","Jump Hard","Jumping jacks",30.0,0,0,"JumpingJacks.gif"));
+workout.add(new Exercises("Muscle Gain","Arms","Curls",0.0,3,10,"storverkefni3/pics/BicepCurl.gif"));
+      arms.add(new Exercises ("Muscle Gain","Arms","Hammer Curls",0.0,3,10,"storverkefni3/pics/HammerCurl.gif"));
+      workout.add(new Exercises("Muscle Gain","Legs","Squats",0.0,3,10,"storverkefni3/pics/Squats.gif" ));
+      workout.add(new Exercises("Weight loss","Jump Hard","Jumping jacks",30.0,0,0,"storverkefni3/pics/JumpingJacks.gif"));
 return workout;
    }
    public ObservableList<Exercises> filterExercises(String goal) {
