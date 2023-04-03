@@ -1,5 +1,6 @@
 package storverkefni3.hbv201gstortverkefni3.vidmot;
 
+import javafx.animation.*;
 import javafx.beans.property.*;
 import javafx.beans.value.*;
 import javafx.collections.*;
@@ -9,6 +10,7 @@ import javafx.scene.*;
 import javafx.scene.control.*;
 import javafx.scene.image.*;
 import javafx.stage.*;
+import javafx.util.*;
 import storverkefni3.hbv201gstortverkefni3.vinnsla.*;
 
 import java.io.*;
@@ -25,6 +27,8 @@ public class CardioSessionController implements Initializable{
 
     public Button fxStartButton;
 
+    @FXML
+    public Label fxTimer;
     @FXML
     public Button fxPauseButton;
 
@@ -52,6 +56,9 @@ public class CardioSessionController implements Initializable{
 
     IntegerProperty count = new SimpleIntegerProperty();
 
+    final double TIME = 60.0;
+
+    Timeline timeline;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
@@ -67,6 +74,20 @@ public class CardioSessionController implements Initializable{
                 setNameRepSets((Integer) t1);
             }
         });
+        setTime(TIME);
+        timeline = new Timeline(
+                new KeyFrame(Duration.seconds(1), event ->{
+                    setTime(getTime()-1);
+                    fxTimer.setText(String.valueOf(getTime()));
+                    if (getTime() <= 0){
+                        timeline.stop();
+                        fxTimer.setText("Done");
+                    }
+                })
+        );
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.play();
+
 
     }
     public void setNameRepSets(int count){
@@ -101,4 +122,18 @@ public class CardioSessionController implements Initializable{
     public void fxSkipExerciseHandler(ActionEvent actionEvent) {
         setCount(getCount()+1);
     }
+
+    public double getTime() {
+        return time.get();
+    }
+
+    public DoubleProperty timeProperty() {
+        return time;
+    }
+
+    public void setTime(double time) {
+        this.time.set(time);
+    }
+
+    DoubleProperty time = new SimpleDoubleProperty();
 }
