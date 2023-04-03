@@ -33,6 +33,7 @@ public class WorkoutController implements Initializable {
     private Scene scene;
 
     User user;
+
     private Workouts workoutnames;
 
     ObservableList<WorkoutName> workoutList;
