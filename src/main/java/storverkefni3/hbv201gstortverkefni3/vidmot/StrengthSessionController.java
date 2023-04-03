@@ -78,12 +78,12 @@ public class StrengthSessionController implements Initializable {
         fxExerciseName.setText(exercises[count].getName());
         fxRepetitions.setText(String.valueOf(exercises[count].getReps()));
         fxSets.setText(String.valueOf(exercises[count].getSets()));
-        fxExerciseView.setImage(new Image(getClass().getResourceAsStream(exercises[count].getGif())));
+        fxExerciseView.setImage(new Image("src/main/resources/storverkefni3/pics/BicepCurl.gif"));
     }
 
 
     public void fxQuitWorkoutHandler(ActionEvent actionEvent) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("BicepCurl.gif")));
         stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

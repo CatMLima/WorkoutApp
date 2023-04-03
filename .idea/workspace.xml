@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="possible fix for filterexercises">
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.java" afterDir="false" />
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="making exercises look nicer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/StrengthSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/StrengthSessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +98,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="merged all getallworkouts into one getter" />
     <MESSAGE value="fixed workspace.xml file" />
     <MESSAGE value="made switch type be enhanced switch instead" />
     <MESSAGE value="merged getters for exercises" />
@@ -121,11 +122,7 @@
     <MESSAGE value="fixed image path" />
     <MESSAGE value="added Jump Hard into filterExercises" />
     <MESSAGE value="possible fix for filterexercises" />
-    <option name="LAST_COMMIT_MESSAGE" value="possible fix for filterexercises" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HBV201GStortVerkefni3$FitUApplication.ic" NAME="FitUApplication Coverage Results" MODIFIED="1680547166783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>storverkefni3.hbv201gstortverkefni3.vidmot.*</FILTER>
-    </SUITE>
+    <MESSAGE value="making exercises look nicer" />
+    <option name="LAST_COMMIT_MESSAGE" value="making exercises look nicer" />
   </component>
 </project>

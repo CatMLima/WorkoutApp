@@ -56,7 +56,10 @@ public class WorkoutController implements Initializable {
                 }
                 if ("Legs".equals(newValue.toString())) {
                     fxExercisesListView.setItems(workoutnames.legs);
-            }}});
+            } if ("Jump Hard".equals(newValue.toString())){
+                    fxExercisesListView.setItems(workoutnames.JumpHard);
+                }
+            }});
         fxStartButton.disableProperty().bind(fxWorkoutsListView.getSelectionModel().selectedItemProperty().isNull());
 
     }
