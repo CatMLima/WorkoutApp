@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="Completed implementation of  fxExerciseview.setImage in setNameRepSets">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added a comment to setNameRepSets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/StrengthSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/StrengthSessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +98,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added legs and arms as lists in constructor" />
     <MESSAGE value="added a comment about how we would move forward with filterExercises" />
     <MESSAGE value="refined comment" />
     <MESSAGE value="added a call to filterExercises" />
@@ -122,6 +122,7 @@
     <MESSAGE value="fixing gifs in workouts" />
     <MESSAGE value="fixed setImage in setNameRepSets" />
     <MESSAGE value="Completed implementation of  fxExerciseview.setImage in setNameRepSets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed implementation of  fxExerciseview.setImage in setNameRepSets" />
+    <MESSAGE value="added a comment to setNameRepSets" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a comment to setNameRepSets" />
   </component>
 </project>
