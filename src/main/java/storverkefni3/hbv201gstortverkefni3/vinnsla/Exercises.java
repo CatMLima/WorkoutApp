@@ -13,24 +13,20 @@ public class Exercises {
     private IntegerProperty reps = new SimpleIntegerProperty();
     private IntegerProperty sets=new SimpleIntegerProperty();
     private DoubleProperty time = new SimpleDoubleProperty();
-    private Image gif;
+
+    public String getGif() {
+        return gif.get();
+    }
+
+    private StringProperty gif = new SimpleStringProperty();
 
     public String getWorkouttype() {
         return workouttype.get();
     }
-
-    public StringProperty workouttypeProperty() {
-        return workouttype;
-    }
-
     private StringProperty workouttype=new SimpleStringProperty();
 
     public String getBodypart() {
         return bodypart.get();
-    }
-
-    public StringProperty bodypartProperty() {
-        return bodypart;
     }
 
     private StringProperty bodypart=new SimpleStringProperty();
@@ -43,7 +39,7 @@ public class Exercises {
     public void setBodypart(String bodypart) {
         this.bodypart.set(bodypart);
     }
-    public Exercises(String workouttype, String bodypart, String name, double time, int sets, int reps, Image gif) {
+    public Exercises(String workouttype, String bodypart, String name, double time, int sets, int reps, String gif) {
         setWorkouttype(workouttype);
         setBodypart(bodypart);
         setName(name);
@@ -76,8 +72,8 @@ public class Exercises {
 
         }
 
-    public void setGif(Image gif) {
-        this.gif = gif;
+    public void setGif(String gif) {
+        this.gif.set(gif);
     }
 }
 
