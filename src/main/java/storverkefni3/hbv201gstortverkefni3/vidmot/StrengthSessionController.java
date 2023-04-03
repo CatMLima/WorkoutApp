@@ -78,7 +78,7 @@ public class StrengthSessionController implements Initializable {
         fxExerciseName.setText(exercises[count].getName());
         fxRepetitions.setText(String.valueOf(exercises[count].getReps()));
         fxSets.setText(String.valueOf(exercises[count].getSets()));
-       // fxExerciseView.setImage(new Image("/storverkefni3/pics/BicepCurl.gif"));
+        fxExerciseView.setImage(new Image(getClass().getResourceAsStream("/storverkefni3/pics/BicepCurl.gif")));
     }
 
 
