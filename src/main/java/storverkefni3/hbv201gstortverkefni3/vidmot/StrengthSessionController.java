@@ -39,12 +39,30 @@ public class StrengthSessionController implements Initializable {
 
     Workouts workout;
 
+    Exercises[] exercises;
+
+    int count = 0;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
         workout = new Workouts();
         selectedExercises = StoreWorkout.getSelectedExercises();
+        exercises = new Exercises[selectedExercises.size()];
+        selectedExercises.toArray(exercises);
+
+
+
+
+
+
+
+    }
+
+    public void setNameRepSet(int count){
+        fxExerciseName.setText(exercises[count].getName());
+        fxRepetitions.setText(String.valueOf(exercises[count].getReps()));
+        fxSets.setText(String.valueOf(exercises[count].getSets()));
 
     }
 
