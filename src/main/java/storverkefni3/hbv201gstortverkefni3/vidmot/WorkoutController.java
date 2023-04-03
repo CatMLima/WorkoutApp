@@ -71,6 +71,8 @@ public class WorkoutController implements Initializable {
             case "Muscle Gain" -> file = "/storverkefni3/hbv201gstortverkefni3/workout-strength-session.fxml";
             case "Endurance" -> file = "/storverkefni3/hbv201gstortverkefni3/workout-cardio-session.fxml";
         }
+        ObservableList<Exercises> selectedExercises = fxExercisesListView.getSelectionModel().getSelectedItems();
+        StoreWorkout.setSelectedExercises(selectedExercises);
         assert file != null;
         root = FXMLLoader.load((getClass().getResource(file)));
         stage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow();
