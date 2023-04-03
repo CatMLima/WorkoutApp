@@ -45,7 +45,6 @@ return workout;
    }
 public Double getTotalTime(String goal){
    Double TotalTime = 0.0;
-   List<Exercises> exerciseList = new ArrayList<>();
    ObservableList<Exercises> beingFiltered = StoreWorkout.getSelectedExercises();
       for (Exercises exercise : beingFiltered) {
       if (exercise.getWorkouttype().equals(goal)) {
