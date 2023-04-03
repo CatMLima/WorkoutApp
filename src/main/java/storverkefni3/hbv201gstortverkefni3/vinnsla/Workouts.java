@@ -13,6 +13,7 @@ public class Workouts {
       workout = FXCollections.observableArrayList();
 arms = FXCollections.observableArrayList();
 legs = FXCollections.observableArrayList();
+JumpHard = FXCollections.observableArrayList();
 
    }
 
