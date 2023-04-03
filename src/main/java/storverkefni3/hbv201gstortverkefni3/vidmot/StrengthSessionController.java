@@ -50,21 +50,15 @@ public class StrengthSessionController implements Initializable {
         selectedExercises = StoreWorkout.getSelectedExercises();
         exercises = new Exercises[selectedExercises.size()];
         selectedExercises.toArray(exercises);
-
-
-
-
-
-
+        setNameRepSets(count);
 
     }
-
-    public void setNameRepSet(int count){
+    public void setNameRepSets(int count){
         fxExerciseName.setText(exercises[count].getName());
         fxRepetitions.setText(String.valueOf(exercises[count].getReps()));
         fxSets.setText(String.valueOf(exercises[count].getSets()));
-
     }
+
 
     public void fxQuitWorkoutHandler(ActionEvent actionEvent) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
