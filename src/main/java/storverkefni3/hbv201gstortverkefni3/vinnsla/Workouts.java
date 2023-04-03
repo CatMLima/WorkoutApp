@@ -43,6 +43,15 @@ return workout;
       }
       return FXCollections.observableArrayList(exerciseList);
    }
+public Double getTotalTime(String goal){
+   Double TotalTime = 0.0;
+   List<Exercises> exerciseList = new ArrayList<>();
+   ObservableList<Exercises> beingFiltered = getAllExercises();
+      for (Exercises exercise : beingFiltered) {
+      if (exercise.getWorkouttype().equals(goal)) {
+         TotalTime += exercise.getTime();}
+   }return TotalTime;
+}
 
    public ObservableList<WorkoutName> getAllWorkouts(String type) {
       switch (type) {

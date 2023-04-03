@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added a comment to Exercises.txt" />
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="fixed selectedExercises">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,6 +112,7 @@
     <MESSAGE value="added 2 gifs to use with exercises later" />
     <MESSAGE value="Created a txt file for exercises and fixed some exercises" />
     <MESSAGE value="added a comment to Exercises.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a comment to Exercises.txt" />
+    <MESSAGE value="fixed selectedExercises" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed selectedExercises" />
   </component>
 </project>
