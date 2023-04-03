@@ -13,23 +13,20 @@ public class Exercises {
     private IntegerProperty reps = new SimpleIntegerProperty();
     private IntegerProperty sets=new SimpleIntegerProperty();
     private DoubleProperty time = new SimpleDoubleProperty();
+    private StringProperty gif = new SimpleStringProperty();
+    private StringProperty workouttype=new SimpleStringProperty();
+    private StringProperty bodypart=new SimpleStringProperty();
 
     public String getGif() {
         return gif.get();
     }
-
-    private StringProperty gif = new SimpleStringProperty();
-
     public String getWorkouttype() {
         return workouttype.get();
     }
-    private StringProperty workouttype=new SimpleStringProperty();
 
     public String getBodypart() {
         return bodypart.get();
     }
-
-    private StringProperty bodypart=new SimpleStringProperty();
     public void setName(String name) {
         this.name.set(name);
     }
