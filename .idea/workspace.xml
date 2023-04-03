@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="fixed Exercises.txt and added a comment to setNameRepSets" />
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="Added the remaining gifs for the exercises">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/Exercises.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,13 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/catis/OneDrive - Menntaský/Documents/Y1 S2/Viðmótsforritun - HBV201G/DialogExample&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/brynj/Desktop/Bækur fyrir HÍ/HBV201G/HBV201GStortVerkefni3/src/main/resources/storverkefni3/hbv201gstortverkefni3"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\brynj\Desktop\Bækur fyrir HÍ\HBV201G\HBV201GStortVerkefni3\src\main\resources\storverkefni3\hbv201gstortverkefni3" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="FitUApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="storverkefni3.hbv201gstortverkefni3.vidmot.FitUApplication" />
@@ -94,7 +104,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refined comment" />
     <MESSAGE value="added a call to filterExercises" />
     <MESSAGE value="added comments about who worked on WorkoutName and Workouts" />
     <MESSAGE value="Created a class to store selected workouts and added the code to use it in workoutcontroller and StrengthSessionController" />
@@ -119,6 +128,7 @@
     <MESSAGE value="Completed implementation of  fxExerciseview.setImage in setNameRepSets" />
     <MESSAGE value="added a comment to setNameRepSets" />
     <MESSAGE value="fixed Exercises.txt and added a comment to setNameRepSets" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed Exercises.txt and added a comment to setNameRepSets" />
+    <MESSAGE value="Added the remaining gifs for the exercises" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the remaining gifs for the exercises" />
   </component>
 </project>
