@@ -1,6 +1,8 @@
 package storverkefni3.hbv201gstortverkefni3.vidmot;
 
 
+import javafx.beans.property.*;
+import javafx.beans.value.*;
 import javafx.collections.*;
 
 import javafx.collections.ObservableList;
@@ -41,16 +43,35 @@ public class StrengthSessionController implements Initializable {
 
     Exercises[] exercises;
 
-    int count = 0;
+    public int getCount() {
+        return count.get();
+    }
+
+    public IntegerProperty countProperty() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count.set(count);
+    }
+
+    IntegerProperty count = new SimpleIntegerProperty();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
+        setCount(0);
         workout = new Workouts();
         selectedExercises = StoreWorkout.getSelectedExercises();
         exercises = new Exercises[selectedExercises.size()];
         selectedExercises.toArray(exercises);
-        setNameRepSets(count);
+        setNameRepSets(getCount());
+        countProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
+                setNameRepSets((Integer) t1);
+            }
+        });
 
     }
     public void setNameRepSets(int count){
@@ -68,6 +89,7 @@ public class StrengthSessionController implements Initializable {
         stage.show();
     }
 
-    public void fxSkipExerciseHandler(ActionEvent actionEvent) {
+    public void fxContinueExerciseHandler(ActionEvent actionEvent) {
+        setCount(getCount()+1);
     }
 }
