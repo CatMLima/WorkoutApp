@@ -22,11 +22,11 @@ protected ObservableList<Exercises> workout;
    public ObservableList<Exercises> legs;
 
    public ObservableList<Exercises> getAllExercises() {
-      //exercise(name,time,sets,reps)
+      //exercise(WorkoutType,Bodypart,name,time,sets,reps)
 workout.add(new Exercises("Muscle Gain","Arms","Curls",0.0,3,10 ));
       arms.add(new Exercises ("Muscle Gain","Arms","Hammer Curls",0.0,3,10) );
       workout.add(new Exercises("Muscle Gain","Legs","Squats",0.0,3,10 ));
-      workout.add(new Exercises("Weight loss","Whole","Jumping jacks",30.0,0,0 ));
+      workout.add(new Exercises("Weight loss","Jump Hard","Jumping jacks",30.0,0,0 ));
 return workout;
    }
    public ObservableList<Exercises> filterExercises(String goal) {
