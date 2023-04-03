@@ -31,7 +31,7 @@
       </Pane>
       <Pane layoutX="116.0" layoutY="78.0" prefHeight="348.0" prefWidth="395.0" style="-fx-background-color: #52B2BF;">
          <children>
-            <Button fx:id="fxSkipButton" layoutX="153.0" layoutY="263.0" mnemonicParsing="false" onAction="#fxSkipExerciseHandler" prefHeight="57.0" prefWidth="90.0" text="Skip">
+            <Button fx:id="fxSkipButton" layoutX="130.0" layoutY="271.0" mnemonicParsing="false" onAction="#fxSkipExerciseHandler" prefHeight="57.0" prefWidth="138.0" text="Continue">
                <font>
                   <Font name="Gill Sans MT" size="25.0" />
                </font>

@@ -45,6 +45,7 @@ public class StrengthSessionController implements Initializable {
         user = new User();
         workout = new Workouts();
         selectedExercises = StoreWorkout.getSelectedExercises();
+
     }
 
     public void fxQuitWorkoutHandler(ActionEvent actionEvent) throws IOException {
