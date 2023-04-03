@@ -1,4 +1,4 @@
- //exercise(WorkoutType,Bodypart,name,time,sets,reps)
+# exercise(WorkoutType,Bodypart,name,time,sets,reps)
 "Muscle Gain","Arms","Curls",0.0,3,10
 "Muscle Gain","Arms","Hammer Curls",0.0,3,10
 "Muscle Gain","Legs","Squats",0.0,3,10
