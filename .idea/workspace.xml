@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="Added the remaining gifs for the exercises">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/Exercises.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="Changed getAllExercises so that it gets exercises from Exercises.txt">
+      <change beforePath="$PROJECT_DIR$/Tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tasks.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +101,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added a call to filterExercises" />
     <MESSAGE value="added comments about who worked on WorkoutName and Workouts" />
     <MESSAGE value="Created a class to store selected workouts and added the code to use it in workoutcontroller and StrengthSessionController" />
     <MESSAGE value="added 2 gifs to use with exercises later" />
@@ -129,6 +125,7 @@
     <MESSAGE value="added a comment to setNameRepSets" />
     <MESSAGE value="fixed Exercises.txt and added a comment to setNameRepSets" />
     <MESSAGE value="Added the remaining gifs for the exercises" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the remaining gifs for the exercises" />
+    <MESSAGE value="Changed getAllExercises so that it gets exercises from Exercises.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed getAllExercises so that it gets exercises from Exercises.txt" />
   </component>
 </project>
