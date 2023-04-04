@@ -31,17 +31,17 @@
         </Pane>
         <Pane layoutX="116.0" layoutY="78.0" prefHeight="348.0" prefWidth="395.0" style="-fx-background-color: #52B2BF;">
             <children>
-                <Button fx:id="fxStartButton" layoutX="103.0" layoutY="296.0" mnemonicParsing="false" onAction="#fxStartExerciseHandler" prefHeight="25.0" prefWidth="52.0" text="Start">
+                <Button fx:id="fxStartButton" layoutX="78.0" layoutY="296.0" mnemonicParsing="false" onAction="#fxStartExerciseHandler" prefHeight="25.0" prefWidth="52.0" text="Start">
                     <font>
                         <Font name="Gill Sans MT" size="15.0" />
                     </font>
                 </Button>
-                <Button fx:id="fxPauseButton" layoutX="165.0" layoutY="286.0" mnemonicParsing="false" onAction="#fxPauseExerciseHandler" prefHeight="47.0" prefWidth="65.0" text="Pause">
+                <Button fx:id="fxPauseButton" layoutX="152.0" layoutY="286.0" mnemonicParsing="false" onAction="#fxPauseExerciseHandler" prefHeight="47.0" prefWidth="91.0" text="Pause">
                     <font>
                         <Font name="Gill Sans MT" size="15.0" />
                     </font>
                 </Button>
-                <Button fx:id="fxSkipButton" layoutX="243.0" layoutY="296.0" mnemonicParsing="false" onAction="#fxSkipExerciseHandler" prefHeight="25.0" prefWidth="52.0" text="Skip">
+                <Button fx:id="fxSkipButton" layoutX="265.0" layoutY="296.0" mnemonicParsing="false" onAction="#fxSkipExerciseHandler" prefHeight="25.0" prefWidth="52.0" text="Skip">
                     <font>
                         <Font name="Gill Sans MT" size="15.0" />
                     </font>

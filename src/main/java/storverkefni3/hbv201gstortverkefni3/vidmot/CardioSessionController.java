@@ -56,7 +56,7 @@ public class CardioSessionController implements Initializable{
 
     IntegerProperty count = new SimpleIntegerProperty();
 
-    final double TIME = 60.0;
+    final double TIME = 61.0;
 
     Timeline timeline;
     @Override
@@ -86,9 +86,7 @@ public class CardioSessionController implements Initializable{
                 })
         );
         timeline.setCycleCount(Animation.INDEFINITE);
-        timeline.play();
-
-
+        fxStartButton.disableProperty().bind(fxTimer.textProperty().isNotEmpty());
     }
     public void setNameRepSets(int count){
         fxExerciseName.setText(exercises[count].getName());
@@ -107,16 +105,19 @@ public class CardioSessionController implements Initializable{
     int clicks = 0;
 
     public void fxPauseExerciseHandler(ActionEvent actionEvent) {
+
         if (clicks == 0 || clicks % 2 == 0 ){
             fxPauseButton.setText("Continue");
+            timeline.pause();
             }
-        else
+        else {
             fxPauseButton.setText("Pause");
+            timeline.play();
+        }
         clicks++;
         }
     public void fxStartExerciseHandler(ActionEvent actionEvent){
-
-        
+        timeline.playFromStart();
     }
 
     public void fxSkipExerciseHandler(ActionEvent actionEvent) {
