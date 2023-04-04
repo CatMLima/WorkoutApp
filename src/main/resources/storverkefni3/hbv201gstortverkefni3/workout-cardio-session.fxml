@@ -64,7 +64,7 @@
                         </Pane>
                         <ImageView fx:id="fxExerciseView" fitHeight="175.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
                             <VBox.margin>
-                                <Insets left="45.0" />
+                                <Insets left="45.0" top="20.0" />
                             </VBox.margin>
                         </ImageView>
                     </children>
