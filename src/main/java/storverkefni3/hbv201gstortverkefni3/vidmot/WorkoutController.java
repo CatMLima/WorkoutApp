@@ -62,19 +62,31 @@ public class WorkoutController implements Initializable {
             //System.out.println(newValue);
             if (newValue != null) {
                 if ("Arms".equals(newValue.toString())) {
+                    uncheckAll();
                     fxExercisesListView.setItems(workoutnames.arms);
                     filterCheck(workoutnames.arms);
                 }
                 if ("Legs".equals(newValue.toString())) {
+                    uncheckAll();
                     fxExercisesListView.setItems(workoutnames.legs);
                     filterCheck(workoutnames.legs);
             } if ("Jump Hard".equals(newValue.toString())){
+                    uncheckAll();
                     fxExercisesListView.setItems(workoutnames.JumpHard);
                     filterCheck(workoutnames.JumpHard);
                 }
             }});
         fxStartButton.disableProperty().bind(fxWorkoutsListView.getSelectionModel().selectedItemProperty().isNull());
 
+    }
+
+    public void uncheckAll(){
+        fxDumbell.setSelected(false);
+        fxExerciseMats.setSelected(false);
+        fxGymMachines.setSelected(false);
+        fxBarbell.setSelected(false);
+        fxKettlebell.setSelected(false);
+        fxResistanceBands.setSelected(false);
     }
     Exercises[] exercises1;
 
@@ -91,8 +103,6 @@ public class WorkoutController implements Initializable {
                 case "Exercise Mats"-> fxExerciseMats.setSelected(true);
             }
         }
-
-
     }
 
 
