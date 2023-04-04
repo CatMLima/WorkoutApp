@@ -34,13 +34,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/brynj/Desktop/Bækur fyrir HÍ/HBV201G/HBV201GStortVerkefni3/src/main/resources/storverkefni3/hbv201gstortverkefni3"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/brynj/Desktop/Bækur fyrir HÍ/HBV201G/HBV201GStortVerkefni3/src/main/resources/storverkefni3/hbv201gstortverkefni3&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\brynj\Desktop\Bækur fyrir HÍ\HBV201G\HBV201GStortVerkefni3\src\main\resources\storverkefni3\hbv201gstortverkefni3" />
@@ -127,5 +127,10 @@
     <MESSAGE value="Added the remaining gifs for the exercises" />
     <MESSAGE value="Changed getAllExercises so that it gets exercises from Exercises.txt" />
     <option name="LAST_COMMIT_MESSAGE" value="Changed getAllExercises so that it gets exercises from Exercises.txt" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HBV201GStortVerkefni3$FitUApplication.ic" NAME="FitUApplication Coverage Results" MODIFIED="1680547166783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>storverkefni3.hbv201gstortverkefni3.vidmot.*</FILTER>
+    </SUITE>
   </component>
 </project>
