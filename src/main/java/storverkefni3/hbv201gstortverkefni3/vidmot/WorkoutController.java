@@ -19,6 +19,12 @@ Catarina Lima worked on this class.
  */
 
 public class WorkoutController implements Initializable {
+    public CheckBox fxExerciseMats;
+    public CheckBox fxResistanceBands;
+    public CheckBox fxGymMachines;
+    public CheckBox fxDumbell;
+    public CheckBox fxBarbell;
+    public CheckBox fxKettlebell;
     @FXML
     ListView fxWorkoutsListView;
     @FXML
@@ -57,14 +63,35 @@ public class WorkoutController implements Initializable {
             if (newValue != null) {
                 if ("Arms".equals(newValue.toString())) {
                     fxExercisesListView.setItems(workoutnames.arms);
+                    filterCheck(workoutnames.arms);
                 }
                 if ("Legs".equals(newValue.toString())) {
                     fxExercisesListView.setItems(workoutnames.legs);
+                    filterCheck(workoutnames.legs);
             } if ("Jump Hard".equals(newValue.toString())){
                     fxExercisesListView.setItems(workoutnames.JumpHard);
+                    filterCheck(workoutnames.JumpHard);
                 }
             }});
         fxStartButton.disableProperty().bind(fxWorkoutsListView.getSelectionModel().selectedItemProperty().isNull());
+
+    }
+    Exercises[] exercises1;
+
+    public void filterCheck(ObservableList<Exercises> exercises){
+        exercises1 = new Exercises[6];
+        exercises.toArray(exercises1);
+        for (Exercises exercise: exercises){
+            switch(exercise.getEquipment()){
+                case "Kettlebell" -> fxKettlebell.setSelected(true);
+                case "Dumbell" -> fxDumbell.setSelected(true);
+                case "Resistance Bands" -> fxResistanceBands.setSelected(true);
+                case "Barbell" -> fxBarbell.setSelected(true);
+                case "Gym machines" -> fxGymMachines.setSelected(true);
+                case "Exercise Mats"-> fxExerciseMats.setSelected(true);
+            }
+        }
+
 
     }
 
@@ -109,7 +136,6 @@ public class WorkoutController implements Initializable {
             scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
-
     }
 
 }
