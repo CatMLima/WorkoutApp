@@ -16,7 +16,7 @@ public class Workouts {
 arms = FXCollections.observableArrayList();
 legs = FXCollections.observableArrayList();
 JumpHard = FXCollections.observableArrayList();
-
+CrossFit = FXCollections.observableArrayList();
    }
 
    protected ObservableList<WorkoutName> workoutNames;
@@ -24,6 +24,7 @@ JumpHard = FXCollections.observableArrayList();
 protected ObservableList<Exercises> workout;
    public ObservableList<Exercises> legs;
    public ObservableList<Exercises> JumpHard;
+   public ObservableList<Exercises> CrossFit;
 
    public ObservableList<Exercises> getAllExercises() throws IOException {
       InputStream inputStream = getClass().getResourceAsStream("/storverkefni3/hbv201gstortverkefni3/Exercises.txt");
@@ -59,6 +60,7 @@ protected ObservableList<Exercises> workout;
             }
             if (exercise.getBodypart().equals("Legs")) {legs.add(exercise);}
          } if (exercise.getBodypart().equals("Jump Hard")) {JumpHard.add(exercise);}
+         if (exercise.getBodypart().equals("Cross Fit")) {CrossFit.add(exercise);}
       }
       return FXCollections.observableArrayList(exerciseList);
    }
@@ -73,12 +75,16 @@ public Double getTotalTime(String goal){
 
    public ObservableList<WorkoutName> getAllWorkouts(String type) {
       switch (type) {
-         case "Weight loss" -> workoutNames.add(new WorkoutName("Jump Hard"));
+         case "Weight loss" -> {workoutNames.add(new WorkoutName("Jump Hard"));
+         workoutNames.add(new WorkoutName("Cross Fit"));
+         }
          case "Muscle Gain" -> {
             workoutNames.add(new WorkoutName("Arms"));
             workoutNames.add(new WorkoutName("Legs"));
          }
-         case "Endurance" -> workoutNames.add(new WorkoutName("Stamina Junkie"));
+         case "Endurance" ->{ workoutNames.add(new WorkoutName("Stamina Junkie"));
+            workoutNames.add(new WorkoutName("Cross Fit"));
+         }
 
       }
       return workoutNames;
