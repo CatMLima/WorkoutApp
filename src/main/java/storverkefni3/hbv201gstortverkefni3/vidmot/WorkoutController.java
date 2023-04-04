@@ -74,7 +74,11 @@ public class WorkoutController implements Initializable {
                     uncheckAll();
                     fxExercisesListView.setItems(workoutnames.JumpHard);
                     filterCheck(workoutnames.JumpHard);
-                }
+                } if ("Cross Fit".equals(newValue.toString())){
+                uncheckAll();
+                fxExercisesListView.setItems(workoutnames.CrossFit);
+                filterCheck(workoutnames.CrossFit);
+            }
             }});
         fxStartButton.disableProperty().bind(fxWorkoutsListView.getSelectionModel().selectedItemProperty().isNull());
 
