@@ -17,6 +17,8 @@ public class Exercises {
     private StringProperty workouttype=new SimpleStringProperty();
     private StringProperty bodypart=new SimpleStringProperty();
 
+    private StringProperty equipment = new SimpleStringProperty();
+
     public String getGif() {
         return gif.get();
     }
@@ -36,7 +38,7 @@ public class Exercises {
     public void setBodypart(String bodypart) {
         this.bodypart.set(bodypart);
     }
-    public Exercises(String workouttype, String bodypart, String name, double time, int sets, int reps, String gif) {
+    public Exercises(String workouttype, String bodypart, String name, double time, int sets, int reps, String gif, String equipment) {
         setWorkouttype(workouttype);
         setBodypart(bodypart);
         setName(name);
@@ -44,6 +46,7 @@ public class Exercises {
         setSets(sets); //is null if not strength
         setReps(reps); //is null if not strength
         setGif(gif);
+        setEquipment(equipment);
     }
 
     private void setReps(int reps) {
@@ -71,6 +74,18 @@ public class Exercises {
 
     public void setGif(String gif) {
         this.gif.set(gif);
+    }
+
+    public String getEquipment() {
+        return equipment.get();
+    }
+
+    public StringProperty equipmentProperty() {
+        return equipment;
+    }
+
+    public void setEquipment(String equipment) {
+        this.equipment.set(equipment);
     }
 }
 

@@ -41,8 +41,9 @@ protected ObservableList<Exercises> workout;
          int sets = Integer.parseInt(tokens[4]);
          int reps = Integer.parseInt(tokens[5]);
          String gif = tokens[6].replace("\"", "");
+         String equipment = tokens[7].replace("\"", "");
 
-         workout.add(new Exercises(workoutType, bodypart, name, time, sets, reps, gif));
+         workout.add(new Exercises(workoutType, bodypart, name, time, sets, reps, gif, equipment));
       }
       return workout;
    }
