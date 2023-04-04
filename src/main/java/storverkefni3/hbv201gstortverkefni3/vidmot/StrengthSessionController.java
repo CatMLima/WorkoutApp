@@ -12,6 +12,7 @@ import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.scene.control.*;
 import javafx.scene.image.*;
+import javafx.scene.paint.*;
 import javafx.stage.*;
 
 import storverkefni3.hbv201gstortverkefni3.vinnsla.*;
