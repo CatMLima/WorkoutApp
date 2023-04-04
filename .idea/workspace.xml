@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="adding jump hard to the initialize listener in WorkoutController">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/StrengthSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/StrengthSessionController.java" afterDir="false" />
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="Changed getAllExercises so that it gets exercises from Exercises.txt">
+      <change beforePath="$PROJECT_DIR$/Tasks.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tasks.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +34,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/catis/OneDrive - Menntaský/Documents/Y1 S2/Viðmótsforritun - HBV201G/DialogExample&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/brynj/Desktop/Bækur fyrir HÍ/HBV201G/HBV201GStortVerkefni3/src/main/resources/storverkefni3/hbv201gstortverkefni3"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\brynj\Desktop\Bækur fyrir HÍ\HBV201G\HBV201GStortVerkefni3\src\main\resources\storverkefni3\hbv201gstortverkefni3" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="FitUApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="storverkefni3.hbv201gstortverkefni3.vidmot.FitUApplication" />
@@ -97,14 +101,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="made switch type be enhanced switch instead" />
-    <MESSAGE value="merged getters for exercises" />
-    <MESSAGE value="changed exercises to include bodypart" />
-    <MESSAGE value="started making filterExercises" />
-    <MESSAGE value="added legs and arms as lists in constructor" />
-    <MESSAGE value="added a comment about how we would move forward with filterExercises" />
-    <MESSAGE value="refined comment" />
-    <MESSAGE value="added a call to filterExercises" />
     <MESSAGE value="added comments about who worked on WorkoutName and Workouts" />
     <MESSAGE value="Created a class to store selected workouts and added the code to use it in workoutcontroller and StrengthSessionController" />
     <MESSAGE value="added 2 gifs to use with exercises later" />
@@ -122,11 +118,14 @@
     <MESSAGE value="possible fix for filterexercises" />
     <MESSAGE value="making exercises look nicer" />
     <MESSAGE value="adding jump hard to the initialize listener in WorkoutController" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding jump hard to the initialize listener in WorkoutController" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HBV201GStortVerkefni3$FitUApplication.ic" NAME="FitUApplication Coverage Results" MODIFIED="1680547166783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>storverkefni3.hbv201gstortverkefni3.vidmot.*</FILTER>
-    </SUITE>
+    <MESSAGE value="fixed fxquitworkouthander in strenghtsession" />
+    <MESSAGE value="fixing gifs in workouts" />
+    <MESSAGE value="fixed setImage in setNameRepSets" />
+    <MESSAGE value="Completed implementation of  fxExerciseview.setImage in setNameRepSets" />
+    <MESSAGE value="added a comment to setNameRepSets" />
+    <MESSAGE value="fixed Exercises.txt and added a comment to setNameRepSets" />
+    <MESSAGE value="Added the remaining gifs for the exercises" />
+    <MESSAGE value="Changed getAllExercises so that it gets exercises from Exercises.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed getAllExercises so that it gets exercises from Exercises.txt" />
   </component>
 </project>

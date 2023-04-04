@@ -1,5 +1,0 @@
-# exercise(WorkoutType,Bodypart,name,time,sets,reps)
-"Muscle Gain","Arms","Curls",0.0,3,10
-"Muscle Gain","Arms","Hammer Curls",0.0,3,10
-"Muscle Gain","Legs","Squats",0.0,3,10
-"Weight loss","Whole","Jumping jacks",30.0,0,0

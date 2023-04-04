@@ -46,7 +46,11 @@ public class WorkoutController implements Initializable {
         workoutnames = new Workouts();
         fxUserLabel.setText("Hi, " + user.getName());
         workoutList = workoutnames.getAllWorkouts(user.getGoal());
-        workoutnames.filterExercises(user.getGoal());
+        try {
+            workoutnames.filterExercises(user.getGoal());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         fxWorkoutsListView.setItems(workoutList);
         fxWorkoutsListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             //System.out.println(newValue);

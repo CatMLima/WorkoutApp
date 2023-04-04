@@ -1,0 +1,5 @@
+# Format for each exercise entry: exercise(WorkoutType,Bodypart,name,time,sets,reps,Image)
+"Muscle Gain","Arms","Curls",0.0,3,10,"/storverkefni3/pics/BicepCurl.gif"
+"Muscle Gain","Arms","Hammer Curls",0.0,3,10,"/storverkefni3/pics/HammerCurl.gif"
+"Muscle Gain","Legs","Squats",0.0,3,10,"/storverkefni3/pics/Squats.gif"
+"Weight loss","Whole","Jumping jacks",30.0,0,0,"/storverkefni3/pics/JumpingJacks.gif"

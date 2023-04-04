@@ -79,7 +79,8 @@ public class StrengthSessionController implements Initializable {
         fxExerciseName.setText(exercises[count].getName());
         fxRepetitions.setText(String.valueOf(exercises[count].getReps()));
         fxSets.setText(String.valueOf(exercises[count].getSets()));
-        fxExerciseView.setImage(new Image("/storverkefni3/pics/BicepCurl.gif"));
+        fxExerciseView.setImage(new Image(getClass().getResourceAsStream(exercises[count].getGif())));
+        //could have an if here where if(url not found) then display some image not found picture
     }
 
 
