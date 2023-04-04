@@ -67,11 +67,11 @@ public class CardioSessionController implements Initializable{
         selectedExercises = StoreWorkout.getSelectedExercises();
         exercises = new Exercises[selectedExercises.size()];
         selectedExercises.toArray(exercises);
-        setNameRepSets(getCount());
+        setNameGif(getCount());
         countProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
-                setNameRepSets((Integer) t1);
+                setNameGif((Integer) t1);
             }
         });
         setTime(TIME);
@@ -87,9 +87,11 @@ public class CardioSessionController implements Initializable{
         );
         timeline.setCycleCount(Animation.INDEFINITE);
         fxStartButton.disableProperty().bind(fxTimer.textProperty().isNotEmpty());
+        fxPauseButton.disableProperty().bind(fxTimer.textProperty().isEmpty());
     }
-    public void setNameRepSets(int count){
+    public void setNameGif(int count){
         fxExerciseName.setText(exercises[count].getName());
+        fxExerciseView.setImage(new Image(getClass().getResourceAsStream(exercises[count].getGif())));
 
     }
 
