@@ -78,6 +78,7 @@ public Double getTotalTime(String goal){
             workoutNames.add(new WorkoutName("Legs"));
          }
          case "Endurance" -> workoutNames.add(new WorkoutName("idnoman"));
+
       }
       return workoutNames;
    }}

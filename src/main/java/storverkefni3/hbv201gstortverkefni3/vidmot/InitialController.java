@@ -64,7 +64,16 @@ public class InitialController implements Initializable {
         user.setHeight(-1);
         user.setWeight(-1);
         user.setGoal("none");
-        switchToWorkout(actionEvent);
+        pickGoal(actionEvent);
+
+    }
+
+    public void pickGoal(ActionEvent actionEvent) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/change-goals-view.fxml")));
+        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     public void confirmHandler(ActionEvent actionEvent) throws IOException {
