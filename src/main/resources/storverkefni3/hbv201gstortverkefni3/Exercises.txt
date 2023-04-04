@@ -5,3 +5,4 @@
 "Weight loss","Jump Hard","Jumping jacks",30.0,0,0,"/storverkefni3/pics/JumpingJacks.gif","none"
 "Weight loss","Cross Fit","Swing",30.0,0,0,"/storverkefni3/pics/Swing.gif","Kettlebell"
 "Muscle Gain","Chest","Push ups",0.0,3,10,"/storverkefni3/pics/PushUps.gif","none"
+"Muscle Gain","Chest","Cobra Push ups",0.0,3,10,"/storverkefni3/pics/CobraPushUp.gif","none"
