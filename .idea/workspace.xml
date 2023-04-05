@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added push ups exercise gif and cobra push ups and gif">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added dead lift exercise">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/Exercises.txt" afterDir="false" />
     </list>
@@ -109,7 +109,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed selectedExercises" />
     <MESSAGE value="added a method to get the total time of a workout" />
     <MESSAGE value="fixed getTotalTime method" />
     <MESSAGE value="removed exerciselist from getTotalTime" />
@@ -134,6 +133,7 @@
     <MESSAGE value="added gif for Kettlebell Swing" />
     <MESSAGE value="added push ups exercise" />
     <MESSAGE value="added push ups exercise gif and cobra push ups and gif" />
-    <option name="LAST_COMMIT_MESSAGE" value="added push ups exercise gif and cobra push ups and gif" />
+    <MESSAGE value="added dead lift exercise" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dead lift exercise" />
   </component>
 </project>
