@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="storverkefni3.hbv201gstortverkefni3.vidmot.WorkoutController">
@@ -63,7 +65,12 @@
       </Button>
       <Pane layoutX="31.0" layoutY="323.0" prefHeight="108.0" prefWidth="222.0" style="-fx-background-color: #fbbf77;">
          <children>
-            <GridPane layoutX="9.0" layoutY="18.0" prefHeight="91.0" prefWidth="207.0">
+            <Label layoutX="7.0" layoutY="5.0" text="Required Equipment:">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="15.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="7.0" layoutY="18.0" prefHeight="91.0" prefWidth="222.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -74,43 +81,110 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <CheckBox fx:id="fxExerciseMats" mnemonicParsing="false" text="Exercise Mats" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                     <font>
-                        <Font name="Gill Sans MT Italic" size="12.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="fxResistanceBands" layoutX="10.0" layoutY="16.0" mnemonicParsing="false" text="Resistance Bands" GridPane.rowIndex="2">
-                     <font>
-                        <Font name="Gill Sans MT Italic" size="12.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="fxGymMachines" layoutX="10.0" layoutY="16.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="92.0" text="Gym machines" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font name="Gill Sans MT Italic" size="12.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="fxDumbell" layoutX="10.0" layoutY="16.0" mnemonicParsing="false" text="Dumbell" GridPane.rowIndex="1">
-                     <font>
-                        <Font name="Gill Sans MT Italic" size="12.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="fxBarbell" layoutX="10.0" layoutY="16.0" mnemonicParsing="false" text="Barbell" GridPane.columnIndex="1">
-                     <font>
-                        <Font name="Gill Sans MT Italic" size="12.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="fxKettlebell" layoutX="95.0" layoutY="77.0" mnemonicParsing="false" text="Kettlebell">
-                     <font>
-                        <Font name="Gill Sans MT Italic" size="12.0" />
-                     </font>
-                  </CheckBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Circle fx:id="fxKB" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Label fx:id="fxKettlebell" text="Kettlebell">
+                           <padding>
+                              <Insets left="5.0" top="6.0" />
+                           </padding>
+                           <font>
+                              <Font name="Gill Sans MT" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Circle fx:id="fxBB" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Label fx:id="fxBarbell" text="Barbell">
+                           <padding>
+                              <Insets left="5.0" top="6.0" />
+                           </padding>
+                           <font>
+                              <Font name="Gill Sans MT" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="30.0" prefWidth="106.0" GridPane.rowIndex="1">
+                     <children>
+                        <Circle fx:id="fxDB" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Label fx:id="fxDumbell" text="Dumbell">
+                           <padding>
+                              <Insets left="5.0" top="6.0" />
+                           </padding>
+                           <font>
+                              <Font name="Gill Sans MT" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Circle fx:id="fxGM" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Label fx:id="fxGymMachines" text="Gym machines">
+                           <padding>
+                              <Insets left="5.0" top="6.0" />
+                           </padding>
+                           <font>
+                              <Font name="Gill Sans MT" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <Circle fx:id="fxRB" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Label fx:id="fxResistanceBands" text="Resistance Bands">
+                           <padding>
+                              <Insets left="5.0" top="6.0" />
+                           </padding>
+                           <font>
+                              <Font name="Gill Sans MT" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Circle fx:id="fxEM" fill="WHITE" radius="5.0" stroke="BLACK" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Circle>
+                        <Label fx:id="fxExerciseMats" text="Exercise Mats">
+                           <padding>
+                              <Insets left="5.0" top="6.0" />
+                           </padding>
+                           <font>
+                              <Font name="Gill Sans MT" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
                </children>
             </GridPane>
-            <Label text="Equipment:">
-               <font>
-                  <Font name="Gill Sans MT Bold" size="15.0" />
-               </font>
-            </Label>
          </children>
       </Pane>
    </children>

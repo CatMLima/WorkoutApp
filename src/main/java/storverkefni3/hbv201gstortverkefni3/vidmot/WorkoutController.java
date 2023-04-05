@@ -7,6 +7,7 @@ import javafx.event.*;
 import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.scene.control.*;
+import javafx.scene.shape.*;
 import javafx.stage.*;
 import storverkefni3.hbv201gstortverkefni3.vinnsla.*;
 
@@ -14,17 +15,26 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
+import static javafx.scene.paint.Color.BLACK;
+import static javafx.scene.paint.Color.WHITE;
+
 /*
 Catarina Lima worked on this class.
  */
 
 public class WorkoutController implements Initializable {
-    public CheckBox fxExerciseMats;
-    public CheckBox fxResistanceBands;
-    public CheckBox fxGymMachines;
-    public CheckBox fxDumbell;
-    public CheckBox fxBarbell;
-    public CheckBox fxKettlebell;
+    public Label fxExerciseMats;
+    public Label fxResistanceBands;
+    public Label fxGymMachines;
+    public Label fxDumbell;
+    public Label fxBarbell;
+    public Label fxKettlebell;
+    public Circle fxKB;
+    public Circle fxBB;
+    public Circle fxDB;
+    public Circle fxGM;
+    public Circle fxRB;
+    public Circle fxEM;
     @FXML
     ListView fxWorkoutsListView;
     @FXML
@@ -52,7 +62,6 @@ public class WorkoutController implements Initializable {
         workoutnames = new Workouts();
         fxUserLabel.setText("Hi, " + user.getName());
         workoutList = workoutnames.getAllWorkouts(user.getGoal());
-        disableCheckboxes();
         try {
             workoutnames.filterExercises(user.getGoal());
         } catch (IOException e) {
@@ -90,22 +99,15 @@ public class WorkoutController implements Initializable {
 
 
     }
-    public void disableCheckboxes(){
-        fxDumbell.setDisable(true);
-        fxExerciseMats.setDisable(true);
-        fxGymMachines.setDisable(true);
-        fxBarbell.setDisable(true);
-        fxKettlebell.setDisable(true);
-        fxResistanceBands.setDisable(true);
-    }
+
 
     public void uncheckAll(){
-        fxDumbell.setSelected(false);
-        fxExerciseMats.setSelected(false);
-        fxGymMachines.setSelected(false);
-        fxBarbell.setSelected(false);
-        fxKettlebell.setSelected(false);
-        fxResistanceBands.setSelected(false);
+        fxDB.setFill(WHITE);
+        fxEM.setFill(WHITE);
+        fxGM.setFill(WHITE);
+        fxBB.setFill(WHITE);
+        fxKB.setFill(WHITE);
+        fxRB.setFill(WHITE);
     }
     Exercises[] exercises1;
 
@@ -114,12 +116,12 @@ public class WorkoutController implements Initializable {
         exercises.toArray(exercises1);
         for (Exercises exercise: exercises){
             switch(exercise.getEquipment()){
-                case "Kettlebell" -> fxKettlebell.setSelected(true);
-                case "Dumbell" -> fxDumbell.setSelected(true);
-                case "Resistance Bands" -> fxResistanceBands.setSelected(true);
-                case "Barbell" -> fxBarbell.setSelected(true);
-                case "Gym machines" -> fxGymMachines.setSelected(true);
-                case "Exercise Mats"-> fxExerciseMats.setSelected(true);
+                case "Kettlebell" -> fxKB.setFill(BLACK);
+                case "Dumbell" -> fxKB.setFill(BLACK);
+                case "Resistance Bands" -> fxRB.setFill(BLACK);
+                case "Barbell" -> fxBB.setFill(BLACK);
+                case "Gym machines" -> fxGM.setFill(BLACK);
+                case "Exercise Mats"-> fxEM.setFill(BLACK);
             }
         }
     }
