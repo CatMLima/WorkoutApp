@@ -69,13 +69,13 @@ public class WorkoutController implements Initializable {
                 if ("Legs".equals(newValue.toString())) {
                     uncheckAll();
                     fxExercisesListView.setItems(workoutnames.legs);
-                    filterCheck(workoutnames.legs);
-                    if ("Chest".equals(newValue.toString())) {
+                    filterCheck(workoutnames.legs);}
+                if ("Chest".equals(newValue.toString())) {
                         uncheckAll();
                         fxExercisesListView.setItems(workoutnames.chest);
                         filterCheck(workoutnames.legs);
                     }
-            } if ("Jump Hard".equals(newValue.toString())){
+            if ("Jump Hard".equals(newValue.toString())){
                     uncheckAll();
                     fxExercisesListView.setItems(workoutnames.JumpHard);
                     filterCheck(workoutnames.JumpHard);

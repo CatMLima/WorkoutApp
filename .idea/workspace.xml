@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added chest workout">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="chest didnt show exercises, fixed that">
       <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +108,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed exerciselist from getTotalTime" />
     <MESSAGE value="added gifs to exercise constructor" />
     <MESSAGE value="added gifs as a string to Exercises" />
     <MESSAGE value="added set image to setNameRepSets" />
@@ -133,6 +132,7 @@
     <MESSAGE value="added dead lift exercise" />
     <MESSAGE value="added dead lift exercise gif" />
     <MESSAGE value="added chest workout" />
-    <option name="LAST_COMMIT_MESSAGE" value="added chest workout" />
+    <MESSAGE value="chest didnt show exercises, fixed that" />
+    <option name="LAST_COMMIT_MESSAGE" value="chest didnt show exercises, fixed that" />
   </component>
 </project>
