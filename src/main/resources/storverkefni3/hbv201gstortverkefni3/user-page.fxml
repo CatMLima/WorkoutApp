@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #52B2BF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="storverkefni3.hbv201gstortverkefni3.vidmot.UserProfileController">
+   <top>
+      <Pane prefHeight="86.0" prefWidth="600.0" style="-fx-background-color: #F17829;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="19.0" layoutY="20.0" prefHeight="46.0" prefWidth="281.0" text="My information">
+               <font>
+                  <Font name="Gill Sans MT" size="40.0" />
+               </font>
+            </Label>
+            <Button layoutX="527.0" layoutY="14.0" mnemonicParsing="false" onAction="#fxBackHandler" prefHeight="25.0" prefWidth="52.0" text="Back">
+               <font>
+                  <Font name="Gill Sans MT" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="14.0" layoutY="14.0" prefHeight="262.0" prefWidth="222.0" style="-fx-background-color: white; -fx-border-color: black;">
+               <children>
+                  <GridPane layoutX="11.0" layoutY="62.0" prefHeight="194.0" prefWidth="200.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="24.0" prefWidth="106.0" text="Name:" textAlignment="CENTER">
+                           <font>
+                              <Font name="Gill Sans MT" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="21.0" prefHeight="24.0" prefWidth="110.0" text="Age:" textAlignment="CENTER" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="Gill Sans MT" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="21.0" prefHeight="24.0" prefWidth="114.0" text="Height:" textAlignment="CENTER" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="Gill Sans MT" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="21.0" prefHeight="24.0" prefWidth="105.0" text="Weight:" textAlignment="CENTER" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="Gill Sans MT" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="21.0" prefHeight="24.0" prefWidth="102.0" text="BMI:" textAlignment="CENTER" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="Gill Sans MT" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fxName" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Gill Sans MT" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fxAge" layoutX="110.0" layoutY="21.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Gill Sans MT" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fxHeight" layoutX="110.0" layoutY="60.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Gill Sans MT" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fxWeight" layoutX="110.0" layoutY="99.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Gill Sans MT" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fxBMI" layoutX="110.0" layoutY="138.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Gill Sans MT" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <HBox layoutX="64.0" layoutY="1.0" prefHeight="66.0" prefWidth="78.0">
+                     <children>
+                        <ImageView fx:id="fxUserIcon" fitHeight="64.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane layoutX="286.0" layoutY="14.0" prefHeight="61.0" prefWidth="284.0" style="-fx-background-color: white; -fx-border-color: black;">
+               <children>
+                  <Label layoutX="14.0" layoutY="19.0" text="Your goal:">
+                     <font>
+                        <Font name="Gill Sans MT" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fxGoal" layoutX="105.0" layoutY="19.0" prefHeight="17.0" prefWidth="152.0">
+                     <font>
+                        <Font name="Gill Sans MT" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="286.0" layoutY="93.0" prefHeight="200.0" prefWidth="283.0" style="-fx-background-color: white; -fx-border-color: black;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Workout History">
+                     <font>
+                        <Font name="Gill Sans MT" size="20.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="fxWorkoutHistory" layoutX="14.0" layoutY="40.0" prefHeight="153.0" prefWidth="256.0" style="-fx-border-color: black;" />
+               </children>
+            </Pane>
+            <Button fx:id="fxUpdate" layoutX="175.0" layoutY="280.0" mnemonicParsing="false" onAction="#fxUpdateHandler" text="Update">
+               <font>
+                  <Font name="Gill Sans MT" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

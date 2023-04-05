@@ -33,6 +33,7 @@ public class WorkoutController implements Initializable {
     public Circle fxGM;
     public Circle fxRB;
     public Circle fxEM;
+    public Button fxProfileButton;
     @FXML
     ListView fxWorkoutsListView;
     @FXML
@@ -167,4 +168,11 @@ public class WorkoutController implements Initializable {
             stage.show();
     }
 
+    public void profileHandler(ActionEvent actionEvent) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/user-page.fxml")));
+        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

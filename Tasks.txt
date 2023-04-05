@@ -2,9 +2,11 @@ COMPLETE
 (complete)change getAllExercises so that it takes in exercises from a text file rather than adding them inside the method
 (complete) make the required equipment filter work
 (complete) turn off skip button (cardio and endurance) and continue button (strength) when the user reaches the last exercise
+(complete) create user page where BMI and updating of information
 
 INCOMPLETE
 (incomplete) add the hovering message to the mouse
 (incomplete) create congratulations message when workout is finished
-(incomplete) create user page where workouts history can be seen and BMI and updating of information
 (incomplete) make exercises list view only show the exercise names, not their information (or think of other way)
+(incomplete) add javadoc to explain what methods do
+(incomplete) make finished workouts be added to the listview in the user profile page

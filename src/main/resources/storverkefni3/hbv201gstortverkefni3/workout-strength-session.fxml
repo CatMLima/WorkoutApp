@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="storverkefni3.hbv201gstortverkefni3.vidmot.StrengthSessionController">
    <children>
       <Pane layoutY="-2.0" prefHeight="130.0" prefWidth="600.0" style="-fx-background-color: #F17829;">
