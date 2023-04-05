@@ -3,7 +3,6 @@ package storverkefni3.hbv201gstortverkefni3.vidmot;
 
 import javafx.beans.property.*;
 import javafx.beans.value.*;
-import javafx.collections.*;
 
 import javafx.collections.ObservableList;
 
@@ -12,7 +11,6 @@ import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.scene.control.*;
 import javafx.scene.image.*;
-import javafx.scene.paint.*;
 import javafx.stage.*;
 
 import storverkefni3.hbv201gstortverkefni3.vinnsla.*;
@@ -26,11 +24,12 @@ import java.net.*;
 import java.util.*;
 
 public class StrengthSessionController implements Initializable {
+    public Button fxQuitButton;
     private ObservableList<Exercises> selectedExercises;
 
     public Label fxExerciseName;
     public Label fxWorkoutLabel;
-    public Button fxSkipButton;
+    public Button fxContinueButton;
     public Label fxRepetitions;
     public Label fxSets;
     public ImageView fxExerciseView;
@@ -73,6 +72,7 @@ public class StrengthSessionController implements Initializable {
                 setNameRepSets((Integer) t1);
             }
         });
+        fxContinueButton.disableProperty().bind(countProperty().isEqualTo(exercises.length-1));
 
     }
     public void setNameRepSets(int count){
@@ -94,5 +94,8 @@ public class StrengthSessionController implements Initializable {
 
     public void fxContinueExerciseHandler(ActionEvent actionEvent) {
         setCount(getCount()+1);
+        if (getCount() == exercises.length-1){
+            fxQuitButton.textProperty().set("Finish");
+        }
     }
 }
