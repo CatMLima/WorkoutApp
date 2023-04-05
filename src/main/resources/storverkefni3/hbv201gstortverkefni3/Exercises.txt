@@ -4,5 +4,6 @@
 "Muscle Gain","Legs","Squats",0.0,3,10,"/storverkefni3/pics/Squats.gif","none"
 "Weight loss","Jump Hard","Jumping jacks",30.0,0,0,"/storverkefni3/pics/JumpingJacks.gif","none"
 "Weight loss","Cross Fit","Swing",30.0,0,0,"/storverkefni3/pics/Swing.gif","Kettlebell"
+"Weight loss","Cross Fit","Dead Lift",30.0,0,0,"/storverkefni3/pics/BarbellDeadlift.gif","Barbell"
 "Muscle Gain","Chest","Push ups",0.0,3,10,"/storverkefni3/pics/PushUps.gif","none"
 "Muscle Gain","Chest","Cobra Push ups",0.0,3,10,"/storverkefni3/pics/CobraPushUp.gif","none"
