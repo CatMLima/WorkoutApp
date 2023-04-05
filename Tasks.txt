@@ -1,5 +1,6 @@
 (complete)change getAllExercises so that it takes in exercises from a text file rather than adding them inside the method
-(incomplete) make the filter feature work
+(complete) make the required equipment filter work
 (incomplete) add the hovering message to the mouse
 (incomplete) create congratulations message when workout is finished
-(incomplete) turn off skip button (cardio and endurance) and continue button (strength) when the user reaches the last exercise
+(complete) turn off skip button (cardio and endurance) and continue button (strength) when the user reaches the last exercise
+(incomplete) create user page where workouts history can be seen and BMI and updating of information

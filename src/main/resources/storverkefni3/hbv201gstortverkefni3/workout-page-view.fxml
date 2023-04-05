@@ -41,9 +41,9 @@
       </Button>
       <Pane layoutY="-2.0" prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: #F17829;">
          <children>
-            <Label layoutX="58.0" layoutY="17.0" prefHeight="35.0" prefWidth="114.0" text="Workouts">
+            <Label layoutX="58.0" layoutY="11.0" prefHeight="49.0" prefWidth="191.0" text="Workouts">
                <font>
-                  <Font name="Gill Sans MT Condensed" size="40.0" />
+                  <Font name="Gill Sans MT Condensed" size="50.0" />
                </font>
             </Label>
             <Label fx:id="fxUserLabel" layoutX="502.0" layoutY="33.0" text="Hello, user...">
