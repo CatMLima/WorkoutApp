@@ -52,6 +52,7 @@ public class WorkoutController implements Initializable {
         workoutnames = new Workouts();
         fxUserLabel.setText("Hi, " + user.getName());
         workoutList = workoutnames.getAllWorkouts(user.getGoal());
+        disableCheckboxes();
         try {
             workoutnames.filterExercises(user.getGoal());
         } catch (IOException e) {
@@ -87,6 +88,15 @@ public class WorkoutController implements Initializable {
             }});
         fxStartButton.disableProperty().bind(fxWorkoutsListView.getSelectionModel().selectedItemProperty().isNull());
 
+
+    }
+    public void disableCheckboxes(){
+        fxDumbell.setDisable(true);
+        fxExerciseMats.setDisable(true);
+        fxGymMachines.setDisable(true);
+        fxBarbell.setDisable(true);
+        fxKettlebell.setDisable(true);
+        fxResistanceBands.setDisable(true);
     }
 
     public void uncheckAll(){
