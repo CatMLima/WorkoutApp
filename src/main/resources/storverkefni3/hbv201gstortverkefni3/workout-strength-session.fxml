@@ -17,7 +17,7 @@
                   <Font name="Gill Sans MT" size="15.0" />
                </font>
             </Button>
-            <Label fx:id="fxExerciseName" alignment="CENTER" layoutX="217.0" layoutY="37.0" prefHeight="47.0" prefWidth="194.0" text="Exercise Name" textAlignment="CENTER">
+            <Label fx:id="fxExerciseName" alignment="CENTER" layoutX="145.0" layoutY="37.0" prefHeight="47.0" prefWidth="313.0" text="Exercise Name" textAlignment="CENTER">
                <font>
                   <Font name="Gill Sans MT" size="30.0" />
                </font>
@@ -64,7 +64,7 @@
                   </Pane>
                   <ImageView fx:id="fxExerciseView" fitHeight="175.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
-                        <Insets left="65.0" />
+                        <Insets left="65.0" top="5.0" />
                      </VBox.margin>
                   </ImageView>
                </children>

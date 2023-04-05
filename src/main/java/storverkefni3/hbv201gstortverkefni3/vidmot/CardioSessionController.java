@@ -74,19 +74,6 @@ public class CardioSessionController implements Initializable{
                     setNameGif((Integer) t1);
             }
         });
-        setTime(TIME);
-        timeline = new Timeline(
-                new KeyFrame(Duration.seconds(1), event ->{
-                    setTime(getTime()-1);
-                    fxTimer.setText(String.valueOf(getTime()));
-                    if (getTime() <= 0){
-                        timeline.stop();
-                        fxTimer.setText("Done");
-                    }
-                })
-        );
-        timeline.setCycleCount(Animation.INDEFINITE);
-        fxStartButton.disableProperty().bind(fxTimer.textProperty().isNotEmpty());
         fxPauseButton.disableProperty().bind(fxTimer.textProperty().isEmpty());
         fxNextButton.disableProperty().bind(countProperty().isEqualTo(exercises.length-1));
     }
@@ -120,11 +107,27 @@ public class CardioSessionController implements Initializable{
         clicks++;
         }
     public void fxStartExerciseHandler(ActionEvent actionEvent){
+        setTime(TIME);
+        timeline = new Timeline(
+                new KeyFrame(Duration.seconds(1), event ->{
+                    setTime(getTime()-1);
+                    fxTimer.setText(String.valueOf(getTime()));
+                    if (getTime() <= 0){
+                        timeline.stop();
+                        fxTimer.setText("Done");
+                    }
+                })
+        );
+        timeline.setCycleCount(Animation.INDEFINITE);
         timeline.playFromStart();
+        fxStartButton.setDisable(true);
     }
 
     public void fxNextExerciseHandler(ActionEvent actionEvent) {
-            setCount(getCount() + 1);
+        setCount(getCount() + 1);
+        timeline.stop();
+        fxTimer.setText("");
+        fxStartButton.setDisable(false);
     }
 
     public double getTime() {

@@ -1,7 +1,5 @@
 package storverkefni3.hbv201gstortverkefni3.vidmot;
 
-import javafx.beans.binding.*;
-import javafx.beans.value.*;
 import javafx.collections.*;
 import javafx.event.*;
 import javafx.fxml.*;
@@ -26,7 +24,7 @@ public class WorkoutController implements Initializable {
     public Label fxExerciseMats;
     public Label fxResistanceBands;
     public Label fxGymMachines;
-    public Label fxDumbell;
+    public Label fxDumbbell;
     public Label fxBarbell;
     public Label fxKettlebell;
     public Circle fxKB;
@@ -117,7 +115,7 @@ public class WorkoutController implements Initializable {
         for (Exercises exercise: exercises){
             switch(exercise.getEquipment()){
                 case "Kettlebell" -> fxKB.setFill(BLACK);
-                case "Dumbell" -> fxKB.setFill(BLACK);
+                case "Dumbbell" -> fxDB.setFill(BLACK);
                 case "Resistance Bands" -> fxRB.setFill(BLACK);
                 case "Barbell" -> fxBB.setFill(BLACK);
                 case "Gym machines" -> fxGM.setFill(BLACK);
