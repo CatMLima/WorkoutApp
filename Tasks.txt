@@ -10,3 +10,6 @@ INCOMPLETE
 (incomplete) make exercises list view only show the exercise names, not their information (or think of other way)
 (incomplete) add javadoc to explain what methods do
 (incomplete) make finished workouts be added to the listview in the user profile page
+(incomplete) all the workouts and exercises we are missing. Should be 18 total workouts with 6 exercises each.
+(incomplete) complete issues of input type in the initial and change credential controllers
+(incomplete) format BMI text to have only one decimal place

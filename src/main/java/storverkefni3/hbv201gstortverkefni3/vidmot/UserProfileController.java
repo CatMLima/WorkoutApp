@@ -1,5 +1,6 @@
 package storverkefni3.hbv201gstortverkefni3.vidmot;
 
+import javafx.beans.binding.*;
 import javafx.event.*;
 import javafx.fxml.*;
 import javafx.scene.*;
@@ -35,9 +36,11 @@ public class UserProfileController implements Initializable {
         fxAge.setText(String.valueOf(user.getAge()));
         fxHeight.setText(String.valueOf(user.getHeight()));
         fxWeight.setText(String.valueOf(user.getWeight()));
-        fxBMI.setText(String.valueOf(User.calculateBMI(user.getHeight(), user.getWeight())));
+        double value = User.calculateBMI(user.getHeight(), user.getWeight());
+        fxBMI.setText(String.format("%.1f", value));
         fxUserIcon.setImage(new Image(getClass().getResourceAsStream("/storverkefni3/pics/user-profile-logo.png")));
         fxGoal.setText(user.getGoal());
+
 
 
     }
