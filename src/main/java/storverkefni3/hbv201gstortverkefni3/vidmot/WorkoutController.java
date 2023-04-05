@@ -70,11 +70,13 @@ public class WorkoutController implements Initializable {
                     uncheckAll();
                     fxExercisesListView.setItems(workoutnames.legs);
                     filterCheck(workoutnames.legs);
-            } if ("Jump Hard".equals(newValue.toString())){
+            }
+                if ("Jump Hard".equals(newValue.toString())){
                     uncheckAll();
                     fxExercisesListView.setItems(workoutnames.JumpHard);
                     filterCheck(workoutnames.JumpHard);
-                } if ("Cross Fit".equals(newValue.toString())){
+                }
+                if ("Cross Fit".equals(newValue.toString())){
                 uncheckAll();
                 fxExercisesListView.setItems(workoutnames.CrossFit);
                 filterCheck(workoutnames.CrossFit);
@@ -97,6 +99,7 @@ public class WorkoutController implements Initializable {
     public void filterCheck(ObservableList<Exercises> exercises){
         exercises1 = new Exercises[6];
         exercises.toArray(exercises1);
+
         for (Exercises exercise: exercises){
             switch(exercise.getEquipment()){
                 case "Kettlebell" -> fxKettlebell.setSelected(true);

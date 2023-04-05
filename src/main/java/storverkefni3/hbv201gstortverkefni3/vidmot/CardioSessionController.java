@@ -22,7 +22,7 @@ public class CardioSessionController implements Initializable{
 @FXML
     public Label fxExerciseName;
 @FXML
-    public Button fxSkipButton;
+    public Button fxNextButton;
     public ImageView fxExerciseView;
 
     public Button fxStartButton;
@@ -56,7 +56,7 @@ public class CardioSessionController implements Initializable{
 
     IntegerProperty count = new SimpleIntegerProperty();
 
-    final double TIME = 61.0;
+    final double TIME = 31.0;
 
     Timeline timeline;
     @Override
@@ -71,7 +71,7 @@ public class CardioSessionController implements Initializable{
         countProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
-                setNameGif((Integer) t1);
+                    setNameGif((Integer) t1);
             }
         });
         setTime(TIME);
@@ -88,6 +88,7 @@ public class CardioSessionController implements Initializable{
         timeline.setCycleCount(Animation.INDEFINITE);
         fxStartButton.disableProperty().bind(fxTimer.textProperty().isNotEmpty());
         fxPauseButton.disableProperty().bind(fxTimer.textProperty().isEmpty());
+        fxNextButton.disableProperty().bind(countProperty().isEqualTo(exercises.length-1));
     }
     public void setNameGif(int count){
         fxExerciseName.setText(exercises[count].getName());
@@ -122,8 +123,8 @@ public class CardioSessionController implements Initializable{
         timeline.playFromStart();
     }
 
-    public void fxSkipExerciseHandler(ActionEvent actionEvent) {
-        setCount(getCount()+1);
+    public void fxNextExerciseHandler(ActionEvent actionEvent) {
+            setCount(getCount() + 1);
     }
 
     public double getTime() {
