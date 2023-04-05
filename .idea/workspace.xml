@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added push ups exercise gif and cobra push ups and gif">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/Exercises.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,10 +135,5 @@
     <MESSAGE value="added push ups exercise" />
     <MESSAGE value="added push ups exercise gif and cobra push ups and gif" />
     <option name="LAST_COMMIT_MESSAGE" value="added push ups exercise gif and cobra push ups and gif" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HBV201GStortVerkefni3$FitUApplication.ic" NAME="FitUApplication Coverage Results" MODIFIED="1680547166783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>storverkefni3.hbv201gstortverkefni3.vidmot.*</FILTER>
-    </SUITE>
   </component>
 </project>
