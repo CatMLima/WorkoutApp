@@ -53,10 +53,10 @@
                         <Font name="Gill Sans MT" size="15.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="fxAge" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField fx:id="fxWeight" layoutX="110.0" layoutY="12.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <TextField fx:id="fxHeight" layoutX="10.0" layoutY="12.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <TextField fx:id="fxName" layoutX="10.0" layoutY="12.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="fxAge" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="fxHeight" layoutX="10.0" layoutY="12.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="fxWeight" layoutX="110.0" layoutY="12.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <ChoiceBox fx:id="fxGoalChoices" prefHeight="26.0" prefWidth="177.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                </children>
             </GridPane>
