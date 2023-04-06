@@ -20,6 +20,7 @@ legs = FXCollections.observableArrayList();
 JumpHard = FXCollections.observableArrayList();
 CrossFit = FXCollections.observableArrayList();
 chest = FXCollections.observableArrayList();
+StaminaJunkie = FXCollections.observableArrayList();
    }
 
    protected ObservableList<WorkoutName> workoutNames;
@@ -29,6 +30,9 @@ protected ObservableList<Exercises> workout;
    public ObservableList<Exercises> JumpHard;
    public ObservableList<Exercises> CrossFit;
    public ObservableList<Exercises> chest;
+
+   public ObservableList<Exercises> StaminaJunkie;
+
 
    public ObservableList<Exercises> getAllExercises() throws IOException {
       InputStream inputStream = getClass().getResourceAsStream("/storverkefni3/hbv201gstortverkefni3/Exercises.txt");
@@ -69,7 +73,9 @@ protected ObservableList<Exercises> workout;
             if (exercise.getBodypart().equals("Legs")) {legs.add(exercise);}
          } if (exercise.getBodypart().equals("Jump Hard")) {JumpHard.add(exercise);}
          if (exercise.getBodypart().equals("Cross Fit")) {CrossFit.add(exercise);}
+         if (exercise.getBodypart().equals("Stamina Junkie")){ StaminaJunkie.add(exercise);}
       }
+
       return FXCollections.observableArrayList(exerciseList);
    }
 public Double getTotalTime(String goal){
@@ -85,15 +91,17 @@ public Double getTotalTime(String goal){
    public ObservableList<WorkoutName> getAllWorkouts(String type) {
       //creates the names of the workouts could be replaced with another text file reading
       switch (type) {
-         case "Weight loss" -> {workoutNames.add(new WorkoutName("Jump Hard"));
-         workoutNames.add(new WorkoutName("Cross Fit"));
+         case "Weight loss" -> {
+            workoutNames.add(new WorkoutName("Jump Hard"));
+            workoutNames.add(new WorkoutName("Cross Fit"));
          }
          case "Muscle Gain" -> {
             workoutNames.add(new WorkoutName("Arms"));
             workoutNames.add(new WorkoutName("Legs"));
             workoutNames.add(new WorkoutName("Chest"));
          }
-         case "Endurance" ->{ workoutNames.add(new WorkoutName("Stamina Junkie"));
+         case "Endurance" ->{
+            workoutNames.add(new WorkoutName("Stamina Junkie"));
             workoutNames.add(new WorkoutName("Cross Fit"));
          }
 

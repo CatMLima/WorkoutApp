@@ -125,7 +125,11 @@ public class CardioSessionController implements Initializable{
 
     public void fxNextExerciseHandler(ActionEvent actionEvent) {
         setCount(getCount() + 1);
-        timeline.stop();
+        /*
+        In case a timeline was never begun because a user skipped an exercise, the exception is handled
+         */
+        if (timeline != null)
+            timeline.stop();
         fxTimer.setText("");
         fxStartButton.setDisable(false);
     }
