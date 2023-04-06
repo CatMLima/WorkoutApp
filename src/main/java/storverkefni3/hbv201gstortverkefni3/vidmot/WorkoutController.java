@@ -93,7 +93,9 @@ public class WorkoutController implements Initializable {
 
     }
     private void displaySelectedWorkoutExercises(String workoutName) {if (workoutName != null) {
-        //checks which workout was clicked and populates the listview with the appropriate list
+        /* Brynjar worked on this method
+        checks which workout was clicked and populates the listview with the appropriate list
+         */
         if ("Arms".equals(workoutName)) {
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.arms);
