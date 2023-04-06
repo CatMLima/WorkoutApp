@@ -30,7 +30,6 @@ protected ObservableList<Exercises> workout;
    public ObservableList<Exercises> JumpHard;
    public ObservableList<Exercises> CrossFit;
    public ObservableList<Exercises> chest;
-
    public ObservableList<Exercises> StaminaJunkie;
 
 
@@ -89,7 +88,7 @@ public Double getTotalTime(String goal){
 }
 
    public ObservableList<WorkoutName> getAllWorkouts(String type) {
-      //creates the names of the workouts could be replaced with another text file reading
+      //creates the names of the workouts. (could be replaced with another text file reading)
       switch (type) {
          case "Weight loss" -> {
             workoutNames.add(new WorkoutName("Jump Hard"));
