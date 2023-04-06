@@ -119,14 +119,18 @@ public class WorkoutController implements Initializable {
         }}
     }
 
+    /*
+    Test that the user does not have an account, they have to log in and cannot view their profile (since it is nonexistent).
+     */
     public void testForGuestUser(){
         if (user.getName().equals("guest") && user.getAge() == -1 && user.getHeight() == -1 && user.getWeight() == -1){
             fxLogOutButton.setText("Log in");
             fxProfileButton.setDisable(true);
         }
     }
-
-
+    /*
+    When clicking between workouts, this method makes sure to reset the Circles so that the right required equipment is shown.
+     */
     public void uncheckAll(){
         fxDB.setFill(WHITE);
         fxEM.setFill(WHITE);
@@ -137,6 +141,11 @@ public class WorkoutController implements Initializable {
     }
     Exercises[] exercises1;
 
+    /**
+     * Check that the right boxes of equipment are checked
+     * @param exercises workout selected by the user
+     * Turns to black the Circles next to the equipment needed.
+     */
     public void filterCheck(ObservableList<Exercises> exercises){
         exercises1 = new Exercises[6];
         exercises.toArray(exercises1);
@@ -152,9 +161,9 @@ public class WorkoutController implements Initializable {
         }
     }
 
-
-
-
+    /*
+    Checks the user goal and shows the correct fxml page. It can either contain a timer feature or contain repetition and sets (Cardio & Resistance versus Muscle Gain).
+     */
     public void fxStartWorkoutHandler(ActionEvent actionEvent) throws IOException{
         String file = null;
         switch (user.getGoal()) {
@@ -174,6 +183,12 @@ public class WorkoutController implements Initializable {
 
     }
 
+    /**
+     * Erase user information and go back to initial page
+     * @param actionEvent button pressed
+     * @throws IOException fxml not valid
+     * This should set all the user information to null, like a guest user and changes scenes.
+     */
     public void fxLogOutHandler(ActionEvent actionEvent) throws IOException{
             root = FXMLLoader.load((getClass().getResource("/storverkefni3/hbv201gstortverkefni3/initial-page-view.fxml")));
             stage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow();
@@ -187,6 +202,13 @@ public class WorkoutController implements Initializable {
             stage.show();
     }
 
+    /**
+     * User wants to change their current goal.
+     * @param actionEvent button is pushed
+     * @throws IOException fxml page invalid
+     * The user gets taken to another scene where they can change their goal.
+     */
+
     public void fxChangeGoalsHandler(ActionEvent actionEvent) throws IOException {
             root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/change-goals-view.fxml")));
             stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -194,6 +216,13 @@ public class WorkoutController implements Initializable {
             stage.setScene(scene);
             stage.show();
     }
+
+    /**
+     * Take user to their profile
+     * @param actionEvent button pressed
+     * @throws IOException the fxml file is invalid
+     * The user gets to see all the information they put in as well as their calculated BMI and history. They also have a chance to update their information.
+     */
 
     public void profileHandler(ActionEvent actionEvent) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/user-page.fxml")));
