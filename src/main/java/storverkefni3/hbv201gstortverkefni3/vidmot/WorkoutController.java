@@ -118,7 +118,12 @@ public class WorkoutController implements Initializable {
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.CrossFit);
             filterCheck(workoutnames.CrossFit);
-        }}
+        } if ("Stamina Junkie".equals(workoutName)){
+            uncheckAll();
+            fxExercisesListView.setItems(workoutnames.StaminaJunkie);
+            filterCheck(workoutnames.StaminaJunkie);
+        }
+    }
     }
 
     /*
