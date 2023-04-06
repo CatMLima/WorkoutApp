@@ -43,6 +43,9 @@ public class WorkoutController implements Initializable {
     Button fxStartButton;
     @FXML
     Label fxUserLabel;
+
+    @FXML
+    Button fxLogOutButton;
     private Parent root;
     private Stage stage;
     private Scene scene;
@@ -94,9 +97,15 @@ public class WorkoutController implements Initializable {
                 filterCheck(workoutnames.CrossFit);
             }
             }});
+        testForGuestUser();
         fxStartButton.disableProperty().bind(fxWorkoutsListView.getSelectionModel().selectedItemProperty().isNull());
 
-
+    }
+    public void testForGuestUser(){
+        if (user.getName().equals("guest") && user.getAge() == -1 && user.getHeight() == -1 && user.getWeight() == -1){
+            fxLogOutButton.setText("Log in");
+            fxProfileButton.setDisable(true);
+        }
     }
 
 
@@ -174,5 +183,6 @@ public class WorkoutController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+
     }
 }
