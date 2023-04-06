@@ -1,6 +1,7 @@
 package storverkefni3.hbv201gstortverkefni3.vidmot;
 
 import javafx.beans.binding.*;
+import javafx.collections.*;
 import javafx.event.*;
 import javafx.fxml.*;
 import javafx.scene.*;
@@ -27,7 +28,6 @@ public class UserProfileController implements Initializable {
     private Stage stage;
     private Scene scene;
     User user;
-    Image image;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -40,8 +40,6 @@ public class UserProfileController implements Initializable {
         fxBMI.setText(String.format("%.1f", value));
         fxUserIcon.setImage(new Image(getClass().getResourceAsStream("/storverkefni3/pics/user-profile-logo.png")));
         fxGoal.setText(user.getGoal());
-
-
 
     }
 

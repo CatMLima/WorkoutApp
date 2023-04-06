@@ -1,5 +1,6 @@
 package storverkefni3.hbv201gstortverkefni3.vidmot;
 
+import javafx.beans.value.*;
 import javafx.collections.*;
 import javafx.event.*;
 import javafx.fxml.*;
@@ -50,6 +51,7 @@ public class WorkoutController implements Initializable {
     private Stage stage;
     private Scene scene;
 
+
     User user;
 
     private Workouts workoutnames;
@@ -61,7 +63,6 @@ public class WorkoutController implements Initializable {
      */
     public void initialize(URL location, ResourceBundle resources) {
         user = new User();
-        workoutnames = new Workouts();
         fxUserLabel.setText("Hi, " + user.getName());
         workoutList = workoutnames.getAllWorkouts(user.getGoal());
         try {
@@ -90,7 +91,6 @@ public class WorkoutController implements Initializable {
         });
         testForGuestUser();
         fxStartButton.disableProperty().bind(fxWorkoutsListView.getSelectionModel().selectedItemProperty().isNull());
-
     }
     private void displaySelectedWorkoutExercises(String workoutName) {if (workoutName != null) {
         /* Brynjar worked on this method
