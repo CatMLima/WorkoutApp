@@ -21,6 +21,7 @@ JumpHard = FXCollections.observableArrayList();
 CrossFit = FXCollections.observableArrayList();
 chest = FXCollections.observableArrayList();
 StaminaJunkie = FXCollections.observableArrayList();
+PumpItUp = FXCollections.observableArrayList();
    }
 
    protected ObservableList<WorkoutName> workoutNames;

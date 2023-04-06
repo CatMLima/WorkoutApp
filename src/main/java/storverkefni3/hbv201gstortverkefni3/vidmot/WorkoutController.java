@@ -122,6 +122,10 @@ public class WorkoutController implements Initializable {
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.StaminaJunkie);
             filterCheck(workoutnames.StaminaJunkie);
+        } if ("Pump It Up".equals(workoutName)){
+            uncheckAll();
+            fxExercisesListView.setItems(workoutnames.PumpItUp);
+            filterCheck(workoutnames.PumpItUp);
         }
     }
     }
