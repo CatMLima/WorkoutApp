@@ -72,31 +72,9 @@ public class WorkoutController implements Initializable {
         //displays clicked workouts exercises
         fxWorkoutsListView.setItems(workoutList);
         fxWorkoutsListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
-            //System.out.println(newValue);
             if (newValue != null) {
-                if ("Arms".equals(newValue.toString())) {
-                    uncheckAll();
-                    fxExercisesListView.setItems(workoutnames.arms);
-                    filterCheck(workoutnames.arms);
-                }
-                if ("Legs".equals(newValue.toString())) {
-                    uncheckAll();
-                    fxExercisesListView.setItems(workoutnames.legs);
-                    filterCheck(workoutnames.legs);}
-                if ("Chest".equals(newValue.toString())) {
-                        uncheckAll();
-                        fxExercisesListView.setItems(workoutnames.chest);
-                        filterCheck(workoutnames.legs);
-                    }
-            if ("Jump Hard".equals(newValue.toString())){
-                    uncheckAll();
-                    fxExercisesListView.setItems(workoutnames.JumpHard);
-                    filterCheck(workoutnames.JumpHard);
-                } if ("Cross Fit".equals(newValue.toString())){
-                uncheckAll();
-                fxExercisesListView.setItems(workoutnames.CrossFit);
-                filterCheck(workoutnames.CrossFit);
-            }
+            //System.out.println(newValue);
+                    displaySelectedWorkoutExercises(newValue.toString());
 
             }}); // Custom cell factory to display only the name variable
         fxExercisesListView.setCellFactory(param -> new ListCell<Exercises>() {
@@ -114,6 +92,33 @@ public class WorkoutController implements Initializable {
         fxStartButton.disableProperty().bind(fxWorkoutsListView.getSelectionModel().selectedItemProperty().isNull());
 
     }
+    private void displaySelectedWorkoutExercises(String workoutName) {if (workoutName != null) {
+        //checks which workout was clicked and populates the listview with the appropriate list
+        if ("Arms".equals(workoutName)) {
+            uncheckAll();
+            fxExercisesListView.setItems(workoutnames.arms);
+            filterCheck(workoutnames.arms);
+        }
+        if ("Legs".equals(workoutName)) {
+            uncheckAll();
+            fxExercisesListView.setItems(workoutnames.legs);
+            filterCheck(workoutnames.legs);}
+        if ("Chest".equals(workoutName)) {
+            uncheckAll();
+            fxExercisesListView.setItems(workoutnames.chest);
+            filterCheck(workoutnames.legs);
+        }
+        if ("Jump Hard".equals(workoutName)){
+            uncheckAll();
+            fxExercisesListView.setItems(workoutnames.JumpHard);
+            filterCheck(workoutnames.JumpHard);
+        } if ("Cross Fit".equals(workoutName)){
+            uncheckAll();
+            fxExercisesListView.setItems(workoutnames.CrossFit);
+            filterCheck(workoutnames.CrossFit);
+        }}
+    }
+
     public void testForGuestUser(){
         if (user.getName().equals("guest") && user.getAge() == -1 && user.getHeight() == -1 && user.getWeight() == -1){
             fxLogOutButton.setText("Log in");

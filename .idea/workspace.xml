@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added comments to explain Workouts.java">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added a setCellFactory to display only the name in the exercise preview">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" afterDir="false" />
     </list>
@@ -115,7 +115,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added gifs as a string to Exercises" />
     <MESSAGE value="added set image to setNameRepSets" />
     <MESSAGE value="fixed image path" />
     <MESSAGE value="added Jump Hard into filterExercises" />
@@ -140,6 +139,7 @@
     <MESSAGE value="added chest workout" />
     <MESSAGE value="chest didnt show exercises, fixed that" />
     <MESSAGE value="added comments to explain Workouts.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments to explain Workouts.java" />
+    <MESSAGE value="added a setCellFactory to display only the name in the exercise preview" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a setCellFactory to display only the name in the exercise preview" />
   </component>
 </project>
