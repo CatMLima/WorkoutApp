@@ -5,10 +5,11 @@ COMPLETE
 (complete) create user page where BMI and updating of information
 (complete) format BMI text to have only one decimal place
 (complete) make log in button for guests and no users
+(complete) make exercises list view only show the exercise names, not their information (or think of other way)
+
 INCOMPLETE
 (incomplete) add the hovering message to the mouse
 (incomplete) create congratulations message when workout is finished
-(incomplete) make exercises list view only show the exercise names, not their information (or think of other way)
 (incomplete) add javadoc to explain what methods do
 (incomplete) make finished workouts be added to the listview in the user profile page
 (incomplete) all the workouts and exercises we are missing. Should be 18 total workouts with 6 exercises each.
