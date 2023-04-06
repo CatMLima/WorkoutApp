@@ -17,7 +17,7 @@
                         <Font name="Gill Sans MT" size="15.0" />
                     </font>
                 </Button>
-                <Label fx:id="fxExerciseName" alignment="CENTER" layoutX="217.0" layoutY="37.0" prefHeight="47.0" prefWidth="194.0" text="Exercise Name">
+                <Label fx:id="fxExerciseName" alignment="CENTER" layoutX="157.0" layoutY="37.0" prefHeight="47.0" prefWidth="314.0" text="Exercise Name">
                     <font>
                         <Font name="Gill Sans MT" size="30.0" />
                     </font>

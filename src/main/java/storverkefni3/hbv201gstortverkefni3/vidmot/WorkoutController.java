@@ -126,6 +126,10 @@ public class WorkoutController implements Initializable {
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.PumpItUp);
             filterCheck(workoutnames.PumpItUp);
+        } if ("Boxing Time".equals(workoutName)){
+            uncheckAll();
+            fxExercisesListView.setItems(workoutnames.BoxingTime);
+            filterCheck(workoutnames.BoxingTime);
         }
     }
     }
