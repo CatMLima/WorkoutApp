@@ -69,6 +69,7 @@ public class WorkoutController implements Initializable {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        //displays clicked workouts exercises
         fxWorkoutsListView.setItems(workoutList);
         fxWorkoutsListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             //System.out.println(newValue);
@@ -96,7 +97,19 @@ public class WorkoutController implements Initializable {
                 fxExercisesListView.setItems(workoutnames.CrossFit);
                 filterCheck(workoutnames.CrossFit);
             }
-            }});
+
+            }}); // Custom cell factory to display only the name variable
+        fxExercisesListView.setCellFactory(param -> new ListCell<Exercises>() {
+            @Override
+            protected void updateItem(Exercises item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null) {
+                    setText(null);
+                } else {
+                    setText(item.getName()); // Only display the name variable
+                }
+            }
+        });
         testForGuestUser();
         fxStartButton.disableProperty().bind(fxWorkoutsListView.getSelectionModel().selectedItemProperty().isNull());
 
