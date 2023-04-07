@@ -63,6 +63,7 @@ public class WorkoutController implements Initializable {
      */
     public void initialize(URL location, ResourceBundle resources) {
         user = new User();
+        workoutnames = new Workouts();
         fxUserLabel.setText("Hi, " + user.getName());
         workoutList = workoutnames.getAllWorkouts(user.getGoal());
         try {
