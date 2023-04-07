@@ -1,6 +1,7 @@
 package storverkefni3.hbv201gstortverkefni3.vinnsla;
 
 import javafx.beans.property.*;
+import javafx.collections.*;
 
 public class User {
     /*
@@ -96,8 +97,6 @@ public class User {
 
     public static IntegerProperty BMI = new SimpleIntegerProperty();
 
-
-
     /**
      * Calculates the BMI of the user
      * @param height
@@ -109,7 +108,6 @@ public class User {
         double h = height/100.0;
         return weight / (h*h);
     }
-
     public static void main(String[] args) {
         System.out.println(BMI);
 
