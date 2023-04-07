@@ -100,36 +100,44 @@ public class WorkoutController implements Initializable {
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.arms);
             filterCheck(workoutnames.arms);
+            StoreWorkout.setSelectedWorkout(workoutName);
         }
         if ("Legs".equals(workoutName)) {
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.legs);
             filterCheck(workoutnames.legs);}
+        StoreWorkout.setSelectedWorkout(workoutName);
         if ("Chest".equals(workoutName)) {
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.chest);
             filterCheck(workoutnames.legs);
+            StoreWorkout.setSelectedWorkout(workoutName);
         }
         if ("Jump Hard".equals(workoutName)){
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.JumpHard);
             filterCheck(workoutnames.JumpHard);
+            StoreWorkout.setSelectedWorkout(workoutName);
         } if ("Cross Fit".equals(workoutName)){
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.CrossFit);
             filterCheck(workoutnames.CrossFit);
+            StoreWorkout.setSelectedWorkout(workoutName);
         } if ("Stamina Junkie".equals(workoutName)){
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.StaminaJunkie);
             filterCheck(workoutnames.StaminaJunkie);
+            StoreWorkout.setSelectedWorkout(workoutName);
         } if ("Pump It Up".equals(workoutName)){
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.PumpItUp);
             filterCheck(workoutnames.PumpItUp);
+            StoreWorkout.setSelectedWorkout(workoutName);
         } if ("Boxing Time".equals(workoutName)){
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.BoxingTime);
             filterCheck(workoutnames.BoxingTime);
+            StoreWorkout.setSelectedWorkout(workoutName);
         }
     }
     }
