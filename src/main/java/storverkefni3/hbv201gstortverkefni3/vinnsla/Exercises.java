@@ -5,10 +5,10 @@ import javafx.scene.image.Image;
 
 
 public class Exercises {
-    // Brynjar Steinn worked on this class
-   // an exercise has a type like curls is a strength type and curls has reps and sets
-    // but for cardio instead of reps it would have a time duration which would get added to a timer
-    //an exercise has a name and a gif
+    /* Brynjar Steinn worked on this class
+    an exercise has a type like curls is a strength type and curls has reps and sets
+    but for cardio instead of reps it would have a time duration which would get added to a timer
+    an exercise has a name and a gif */
     private StringProperty name=new SimpleStringProperty();
     private IntegerProperty reps = new SimpleIntegerProperty();
     private IntegerProperty sets=new SimpleIntegerProperty();
