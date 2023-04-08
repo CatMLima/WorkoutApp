@@ -23,6 +23,11 @@ public class ChangeInfoController implements Initializable {
     private Scene scene;
     User user;
 
+    /**
+     * User can change their personal information aside from goals.
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
@@ -35,6 +40,11 @@ public class ChangeInfoController implements Initializable {
 
     }
 
+    /**
+     * returns back to the previous page without saving information input
+     * @param actionEvent
+     * @throws IOException
+     */
     public void backHandler(ActionEvent actionEvent) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/user-page.fxml")));
         stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -44,6 +54,11 @@ public class ChangeInfoController implements Initializable {
 
     }
 
+    /**
+     * Anywhere new information was inserted, the user profile gets updated
+     * @param actionEvent
+     * @throws IOException
+     */
     public void updateHandler(ActionEvent actionEvent) throws IOException {
         user.setName(fxName.getText());
         user.setAge(Integer.parseInt(fxAge.getText()));

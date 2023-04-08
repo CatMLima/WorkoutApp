@@ -59,6 +59,12 @@ public class CardioSessionController implements Initializable{
     final double TIME = 31.0;
 
     Timeline timeline;
+
+    /**
+     * exercises imported based on workout selected and gifs set
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
@@ -77,13 +83,22 @@ public class CardioSessionController implements Initializable{
         fxPauseButton.disableProperty().bind(fxTimer.textProperty().isEmpty());
         fxNextButton.disableProperty().bind(countProperty().isEqualTo(exercises.length-1));
     }
+
+    /**
+     * Handling the setting of the image to something else to clear up initialize method
+     * @param count
+     */
     public void setNameGif(int count){
         fxExerciseName.setText(exercises[count].getName());
         fxExerciseView.setImage(new Image(getClass().getResourceAsStream(exercises[count].getGif())));
 
     }
 
-
+    /**
+     * User can return to previous page
+     * @param actionEvent
+     * @throws IOException
+     */
     public void fxQuitWorkoutHandler(ActionEvent actionEvent) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
         stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -93,6 +108,11 @@ public class CardioSessionController implements Initializable{
     }
 
     int clicks = 0;
+
+    /**
+     * Timer can be paused and the button text is updated
+     * @param actionEvent
+     */
 
     public void fxPauseExerciseHandler(ActionEvent actionEvent) {
 
@@ -106,6 +126,11 @@ public class CardioSessionController implements Initializable{
         }
         clicks++;
         }
+
+    /**
+     * The timeline is started from the beginning and also rules for what to display when 0 are set.
+     * @param actionEvent
+     */
     public void fxStartExerciseHandler(ActionEvent actionEvent){
         setTime(TIME);
         timeline = new Timeline(

@@ -57,6 +57,11 @@ public class StrengthSessionController implements Initializable {
 
     IntegerProperty count = new SimpleIntegerProperty();
 
+    /**
+     * Exercises imported based on selected workout. Listeners and binds set.
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
@@ -75,6 +80,11 @@ public class StrengthSessionController implements Initializable {
         fxContinueButton.disableProperty().bind(countProperty().isEqualTo(exercises.length-1));
 
     }
+
+    /**
+     * Based on the exercise, the name, rep and sets need to be added. The code was moved here to maintain cleanliness in initialize.
+     * @param count
+     */
     public void setNameRepSets(int count){
         fxExerciseName.setText(exercises[count].getName());
         fxRepetitions.setText(String.valueOf(exercises[count].getReps()));
@@ -83,7 +93,11 @@ public class StrengthSessionController implements Initializable {
         //could have an if here where if(url not found) then display some image not found picture
     }
 
-
+    /**
+     * User returns to previous page without or after finishing the workout.
+     * @param actionEvent
+     * @throws IOException
+     */
     public void fxQuitWorkoutHandler(ActionEvent actionEvent) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
         stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -92,6 +106,10 @@ public class StrengthSessionController implements Initializable {
         stage.show();
     }
 
+    /**
+     * Next exercise comes up.
+     * @param actionEvent
+     */
     public void fxContinueExerciseHandler(ActionEvent actionEvent) {
         setCount(getCount()+1);
         if (getCount() == exercises.length-1){
