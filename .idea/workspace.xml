@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="Added 2 back musclegain exercises">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="finished back exercises">
       <change beforePath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/Exercises.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +115,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="adding jump hard to the initialize listener in WorkoutController" />
     <MESSAGE value="fixed fxquitworkouthander in strenghtsession" />
     <MESSAGE value="fixing gifs in workouts" />
     <MESSAGE value="fixed setImage in setNameRepSets" />
@@ -141,6 +139,7 @@
     <MESSAGE value="slight change to displayselectedWorkoutExercises" />
     <MESSAGE value="Added back musclegain exercise" />
     <MESSAGE value="Added 2 back musclegain exercises" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 2 back musclegain exercises" />
+    <MESSAGE value="finished back exercises" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished back exercises" />
   </component>
 </project>
