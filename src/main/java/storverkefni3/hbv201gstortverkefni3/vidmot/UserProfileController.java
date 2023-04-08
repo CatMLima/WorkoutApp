@@ -33,6 +33,12 @@ public class UserProfileController implements Initializable {
 
     WorkoutName workoutName;
 
+    /**
+     * Information imported from the static user information.
+     * @param url
+     * @param resourceBundle
+     */
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
@@ -49,6 +55,12 @@ public class UserProfileController implements Initializable {
 
     }
 
+    /**
+     * User can update their information, perhaps a change of name, height, weight.
+     * @param actionEvent
+     * @throws IOException
+     */
+
     public void fxUpdateHandler(ActionEvent actionEvent) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/change-credentials.fxml")));
         stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -56,6 +68,12 @@ public class UserProfileController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+
+    /**
+     * return to previous page with or without having changed their personal information
+     * @param actionEvent
+     * @throws IOException
+     */
 
     public void fxBackHandler(ActionEvent actionEvent) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
