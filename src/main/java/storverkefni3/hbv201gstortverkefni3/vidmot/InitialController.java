@@ -72,7 +72,7 @@ public class InitialController implements Initializable {
                 return null;
             }
         });
-        fxAge.setTextFormatter(formatter2);
+        fxHeight.setTextFormatter(formatter2);
         TextFormatter<Integer> formatter3 = new TextFormatter<>(change -> {
             if (change.getControlNewText().matches("\\d*")) {
                 return change;
