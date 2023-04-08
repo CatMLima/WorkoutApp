@@ -52,6 +52,10 @@ public class InitialController implements Initializable {
         fxGoalChoices.setItems(options);
         textFilter();
     }
+
+    /**
+     * Method makes sure that the User input is filtered to only be String in names and Integers for the rest.
+     */
     public void textFilter(){
         fxName.textProperty().addListener((observable, oldValue, newValue) ->{
             String filteredText = newValue.replaceAll("[^\\p{L}\\s]", "");
@@ -100,6 +104,11 @@ public class InitialController implements Initializable {
 
     }
 
+    /**
+     * If the user will be a guest, they still need to select their personal goal.
+     * @param actionEvent button pressed
+     * @throws IOException no valid fxml
+     */
     public void pickGoal(ActionEvent actionEvent) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/change-goals-view.fxml")));
         stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
@@ -107,6 +116,12 @@ public class InitialController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+
+    /**
+     * When the user fills in all their information their profile is created and goal registered
+     * @param actionEvent button pushed
+     * @throws IOException no valid fxml
+     */
 
     public void confirmHandler(ActionEvent actionEvent) throws IOException {
         user = new User();
@@ -123,6 +138,12 @@ public class InitialController implements Initializable {
         switchToWorkout(actionEvent);
 
     }
+
+    /**
+     * Method created to call on a change of scenery.
+     * @param event button pressed
+     * @throws IOException no valid fxml file
+     */
     public void switchToWorkout(ActionEvent event) throws IOException{
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
