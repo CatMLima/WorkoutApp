@@ -17,6 +17,7 @@
 "Muscle Gain","Chest","Flies",0.0,3,10,"/storverkefni3/pics/PecDeckFly.gif","Gym machines"
 "Muscle Gain","Chest","Pullovers",0.0,3,10,"/storverkefni3/pics/DumbbellPullover.gif","Dumbbell"
 "Muscle Gain","Chest","One Arm Press",0.0,3,10,"/storverkefni3/pics/OneArmCableChestPress.gif","Gym machines"
+"Muscle Gain","Back","Deadlift",0.0,3,10,"/storverkefni3/pics/Deadlift.gif","Barbell"
 "Weight loss","Jump Hard","Jumping jacks",30.0,0,0,"/storverkefni3/pics/Jumpingjack.gif","none"
 "Weight loss","Jump Hard","Lat Pulldown",30.0,0,0,"/storverkefni3/pics/LatPulldown.gif","Gym machines"
 "Weight loss","Jump Hard","Bent Over Rows",30.0,0,0,"/storverkefni3/pics/BentOverDumbbellRow.gif","Dumbbell"

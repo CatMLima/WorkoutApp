@@ -23,6 +23,7 @@ chest = FXCollections.observableArrayList();
 StaminaJunkie = FXCollections.observableArrayList();
 PumpItUp = FXCollections.observableArrayList();
 BoxingTime = FXCollections.observableArrayList();
+back = FXCollections.observableArrayList();
    }
 
    protected ObservableList<WorkoutName> workoutNames;
@@ -34,7 +35,7 @@ protected ObservableList<Exercises> workout;
    public ObservableList<Exercises> chest;
    public ObservableList<Exercises> StaminaJunkie;
    public ObservableList<Exercises> PumpItUp;
-
+   public ObservableList<Exercises> back;
    public ObservableList<Exercises> BoxingTime;
 
 
@@ -74,6 +75,8 @@ protected ObservableList<Exercises> workout;
             }if (exercise.getBodypart().equals("Chest")) {
                chest.add(exercise);
             }
+            if (exercise.getBodypart().equals("Back")) {
+              back.add(exercise);}
             if (exercise.getBodypart().equals("Legs")) {legs.add(exercise);}
          } if (exercise.getBodypart().equals("Jump Hard")) {JumpHard.add(exercise);}
          if (exercise.getBodypart().equals("Cross Fit")) {CrossFit.add(exercise);}
@@ -106,6 +109,7 @@ public Double getTotalTime(String goal){
             workoutNames.add(new WorkoutName("Arms"));
             workoutNames.add(new WorkoutName("Legs"));
             workoutNames.add(new WorkoutName("Chest"));
+            workoutNames.add(new WorkoutName("Back"));
          }
          case "Endurance" ->{
             workoutNames.add(new WorkoutName("Stamina Junkie"));
