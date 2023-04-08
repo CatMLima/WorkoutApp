@@ -4,7 +4,8 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.util.*;
-/* a class to store workouts and exercise lists */
+/* Author: Brynjar Steinn
+a class to store workouts and exercise lists */
 public class StoreWorkout {
     private static ObservableList<Exercises> selectedExercises;
     private static ObservableList<WorkoutName> selectedWorkout = FXCollections.observableArrayList();

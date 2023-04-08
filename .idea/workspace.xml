@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="improved some javadocs">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="added javadoc">
       <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/StoreWorkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/StoreWorkout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +115,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed setImage in setNameRepSets" />
     <MESSAGE value="Completed implementation of  fxExerciseview.setImage in setNameRepSets" />
     <MESSAGE value="added a comment to setNameRepSets" />
     <MESSAGE value="fixed Exercises.txt and added a comment to setNameRepSets" />
@@ -140,6 +139,7 @@
     <MESSAGE value="finished back exercises" />
     <MESSAGE value="changed back exercise a bit" />
     <MESSAGE value="improved some javadocs" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved some javadocs" />
+    <MESSAGE value="added javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="added javadoc" />
   </component>
 </project>
