@@ -50,6 +50,35 @@ public class InitialController implements Initializable {
                         "Endurance"
                 );
         fxGoalChoices.setItems(options);
+        textFilter();
+    }
+    public void textFilter(){
+        fxName.textProperty().addListener((observable, oldValue, newValue) ->{
+            String filteredText = newValue.replaceAll("[^\\p{L}\\s]", "");
+            fxName.setText(filteredText);
+        } );
+        fxAge.textProperty().addListener(((observableValue, oldValue, newValue) ->{
+            try {
+                int value = Integer.parseInt(newValue);
+            } catch (NumberFormatException e){
+                fxAge.setText(oldValue);
+            }
+        } ));
+        fxHeight.textProperty().addListener(((observableValue, oldValue, newValue) ->{
+            try {
+                int value = Integer.parseInt(newValue);
+            } catch (NumberFormatException e){
+                fxAge.setText(oldValue);
+            }
+        } ));
+        fxWeight.textProperty().addListener(((observableValue, oldValue, newValue) ->{
+            try {
+                int value = Integer.parseInt(newValue);
+            } catch (NumberFormatException e){
+                fxAge.setText(oldValue);
+            }
+        } ));
+
     }
 
     /*
