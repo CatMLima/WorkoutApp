@@ -12,11 +12,18 @@ public class StoreWorkout {
         return selectedExercises;
     }
     public static ObservableList<WorkoutName> getSelectedWorkout() {return selectedWorkout;}
+
+    private static ObservableList<WorkoutName> logWorkouts = FXCollections.observableArrayList();
+
+    public static ObservableList<WorkoutName> getLogWorkouts(){return logWorkouts;}
     public static void setSelectedExercises(ObservableList<Exercises> selectedExercises) {
         StoreWorkout.selectedExercises = selectedExercises;
     }
     public static void setSelectedWorkout(String selectedWorkout) {
         StoreWorkout.selectedWorkout.clear();
         StoreWorkout.selectedWorkout.add(new WorkoutName(selectedWorkout));
+    }
+    public static void addToLog(String selectedWorkout){
+        StoreWorkout.logWorkouts.add(new WorkoutName(selectedWorkout));
     }
 }

@@ -18,12 +18,24 @@ public class ChangeGoalsController implements Initializable{
 
     @FXML
     Button fxConfirm;
+
+    /**
+     * Go back to previous page
+     * @param actionEvent
+     * @throws IOException
+     */
     public void fxReturnHandler(ActionEvent actionEvent) throws IOException {
         switchToWorkout(actionEvent);
 
     }
 
     User user;
+
+    /**
+     * Changes the goal selected by the user
+     * @param actionEvent
+     * @throws IOException
+     */
     public void fxNewGoalHandler(ActionEvent actionEvent) throws IOException {
         user.setGoal(fxGoalsList.getSelectionModel().getSelectedItem().toString());
         switchToWorkout(actionEvent);
@@ -39,6 +51,11 @@ public class ChangeGoalsController implements Initializable{
         stage.show();
     }
 
+    /**
+     * List options created and set. Necessary bindings set.
+     * @param url
+     * @param resourceBundle
+     */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
