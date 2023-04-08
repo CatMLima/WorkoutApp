@@ -36,7 +36,7 @@ public class UserProfileController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
-        workouts = StoreWorkout.getSelectedWorkout();
+        workouts = StoreWorkout.getLogWorkouts();
         fxWorkoutHistory.setItems(workouts);
         fxName.setText(user.getName());
         fxAge.setText(String.valueOf(user.getAge()));
