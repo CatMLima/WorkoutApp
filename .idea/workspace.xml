@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="changed back exercise a bit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Exercises.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="improved some javadocs">
+      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/StoreWorkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/StoreWorkout.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixing gifs in workouts" />
     <MESSAGE value="fixed setImage in setNameRepSets" />
     <MESSAGE value="Completed implementation of  fxExerciseview.setImage in setNameRepSets" />
     <MESSAGE value="added a comment to setNameRepSets" />
@@ -142,6 +139,7 @@
     <MESSAGE value="Added 2 back musclegain exercises" />
     <MESSAGE value="finished back exercises" />
     <MESSAGE value="changed back exercise a bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed back exercise a bit" />
+    <MESSAGE value="improved some javadocs" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved some javadocs" />
   </component>
 </project>
