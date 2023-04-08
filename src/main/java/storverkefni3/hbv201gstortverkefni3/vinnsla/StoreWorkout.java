@@ -3,6 +3,8 @@ package storverkefni3.hbv201gstortverkefni3.vinnsla;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+import java.util.*;
+
 public class StoreWorkout {
     private static ObservableList<Exercises> selectedExercises;
     private static ObservableList<WorkoutName> selectedWorkout = FXCollections.observableArrayList();

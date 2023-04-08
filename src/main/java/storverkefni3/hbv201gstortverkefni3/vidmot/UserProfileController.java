@@ -29,9 +29,15 @@ public class UserProfileController implements Initializable {
     private Scene scene;
     User user;
 
+    ObservableList<WorkoutName> workouts;
+
+    WorkoutName workoutName;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
+        workouts = StoreWorkout.getSelectedWorkout();
+        fxWorkoutHistory.setItems(workouts);
         fxName.setText(user.getName());
         fxAge.setText(String.valueOf(user.getAge()));
         fxHeight.setText(String.valueOf(user.getHeight()));

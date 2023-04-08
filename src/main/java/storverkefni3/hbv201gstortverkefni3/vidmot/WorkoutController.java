@@ -197,6 +197,7 @@ public class WorkoutController implements Initializable {
         }
         ObservableList<Exercises> selectedExercises = fxExercisesListView.getItems();
         StoreWorkout.setSelectedExercises(selectedExercises);
+        StoreWorkout.setSelectedWorkout(fxWorkoutsListView.getSelectionModel().getSelectedItem().toString());
         assert file != null;
         root = FXMLLoader.load((getClass().getResource(file)));
         stage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow();
