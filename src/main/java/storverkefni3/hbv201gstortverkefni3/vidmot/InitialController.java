@@ -57,27 +57,30 @@ public class InitialController implements Initializable {
             String filteredText = newValue.replaceAll("[^\\p{L}\\s]", "");
             fxName.setText(filteredText);
         } );
-        fxAge.textProperty().addListener(((observableValue, oldValue, newValue) ->{
-            try {
-                int value = Integer.parseInt(newValue);
-            } catch (NumberFormatException e){
-                fxAge.setText(oldValue);
+        TextFormatter<Integer> formatter = new TextFormatter<>(change -> {
+            if (change.getControlNewText().matches("\\d*")) {
+                return change;
+            } else {
+                return null;
             }
-        } ));
-        fxHeight.textProperty().addListener(((observableValue, oldValue, newValue) ->{
-            try {
-                int value = Integer.parseInt(newValue);
-            } catch (NumberFormatException e){
-                fxAge.setText(oldValue);
+        });
+        fxAge.setTextFormatter(formatter);
+        TextFormatter<Integer> formatter2 = new TextFormatter<>(change -> {
+            if (change.getControlNewText().matches("\\d*")) {
+                return change;
+            } else {
+                return null;
             }
-        } ));
-        fxWeight.textProperty().addListener(((observableValue, oldValue, newValue) ->{
-            try {
-                int value = Integer.parseInt(newValue);
-            } catch (NumberFormatException e){
-                fxAge.setText(oldValue);
+        });
+        fxAge.setTextFormatter(formatter2);
+        TextFormatter<Integer> formatter3 = new TextFormatter<>(change -> {
+            if (change.getControlNewText().matches("\\d*")) {
+                return change;
+            } else {
+                return null;
             }
-        } ));
+        });
+        fxWeight.setTextFormatter(formatter3);
 
     }
 
