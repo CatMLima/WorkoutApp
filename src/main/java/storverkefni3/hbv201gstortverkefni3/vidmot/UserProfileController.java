@@ -32,7 +32,7 @@ public class UserProfileController implements Initializable {
 
     ChangeScene changeScene;
 
-    ObservableList<WorkoutName> workouts;
+    ObservableList<WorkoutName> workouts = FXCollections.observableArrayList();
 
     WorkoutName workoutName;
 
