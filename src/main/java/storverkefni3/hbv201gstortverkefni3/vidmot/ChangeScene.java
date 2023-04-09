@@ -16,6 +16,12 @@ public class ChangeScene {
     private Stage stage;
     private Scene scene;
 
+    /**
+     * Since the moves are always triggered by a button click, I am able to get the source of the action for the stage and then use the provided fxml file.
+     * @param actionEvent
+     * @param fxml
+     * @throws IOException
+     */
     public void changeTo(ActionEvent actionEvent, String fxml) throws IOException {
             root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(fxml)));
             stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
