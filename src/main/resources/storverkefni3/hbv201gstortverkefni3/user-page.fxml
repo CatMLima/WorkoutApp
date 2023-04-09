@@ -144,7 +144,7 @@
                         <Font name="Gill Sans MT" size="20.0" />
                      </font>
                   </Label>
-                  <ListView fx:id="fxWorkoutHistory" layoutX="14.0" layoutY="40.0" prefHeight="153.0" prefWidth="256.0" style="-fx-border-color: black;" />
+                  <ListView fx:id="fxWorkoutHistory" fixedCellSize="10.0" layoutX="14.0" layoutY="40.0" prefHeight="153.0" prefWidth="256.0" style="-fx-border-color: black;" />
                </children>
             </Pane>
             <Button fx:id="fxUpdate" layoutX="175.0" layoutY="280.0" mnemonicParsing="false" onAction="#fxUpdateHandler" text="Update">
