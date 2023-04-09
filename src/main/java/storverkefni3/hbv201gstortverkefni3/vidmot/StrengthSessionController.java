@@ -85,6 +85,9 @@ public class StrengthSessionController implements Initializable {
     public void createToolTips(){
         Tooltip quit = new Tooltip("Return to the workout page.");
         Tooltip.install(fxQuitButton, quit);
+        Tooltip next = new Tooltip("Next exercise");
+        Tooltip.install(fxContinueButton, next);
+
     }
 
     /**

@@ -90,6 +90,8 @@ public class CardioSessionController implements Initializable{
     public void createTooltips(){
         Tooltip quit = new Tooltip("Return to the workout page.");
         Tooltip.install(fxQuitButton, quit);
+        Tooltip next = new Tooltip("Next exercise.");
+        Tooltip.install(fxNextButton, next);
     }
 
     /**
