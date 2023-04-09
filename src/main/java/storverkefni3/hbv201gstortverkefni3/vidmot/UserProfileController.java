@@ -29,6 +29,8 @@ public class UserProfileController implements Initializable {
     private Scene scene;
     User user;
 
+    ChangeScene changeScene;
+
     ObservableList<WorkoutName> workouts;
 
     WorkoutName workoutName;
@@ -42,6 +44,7 @@ public class UserProfileController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
+        changeScene = new ChangeScene();
         workouts = StoreWorkout.getLogWorkouts();
         fxWorkoutHistory.setItems(workouts);
         fxName.setText(user.getName());
@@ -62,11 +65,7 @@ public class UserProfileController implements Initializable {
      */
 
     public void fxUpdateHandler(ActionEvent actionEvent) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/change-credentials.fxml")));
-        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/change-credentials.fxml");
     }
 
     /**
@@ -76,10 +75,6 @@ public class UserProfileController implements Initializable {
      */
 
     public void fxBackHandler(ActionEvent actionEvent) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
-        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml");
     }
 }

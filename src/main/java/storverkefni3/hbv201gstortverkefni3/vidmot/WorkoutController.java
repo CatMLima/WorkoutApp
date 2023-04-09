@@ -47,12 +47,9 @@ public class WorkoutController implements Initializable {
 
     @FXML
     Button fxLogOutButton;
-    private Parent root;
-    private Stage stage;
-    private Scene scene;
-
-
     User user;
+
+    ChangeScene changeScene;
 
     private Workouts workoutnames;
 
@@ -63,6 +60,7 @@ public class WorkoutController implements Initializable {
      */
     public void initialize(URL location, ResourceBundle resources) {
         user = new User();
+        changeScene = new ChangeScene();
         workoutnames = new Workouts();
         fxUserLabel.setText("Hi, " + user.getName());
         workoutList = workoutnames.getAllWorkouts(user.getGoal());
@@ -195,13 +193,7 @@ public class WorkoutController implements Initializable {
         StoreWorkout.setSelectedExercises(selectedExercises);
         StoreWorkout.addToLog(fxWorkoutsListView.getSelectionModel().getSelectedItem().toString());
         assert file != null;
-        root = FXMLLoader.load((getClass().getResource(file)));
-        stage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-
-
+        changeScene.changeTo(actionEvent, file);
     }
 
     /**
@@ -211,16 +203,13 @@ public class WorkoutController implements Initializable {
      * This should set all the user information to null, like a guest user and changes scenes.
      */
     public void fxLogOutHandler(ActionEvent actionEvent) throws IOException{
-            root = FXMLLoader.load((getClass().getResource("/storverkefni3/hbv201gstortverkefni3/initial-page-view.fxml")));
-            stage = (Stage)((Node) actionEvent.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
+            changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/initial-page-view.fxml");
             user.setName("");
             user.setAge(-1);
             user.setHeight(-1);
             user.setWeight(-1);
             user.setGoal(null);
-            stage.show();
+
     }
 
     /**
@@ -231,11 +220,7 @@ public class WorkoutController implements Initializable {
      */
 
     public void fxChangeGoalsHandler(ActionEvent actionEvent) throws IOException {
-            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/change-goals-view.fxml")));
-            stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
+           changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/change-goals-view.fxml");
     }
 
     /**
@@ -246,11 +231,7 @@ public class WorkoutController implements Initializable {
      */
 
     public void profileHandler(ActionEvent actionEvent) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/user-page.fxml")));
-        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/user-page.fxml");
 
     }
 }

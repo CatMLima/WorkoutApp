@@ -19,38 +19,8 @@ public class ChangeGoalsController implements Initializable{
     @FXML
     Button fxConfirm;
 
-    /**
-     * Go back to previous page
-     * @param actionEvent
-     * @throws IOException
-     */
-    public void fxReturnHandler(ActionEvent actionEvent) throws IOException {
-        switchToWorkout(actionEvent);
-
-    }
-
+    ChangeScene changeScene;
     User user;
-
-    /**
-     * Changes the goal selected by the user
-     * @param actionEvent
-     * @throws IOException
-     */
-    public void fxNewGoalHandler(ActionEvent actionEvent) throws IOException {
-        user.setGoal(fxGoalsList.getSelectionModel().getSelectedItem().toString());
-        switchToWorkout(actionEvent);
-    }
-    private Parent root;
-    private Stage stage;
-    private Scene scene;
-    public void switchToWorkout(ActionEvent event) throws IOException{
-        root = FXMLLoader.load((getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
     /**
      * List options created and set. Necessary bindings set.
      * @param url
@@ -59,6 +29,7 @@ public class ChangeGoalsController implements Initializable{
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
+        changeScene = new ChangeScene();
         fxConfirm.disableProperty().bind(fxGoalsList.getSelectionModel().selectedItemProperty().isNull());
         ObservableList<String> options =
                 FXCollections.observableArrayList(
@@ -67,5 +38,24 @@ public class ChangeGoalsController implements Initializable{
                         "Endurance"
                 );
         fxGoalsList.setItems(options);
+    }
+
+    /**
+     * Changes the goal selected by the user
+     * @param actionEvent
+     * @throws IOException
+     */
+    public void fxNewGoalHandler(ActionEvent actionEvent) throws IOException {
+        user.setGoal(fxGoalsList.getSelectionModel().getSelectedItem().toString());
+        changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml");
+    }
+    /**
+     * Go back to previous page
+     * @param actionEvent
+     * @throws IOException
+     */
+    public void fxReturnHandler(ActionEvent actionEvent) throws IOException {
+        changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml");
+
     }
 }

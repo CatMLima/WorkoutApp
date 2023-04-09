@@ -25,6 +25,8 @@ public class ChangeInfoController implements Initializable {
     private Parent root;
     private Stage stage;
     private Scene scene;
+
+    ChangeScene changeScene;
     User user;
 
     /**
@@ -34,6 +36,7 @@ public class ChangeInfoController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        changeScene = new ChangeScene();
         user = new User();
         fxName.setText(user.getName());
         fxAge.setText(String.valueOf(user.getAge()));
@@ -50,11 +53,8 @@ public class ChangeInfoController implements Initializable {
      * @throws IOException
      */
     public void backHandler(ActionEvent actionEvent) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/user-page.fxml")));
-        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        changeScene.changeTo(actionEvent, "/storverkefni3/hbv201gstortverkefni3/user-page.fxml");
+
 
     }
 
@@ -69,10 +69,7 @@ public class ChangeInfoController implements Initializable {
         user.setHeight(Integer.parseInt(fxHeight.getText()));
         user.setWeight(Integer.parseInt(fxWeight.getText()));
 
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/user-page.fxml")));
-        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        changeScene.changeTo(actionEvent, "/storverkefni3/hbv201gstortverkefni3/user-page.fxml");
+
     }
 }

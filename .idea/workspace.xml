@@ -143,4 +143,9 @@
     <MESSAGE value="improved javadoc" />
     <option name="LAST_COMMIT_MESSAGE" value="improved javadoc" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HBV201GStortVerkefni3$FitUApplication.ic" NAME="FitUApplication Coverage Results" MODIFIED="1680547166783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>storverkefni3.hbv201gstortverkefni3.vidmot.*</FILTER>
+    </SUITE>
+  </component>
 </project>

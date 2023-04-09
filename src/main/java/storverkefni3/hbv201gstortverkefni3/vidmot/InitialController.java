@@ -28,11 +28,7 @@ public class InitialController implements Initializable {
     public ChoiceBox fxGoalChoices;
     public Button fxConfirmButton;
     public Button fxGuestButton;
-
-    private Parent root;
-    private Stage stage;
-    private Scene scene;
-
+    ChangeScene changeScene;
 
     public User user;
 
@@ -51,6 +47,7 @@ public class InitialController implements Initializable {
                 );
         fxGoalChoices.setItems(options);
         textFilter();
+        changeScene = new ChangeScene();
     }
 
     /**
@@ -110,11 +107,7 @@ public class InitialController implements Initializable {
      * @throws IOException no valid fxml
      */
     public void pickGoal(ActionEvent actionEvent) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/change-goals-view.fxml")));
-        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/change-goals-view.fxml");
     }
 
     /**
@@ -135,21 +128,7 @@ public class InitialController implements Initializable {
         user.setWeight(weight);
         user.setGoal(goal);
 
-        switchToWorkout(actionEvent);
-
-    }
-
-    /**
-     * Method created to call on a change of scenery.
-     * @param event button pressed
-     * @throws IOException no valid fxml file
-     */
-    public void switchToWorkout(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+       changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml");
 
     }
 }

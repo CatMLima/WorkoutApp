@@ -56,6 +56,8 @@ public class CardioSessionController implements Initializable{
 
     IntegerProperty count = new SimpleIntegerProperty();
 
+    ChangeScene changeScene;
+
     final double TIME = 31.0;
 
     Timeline timeline;
@@ -68,6 +70,7 @@ public class CardioSessionController implements Initializable{
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         user = new User();
+        changeScene = new ChangeScene();
         setCount(0);
         workout = new Workouts();
         selectedExercises = StoreWorkout.getSelectedExercises();
@@ -100,11 +103,7 @@ public class CardioSessionController implements Initializable{
      * @throws IOException
      */
     public void fxQuitWorkoutHandler(ActionEvent actionEvent) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml")));
-        stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+       changeScene.changeTo(actionEvent, "/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml");
     }
 
     int clicks = 0;
