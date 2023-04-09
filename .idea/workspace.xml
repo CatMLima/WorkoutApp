@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="improved javadoc">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="fixed workout history">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/UserProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/UserProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/user-page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/user-page.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +116,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added a comment to setNameRepSets" />
     <MESSAGE value="fixed Exercises.txt and added a comment to setNameRepSets" />
     <MESSAGE value="Added the remaining gifs for the exercises" />
     <MESSAGE value="Changed getAllExercises so that it gets exercises from Exercises.txt" />
@@ -142,6 +140,7 @@
     <MESSAGE value="improved some javadocs" />
     <MESSAGE value="added javadoc" />
     <MESSAGE value="improved javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved javadoc" />
+    <MESSAGE value="fixed workout history" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed workout history" />
   </component>
 </project>
