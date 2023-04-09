@@ -12,6 +12,10 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
+/*
+Catarina Lima worked on this class.
+ */
+
 public class ChangeInfoController implements Initializable {
     public Button fxUpdate;
     public TextField fxAge;
