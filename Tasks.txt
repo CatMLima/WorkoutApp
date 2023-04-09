@@ -8,10 +8,9 @@ COMPLETE
 (complete) make exercises list view only show the exercise names, not their information (or think of other way)
 (complete) make finished workouts be added to the listview in the user profile page
 (complete) complete issues of input type in the initial and change credential controllers
-
+(complete) add the hovering message to the mouse
+(complete) add javadoc to explain what methods do
 INCOMPLETE
-(incomplete) add the hovering message to the mouse
 (incomplete) create congratulations message when workout is finished
-(incomplete) add javadoc to explain what methods do
 (incomplete) all the workouts and exercises we are missing.
 (incomplete) figure out Scene Builder resizing issues

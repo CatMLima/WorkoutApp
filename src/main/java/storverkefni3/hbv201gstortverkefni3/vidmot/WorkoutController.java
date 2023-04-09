@@ -153,6 +153,14 @@ public class WorkoutController implements Initializable {
             uncheckAll();
             fxExercisesListView.setItems(workoutnames.BoxingTime);
             filterCheck(workoutnames.BoxingTime);
+        } if ("HIIT".equals(workoutName)){
+            uncheckAll();
+            fxExercisesListView.setItems(workoutnames.HIIT);
+            filterCheck(workoutnames.HIIT);
+        } if ("No Pain No Gain".equals(workoutName)){
+            uncheckAll();
+            fxExercisesListView.setItems(workoutnames.NoPainNoGain);
+            filterCheck(workoutnames.NoPainNoGain);
         }
     }
     }

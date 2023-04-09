@@ -24,6 +24,8 @@ StaminaJunkie = FXCollections.observableArrayList();
 PumpItUp = FXCollections.observableArrayList();
 BoxingTime = FXCollections.observableArrayList();
 back = FXCollections.observableArrayList();
+HIIT = FXCollections.observableArrayList();
+NoPainNoGain = FXCollections.observableArrayList();
    }
 
    protected ObservableList<WorkoutName> workoutNames;
@@ -37,6 +39,10 @@ protected ObservableList<Exercises> workout;
    public ObservableList<Exercises> PumpItUp;
    public ObservableList<Exercises> back;
    public ObservableList<Exercises> BoxingTime;
+
+   public ObservableList<Exercises> HIIT;
+
+   public ObservableList<Exercises> NoPainNoGain;
 
 
    public ObservableList<Exercises> getAllExercises() throws IOException {
@@ -83,6 +89,8 @@ protected ObservableList<Exercises> workout;
          if (exercise.getBodypart().equals("Stamina Junkie")){ StaminaJunkie.add(exercise);}
          if (exercise.getBodypart().equals("Pump It Up")){ PumpItUp.add(exercise);}
          if (exercise.getBodypart().equals("Boxing Time")){ BoxingTime.add(exercise);}
+         if (exercise.getBodypart().equals("HIIT")){ HIIT.add(exercise);}
+         if (exercise.getBodypart().equals("No Pain No Gain")){ NoPainNoGain.add(exercise);}
       }
 
       return FXCollections.observableArrayList(exerciseList);
@@ -104,6 +112,7 @@ public Double getTotalTime(String goal){
             workoutNames.add(new WorkoutName("Jump Hard"));
             workoutNames.add(new WorkoutName("Cross Fit"));
             workoutNames.add(new WorkoutName("Boxing Time"));
+            workoutNames.add(new WorkoutName("HIIT"));
          }
          case "Muscle Gain" -> {
             workoutNames.add(new WorkoutName("Arms"));
@@ -115,6 +124,7 @@ public Double getTotalTime(String goal){
             workoutNames.add(new WorkoutName("Stamina Junkie"));
             workoutNames.add(new WorkoutName("Cross Fit"));
             workoutNames.add(new WorkoutName("Pump It Up"));
+            workoutNames.add(new WorkoutName("No Pain No Gain"));
          }
 
       }
