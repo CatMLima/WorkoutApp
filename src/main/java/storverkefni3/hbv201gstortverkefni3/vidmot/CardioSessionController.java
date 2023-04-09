@@ -27,6 +27,8 @@ public class CardioSessionController implements Initializable{
 
     public Button fxStartButton;
 
+    public Button fxQuitButton;
+
     @FXML
     public Label fxTimer;
     @FXML
@@ -147,6 +149,9 @@ public class CardioSessionController implements Initializable{
         /*
         In case a timeline was never begun because a user skipped an exercise, the exception is handled
          */
+        if (getCount() == exercises.length-1){
+            fxQuitButton.textProperty().set("Finish");
+        }
         if (timeline != null)
             timeline.stop();
         fxTimer.setText("");

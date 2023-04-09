@@ -8,6 +8,7 @@ import javafx.fxml.*;
 import javafx.scene.*;
 import javafx.scene.control.*;
 import javafx.scene.image.*;
+import javafx.scene.input.*;
 import javafx.stage.*;
 import storverkefni3.hbv201gstortverkefni3.vinnsla.*;
 
@@ -48,6 +49,23 @@ public class InitialController implements Initializable {
         fxGoalChoices.setItems(options);
         textFilter();
         changeScene = new ChangeScene();
+        createTootips();
+    }
+    public void createTootips(){
+        Tooltip tooltip = new Tooltip("Confirm your choice");
+        Tooltip.install(fxConfirmButton,tooltip);
+        Tooltip tooltip1 = new Tooltip("Enter your name.");
+        Tooltip.install(fxName,tooltip1);
+        Tooltip tooltip2 = new Tooltip("Enter your age.");
+        Tooltip.install(fxAge, tooltip2);
+        Tooltip tooltip3 = new Tooltip("Enter your height in centimeters.");
+        Tooltip.install(fxHeight, tooltip3);
+        Tooltip tooltip4 = new Tooltip("Enter your weight in kilograms.");
+        Tooltip.install(fxWeight, tooltip4);
+        Tooltip tooltip5 = new Tooltip("Choose your goal.");
+        Tooltip.install(fxGoalChoices, tooltip5);
+        Tooltip tooltip6 = new Tooltip("Skip entering your information.");
+        Tooltip.install(fxGuestButton, tooltip6);
     }
 
     /**
@@ -131,4 +149,5 @@ public class InitialController implements Initializable {
        changeScene.changeTo(actionEvent,Scenes.WORKOUT.getFileName());
 
     }
+
 }
