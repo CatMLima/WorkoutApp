@@ -1,6 +1,9 @@
 package storverkefni3.hbv201gstortverkefni3.vidmot;
 
 public enum Scenes {
+    /*
+    Catarina Lima worked on this enumeration following SceneSwitcher from previous assignment.
+     */
     INITIAL ("/storverkefni3/hbv201gstortverkefni3/initial-page-view.fxml"),
     WORKOUT("/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml"),
 

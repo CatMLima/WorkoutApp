@@ -7,7 +7,9 @@ import javafx.stage.*;
 
 import java.io.*;
 import java.util.*;
-
+/*
+Catarina Lima worked on this class.
+ */
 public class ChangeScene {
     /**
      * This class is initialized in every controller and gets used to move from fxml file to another.

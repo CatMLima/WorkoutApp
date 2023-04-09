@@ -185,9 +185,8 @@ public class WorkoutController implements Initializable {
     public void fxStartWorkoutHandler(ActionEvent actionEvent) throws IOException{
         String file = null;
         switch (user.getGoal()) {
-            case "Weight loss" -> file = "/storverkefni3/hbv201gstortverkefni3/workout-cardio-session.fxml";
-            case "Muscle Gain" -> file = "/storverkefni3/hbv201gstortverkefni3/workout-strength-session.fxml";
-            case "Endurance" -> file = "/storverkefni3/hbv201gstortverkefni3/workout-cardio-session.fxml";
+            case "Weight loss", "Endurance" -> file = Scenes.CARDIOorENDURANCE.getFileName();
+            case "Muscle Gain" -> file = Scenes.STRENGTH.getFileName();
         }
         ObservableList<Exercises> selectedExercises = fxExercisesListView.getItems();
         StoreWorkout.setSelectedExercises(selectedExercises);
