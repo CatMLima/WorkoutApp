@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="slight change to displayselectedWorkoutExercises">
+    <list default="true" id="5d49ace9-6cce-475e-8c07-3a3173b6efb1" name="Changes" comment="improved javadoc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vidmot/WorkoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/Workouts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/Exercises.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/storverkefni3/hbv201gstortverkefni3/Exercises.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/WorkoutName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storverkefni3/hbv201gstortverkefni3/vinnsla/WorkoutName.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,13 +116,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="possible fix for filterexercises" />
-    <MESSAGE value="making exercises look nicer" />
-    <MESSAGE value="adding jump hard to the initialize listener in WorkoutController" />
-    <MESSAGE value="fixed fxquitworkouthander in strenghtsession" />
-    <MESSAGE value="fixing gifs in workouts" />
-    <MESSAGE value="fixed setImage in setNameRepSets" />
-    <MESSAGE value="Completed implementation of  fxExerciseview.setImage in setNameRepSets" />
     <MESSAGE value="added a comment to setNameRepSets" />
     <MESSAGE value="fixed Exercises.txt and added a comment to setNameRepSets" />
     <MESSAGE value="Added the remaining gifs for the exercises" />
@@ -143,11 +134,13 @@
     <MESSAGE value="change to comment formatting" />
     <MESSAGE value="fixed readability of comment" />
     <MESSAGE value="slight change to displayselectedWorkoutExercises" />
-    <option name="LAST_COMMIT_MESSAGE" value="slight change to displayselectedWorkoutExercises" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/HBV201GStortVerkefni3$FitUApplication.ic" NAME="FitUApplication Coverage Results" MODIFIED="1680547166783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>storverkefni3.hbv201gstortverkefni3.vidmot.*</FILTER>
-    </SUITE>
+    <MESSAGE value="Added back musclegain exercise" />
+    <MESSAGE value="Added 2 back musclegain exercises" />
+    <MESSAGE value="finished back exercises" />
+    <MESSAGE value="changed back exercise a bit" />
+    <MESSAGE value="improved some javadocs" />
+    <MESSAGE value="added javadoc" />
+    <MESSAGE value="improved javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved javadoc" />
   </component>
 </project>

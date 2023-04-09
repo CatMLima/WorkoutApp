@@ -4,7 +4,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class WorkoutName {
-//Brynjar worked on this class
+/* Brynjar worked on this class */
     public WorkoutName(String name) {
         setName(name);
     }

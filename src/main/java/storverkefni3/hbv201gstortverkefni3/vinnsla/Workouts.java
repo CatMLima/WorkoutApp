@@ -8,13 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-//Brynjar Steinn worked on this class
+/* Brynjar Steinn worked on this class */
 public class Workouts {
    public Workouts(){
-      //creates observablelist that gets used in methods
+      /* creates observablelist that gets used in methods */
       workoutNames = FXCollections.observableArrayList();
       workout = FXCollections.observableArrayList();
-      //creates the list of exercises in the preview window
+      /* creates the list of exercises in the preview window */
 arms = FXCollections.observableArrayList();
 legs = FXCollections.observableArrayList();
 JumpHard = FXCollections.observableArrayList();
@@ -47,7 +47,7 @@ protected ObservableList<Exercises> workout;
          if (line.startsWith("#")) {
             continue; // ignore comment lines
          }
-         //reads the exercises.txt and adds it to the workouts list
+         /* reads the exercises.txt and adds it to the workouts list */
          String[] tokens = line.split(",");
          String workoutType = tokens[0].replace("\"", "");
          String bodypart = tokens[1].replace("\"", "");
@@ -64,7 +64,7 @@ protected ObservableList<Exercises> workout;
    }
 
    public ObservableList<Exercises> filterExercises(String goal) throws IOException {
-      //filters workouts list and puts it into the appropriate list
+      /* filters workouts list and puts it into the appropriate list */
       List<Exercises> exerciseList = new ArrayList<>();
       ObservableList<Exercises> beingFiltered = getAllExercises();
       for (Exercises exercise : beingFiltered) {
@@ -88,7 +88,7 @@ protected ObservableList<Exercises> workout;
       return FXCollections.observableArrayList(exerciseList);
    }
 public Double getTotalTime(String goal){
-      //a method to get the total time of a workout
+      /* a method to get the total time of a workout */
    Double TotalTime = 0.0;
    ObservableList<Exercises> beingFiltered = StoreWorkout.getSelectedExercises();
       for (Exercises exercise : beingFiltered) {
@@ -98,7 +98,7 @@ public Double getTotalTime(String goal){
 }
 
    public ObservableList<WorkoutName> getAllWorkouts(String type) {
-      //creates the names of the workouts. (could be replaced with another text file reading)
+      /* creates the names of the workouts. (could be replaced with another text file reading) */
       switch (type) {
          case "Weight loss" -> {
             workoutNames.add(new WorkoutName("Jump Hard"));
