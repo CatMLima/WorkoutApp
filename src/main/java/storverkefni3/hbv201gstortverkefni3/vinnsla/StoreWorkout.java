@@ -27,4 +27,7 @@ public class StoreWorkout {
     public static void addToLog(String selectedWorkout){
         StoreWorkout.logWorkouts.add(new WorkoutName(selectedWorkout));
     }
+    public static void emptyHistory(){
+        StoreWorkout.logWorkouts.removeAll();
+    }
 }

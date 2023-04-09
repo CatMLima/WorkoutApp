@@ -10,7 +10,7 @@ COMPLETE
 (complete) complete issues of input type in the initial and change credential controllers
 (complete) add the hovering message to the mouse
 (complete) add javadoc to explain what methods do
+(complete) all the workouts and exercises we are missing.
 INCOMPLETE
 (incomplete) create congratulations message when workout is finished
-(incomplete) all the workouts and exercises we are missing.
 (incomplete) figure out Scene Builder resizing issues

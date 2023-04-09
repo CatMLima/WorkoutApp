@@ -236,7 +236,7 @@ public class WorkoutController implements Initializable {
             user.setHeight(-1);
             user.setWeight(-1);
             user.setGoal(null);
-
+            StoreWorkout.emptyHistory();
     }
 
     /**
