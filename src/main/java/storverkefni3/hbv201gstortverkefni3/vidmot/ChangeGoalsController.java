@@ -47,7 +47,7 @@ public class ChangeGoalsController implements Initializable{
      */
     public void fxNewGoalHandler(ActionEvent actionEvent) throws IOException {
         user.setGoal(fxGoalsList.getSelectionModel().getSelectedItem().toString());
-        changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml");
+        changeScene.changeTo(actionEvent,Scenes.WORKOUT.getFileName());
     }
     /**
      * Go back to previous page
@@ -55,7 +55,7 @@ public class ChangeGoalsController implements Initializable{
      * @throws IOException
      */
     public void fxReturnHandler(ActionEvent actionEvent) throws IOException {
-        changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml");
+        changeScene.changeTo(actionEvent,Scenes.WORKOUT.getFileName());
 
     }
 }

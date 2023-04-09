@@ -203,7 +203,7 @@ public class WorkoutController implements Initializable {
      * This should set all the user information to null, like a guest user and changes scenes.
      */
     public void fxLogOutHandler(ActionEvent actionEvent) throws IOException{
-            changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/initial-page-view.fxml");
+            changeScene.changeTo(actionEvent,Scenes.INITIAL.getFileName());
             user.setName("");
             user.setAge(-1);
             user.setHeight(-1);
@@ -220,7 +220,7 @@ public class WorkoutController implements Initializable {
      */
 
     public void fxChangeGoalsHandler(ActionEvent actionEvent) throws IOException {
-           changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/change-goals-view.fxml");
+               changeScene.changeTo(actionEvent,Scenes.CHANGEGOALS.getFileName());
     }
 
     /**
@@ -231,7 +231,7 @@ public class WorkoutController implements Initializable {
      */
 
     public void profileHandler(ActionEvent actionEvent) throws IOException {
-        changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/user-page.fxml");
+        changeScene.changeTo(actionEvent,Scenes.USER.getFileName());
 
     }
 }

@@ -33,10 +33,6 @@ public class StrengthSessionController implements Initializable {
     public Label fxRepetitions;
     public Label fxSets;
     public ImageView fxExerciseView;
-    private Parent root;
-    private Stage stage;
-    private Scene scene;
-
     User user;
     ChangeScene changeScene;
 
@@ -101,7 +97,7 @@ public class StrengthSessionController implements Initializable {
      * @throws IOException
      */
     public void fxQuitWorkoutHandler(ActionEvent actionEvent) throws IOException {
-        changeScene.changeTo(actionEvent, "/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml");
+        changeScene.changeTo(actionEvent, Scenes.WORKOUT.getFileName());
     }
 
     /**

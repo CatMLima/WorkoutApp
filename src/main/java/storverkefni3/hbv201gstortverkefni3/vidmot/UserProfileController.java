@@ -24,9 +24,6 @@ public class UserProfileController implements Initializable {
     public ImageView fxUserIcon;
     public Label fxGoal;
     public ListView fxWorkoutHistory;
-    private Parent root;
-    private Stage stage;
-    private Scene scene;
     User user;
 
     ChangeScene changeScene;
@@ -65,7 +62,7 @@ public class UserProfileController implements Initializable {
      */
 
     public void fxUpdateHandler(ActionEvent actionEvent) throws IOException {
-        changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/change-credentials.fxml");
+        changeScene.changeTo(actionEvent,Scenes.CHANGEINFO.getFileName());
     }
 
     /**
@@ -75,6 +72,6 @@ public class UserProfileController implements Initializable {
      */
 
     public void fxBackHandler(ActionEvent actionEvent) throws IOException {
-        changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml");
+        changeScene.changeTo(actionEvent,Scenes.WORKOUT.getFileName());
     }
 }

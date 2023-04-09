@@ -22,10 +22,6 @@ public class ChangeInfoController implements Initializable {
     public TextField fxWeight;
     public TextField fxHeight;
     public TextField fxName;
-    private Parent root;
-    private Stage stage;
-    private Scene scene;
-
     ChangeScene changeScene;
     User user;
 
@@ -53,7 +49,7 @@ public class ChangeInfoController implements Initializable {
      * @throws IOException
      */
     public void backHandler(ActionEvent actionEvent) throws IOException {
-        changeScene.changeTo(actionEvent, "/storverkefni3/hbv201gstortverkefni3/user-page.fxml");
+        changeScene.changeTo(actionEvent, Scenes.USER.getFileName());
 
 
     }
@@ -69,7 +65,7 @@ public class ChangeInfoController implements Initializable {
         user.setHeight(Integer.parseInt(fxHeight.getText()));
         user.setWeight(Integer.parseInt(fxWeight.getText()));
 
-        changeScene.changeTo(actionEvent, "/storverkefni3/hbv201gstortverkefni3/user-page.fxml");
+        changeScene.changeTo(actionEvent, Scenes.USER.getFileName());
 
     }
 }

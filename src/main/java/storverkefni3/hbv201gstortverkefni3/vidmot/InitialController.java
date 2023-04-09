@@ -107,7 +107,7 @@ public class InitialController implements Initializable {
      * @throws IOException no valid fxml
      */
     public void pickGoal(ActionEvent actionEvent) throws IOException {
-        changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/change-goals-view.fxml");
+        changeScene.changeTo(actionEvent,Scenes.CHANGEGOALS.getFileName());
     }
 
     /**
@@ -128,7 +128,7 @@ public class InitialController implements Initializable {
         user.setWeight(weight);
         user.setGoal(goal);
 
-       changeScene.changeTo(actionEvent,"/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml");
+       changeScene.changeTo(actionEvent,Scenes.WORKOUT.getFileName());
 
     }
 }

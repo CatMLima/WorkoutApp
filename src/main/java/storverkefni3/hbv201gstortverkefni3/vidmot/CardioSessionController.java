@@ -31,11 +31,6 @@ public class CardioSessionController implements Initializable{
     public Label fxTimer;
     @FXML
     public Button fxPauseButton;
-
-    private Parent root;
-    private Stage stage;
-    private Scene scene;
-
     User user;
 
     Workouts workout;
@@ -103,7 +98,7 @@ public class CardioSessionController implements Initializable{
      * @throws IOException
      */
     public void fxQuitWorkoutHandler(ActionEvent actionEvent) throws IOException {
-       changeScene.changeTo(actionEvent, "/storverkefni3/hbv201gstortverkefni3/workout-page-view.fxml");
+       changeScene.changeTo(actionEvent, Scenes.WORKOUT.getFileName());
     }
 
     int clicks = 0;
