@@ -24,6 +24,10 @@ public class UserProfileController implements Initializable {
     public ImageView fxUserIcon;
     public Label fxGoal;
     public ListView fxWorkoutHistory;
+
+    public Button fxBackButton;
+
+    public Button fxUpdate;
     User user;
 
     ChangeScene changeScene;
@@ -52,7 +56,17 @@ public class UserProfileController implements Initializable {
         fxBMI.setText(String.format("%.1f", value));
         fxUserIcon.setImage(new Image(getClass().getResourceAsStream("/storverkefni3/pics/user-profile-logo.png")));
         fxGoal.setText(user.getGoal());
+        createTooltips();
 
+    }
+    /**
+     * Creates the relevant Tool Tips for the FX tools.
+     */
+    public void createTooltips(){
+        Tooltip back = new Tooltip("Return to workout page.");
+        Tooltip.install(fxBackButton, back);
+        Tooltip update = new Tooltip("Change user information.");
+        Tooltip.install(fxUpdate, update);
     }
 
     /**

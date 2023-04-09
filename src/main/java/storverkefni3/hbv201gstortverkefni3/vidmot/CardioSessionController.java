@@ -82,6 +82,14 @@ public class CardioSessionController implements Initializable{
         });
         fxPauseButton.disableProperty().bind(fxTimer.textProperty().isEmpty());
         fxNextButton.disableProperty().bind(countProperty().isEqualTo(exercises.length-1));
+        createTooltips();
+    }
+    /**
+     * Creates the relevant Tool Tips for the FX tools.
+     */
+    public void createTooltips(){
+        Tooltip quit = new Tooltip("Return to the workout page.");
+        Tooltip.install(fxQuitButton, quit);
     }
 
     /**

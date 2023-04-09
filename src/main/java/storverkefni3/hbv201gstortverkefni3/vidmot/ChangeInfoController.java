@@ -22,6 +22,8 @@ public class ChangeInfoController implements Initializable {
     public TextField fxWeight;
     public TextField fxHeight;
     public TextField fxName;
+
+    public Button fxBackButton;
     ChangeScene changeScene;
     User user;
 
@@ -40,9 +42,27 @@ public class ChangeInfoController implements Initializable {
         fxWeight.setText(String.valueOf(user.getWeight()));
         fxUpdate.disableProperty().bind(Bindings.or(fxName.textProperty().isEmpty(),fxAge.textProperty().isEmpty()));
         fxUpdate.disableProperty().bind(Bindings.or(fxHeight.textProperty().isEmpty(), fxWeight.textProperty().isEmpty()));
+        createTooltips();
 
     }
+    /**
+     * Creates the relevant Tool Tips for the FX tools.
+     */
 
+    public void createTooltips(){
+        Tooltip back = new Tooltip("Return to profile page.");
+        Tooltip.install(fxBackButton, back);
+        Tooltip name = new Tooltip("Insert new name.");
+        Tooltip.install(fxName, name);
+        Tooltip age = new Tooltip("Insert new age.");
+        Tooltip.install(fxAge, age);
+        Tooltip height = new Tooltip("Insert new height.");
+        Tooltip.install(fxHeight, height);
+        Tooltip weight = new Tooltip("Insert new weight.");
+        Tooltip.install(fxWeight, weight);
+        Tooltip update = new Tooltip("Confirm new user information.");
+        Tooltip.install(fxUpdate, update);
+    }
     /**
      * returns back to the previous page without saving information input
      * @param actionEvent

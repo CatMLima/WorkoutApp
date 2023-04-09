@@ -34,6 +34,8 @@ public class WorkoutController implements Initializable {
     public Circle fxGM;
     public Circle fxRB;
     public Circle fxEM;
+
+    public Button fxChangeGoals;
     public Button fxProfileButton;
     @FXML
     ListView fxWorkoutsListView;
@@ -90,7 +92,25 @@ public class WorkoutController implements Initializable {
         });
         testForGuestUser();
         fxStartButton.disableProperty().bind(fxWorkoutsListView.getSelectionModel().selectedItemProperty().isNull());
+        createTooltips();
     }
+
+    /**
+     * Creates the relevant Tool Tips for the FX tools.
+     */
+    public void createTooltips(){
+        Tooltip workouts = new Tooltip("Select a workout to see the exercises.");
+        Tooltip.install(fxWorkoutsListView, workouts);
+        Tooltip start = new Tooltip("Begin the workout.");
+        Tooltip.install(fxStartButton, start);
+        Tooltip profile = new Tooltip("See user profile and workout log.");
+        Tooltip.install(fxProfileButton, profile);
+        Tooltip logout = new Tooltip("Delete all your information and exit.");
+        Tooltip.install(fxLogOutButton, logout);
+        Tooltip goals = new Tooltip("Adjust your goals setting.");
+        Tooltip.install(fxChangeGoals, goals);
+    }
+
     private void displaySelectedWorkoutExercises(String workoutName) {if (workoutName != null) {
         /* Brynjar worked on this method
         checks which workout was clicked and populates the listview with the appropriate list

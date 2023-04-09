@@ -19,6 +19,8 @@ public class ChangeGoalsController implements Initializable{
     @FXML
     Button fxConfirm;
 
+    public Button fxBackButton;
+
     ChangeScene changeScene;
     User user;
     /**
@@ -38,6 +40,20 @@ public class ChangeGoalsController implements Initializable{
                         "Endurance"
                 );
         fxGoalsList.setItems(options);
+        createTooltips();
+    }
+
+    /**
+     * Creates the Tool tips for each relevant fx tool.
+     */
+
+    public void createTooltips(){
+        Tooltip back = new Tooltip("Return to workout page.");
+        Tooltip.install(fxBackButton, back);
+        Tooltip choices = new Tooltip("Select your new goal.");
+        Tooltip.install(fxGoalsList, choices);
+        Tooltip confirm = new Tooltip("Save new goal.");
+        Tooltip.install(fxConfirm, confirm);
     }
 
     /**

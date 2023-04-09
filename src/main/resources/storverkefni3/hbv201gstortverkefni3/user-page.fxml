@@ -22,7 +22,7 @@
                   <Font name="Gill Sans MT" size="40.0" />
                </font>
             </Label>
-            <Button layoutX="527.0" layoutY="14.0" mnemonicParsing="false" onAction="#fxBackHandler" prefHeight="25.0" prefWidth="52.0" text="Back">
+            <Button fx:id="fxBackButton" layoutX="527.0" layoutY="14.0" mnemonicParsing="false" onAction="#fxBackHandler" prefHeight="25.0" prefWidth="52.0" text="Back">
                <font>
                   <Font name="Gill Sans MT" size="14.0" />
                </font>

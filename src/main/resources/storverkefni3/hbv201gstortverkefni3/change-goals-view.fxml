@@ -15,7 +15,7 @@
                   <Font name="Gill Sans MT" size="40.0" />
                </font>
             </Label>
-            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#fxReturnHandler" text="Back">
+            <Button fx:id="fxBackButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#fxReturnHandler" text="Back">
                <font>
                   <Font name="Gill Sans MT" size="20.0" />
                </font>

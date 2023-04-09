@@ -63,7 +63,7 @@
             </Button>
          </children>
       </Pane>
-      <Button layoutX="487.0" layoutY="385.0" mnemonicParsing="false" onAction="#fxChangeGoalsHandler" style="-fx-background-color: #fbbf77;" text="Change goals">
+      <Button fx:id="fxChangeGoals" layoutX="487.0" layoutY="385.0" mnemonicParsing="false" onAction="#fxChangeGoalsHandler" style="-fx-background-color: #fbbf77;" text="Change goals">
          <font>
             <Font name="Gill Sans MT" size="12.0" />
          </font>

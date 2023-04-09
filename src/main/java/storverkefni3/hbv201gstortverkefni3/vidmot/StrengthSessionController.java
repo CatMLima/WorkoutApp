@@ -76,7 +76,15 @@ public class StrengthSessionController implements Initializable {
             }
         });
         fxContinueButton.disableProperty().bind(countProperty().isEqualTo(exercises.length-1));
+        createToolTips();
 
+    }
+    /**
+     * Creates the relevant Tool Tips for the FX tools.
+     */
+    public void createToolTips(){
+        Tooltip quit = new Tooltip("Return to the workout page.");
+        Tooltip.install(fxQuitButton, quit);
     }
 
     /**
