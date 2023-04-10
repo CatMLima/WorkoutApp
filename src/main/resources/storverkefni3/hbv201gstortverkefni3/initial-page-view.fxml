@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="storverkefni3.hbv201gstortverkefni3.vidmot.InitialController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="storverkefni3.hbv201gstortverkefni3.vidmot.InitialController">
    <children>
-      <Pane layoutX="41.0" layoutY="126.0" prefHeight="285.0" prefWidth="509.0" style="-fx-background-color: #52B2BF;">
+      <Pane layoutX="130.0" layoutY="183.0" prefHeight="466.0" prefWidth="509.0" style="-fx-background-color: #52B2BF;">
          <children>
-            <GridPane layoutX="95.0" layoutY="56.0" prefHeight="152.0" prefWidth="320.0">
+            <GridPane layoutX="47.0" layoutY="51.0" prefHeight="246.0" prefWidth="417.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.20001220703125" minWidth="10.0" prefWidth="68.800048828125" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.199951171875" minWidth="10.0" prefWidth="251.199951171875" />
@@ -30,60 +30,72 @@
                <children>
                   <Label alignment="CENTER" prefHeight="18.0" prefWidth="159.0" text="Name:">
                      <font>
-                        <Font name="Gill Sans MT" size="15.0" />
+                        <Font name="Gill Sans MT" size="25.0" />
                      </font>
                   </Label>
                   <Label alignment="CENTER" layoutX="10.0" layoutY="16.0" prefHeight="18.0" prefWidth="208.0" text="Goal:" GridPane.rowIndex="4">
                      <font>
-                        <Font name="Gill Sans MT" size="15.0" />
+                        <Font name="Gill Sans MT" size="25.0" />
                      </font>
                   </Label>
                   <Label alignment="CENTER" layoutX="10.0" layoutY="16.0" prefHeight="18.0" prefWidth="170.0" text="Weight:" GridPane.rowIndex="3">
                      <font>
-                        <Font name="Gill Sans MT" size="15.0" />
+                        <Font name="Gill Sans MT" size="25.0" />
                      </font>
                   </Label>
                   <Label alignment="CENTER" layoutX="10.0" layoutY="16.0" prefHeight="18.0" prefWidth="171.0" text="Height:" GridPane.rowIndex="2">
                      <font>
-                        <Font name="Gill Sans MT" size="15.0" />
+                        <Font name="Gill Sans MT" size="25.0" />
                      </font>
                   </Label>
                   <Label alignment="CENTER" layoutX="10.0" layoutY="16.0" prefHeight="18.0" prefWidth="160.0" text="Age:" GridPane.rowIndex="1">
                      <font>
-                        <Font name="Gill Sans MT" size="15.0" />
+                        <Font name="Gill Sans MT" size="25.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="fxName" layoutX="10.0" layoutY="12.0" GridPane.columnIndex="1" />
-                  <TextField fx:id="fxAge" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField fx:id="fxHeight" layoutX="10.0" layoutY="12.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField fx:id="fxWeight" layoutX="110.0" layoutY="12.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <ChoiceBox fx:id="fxGoalChoices" prefHeight="26.0" prefWidth="177.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="fxName" layoutX="10.0" layoutY="12.0" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Gill Sans MT" size="15.0" />
+                     </font></TextField>
+                  <TextField fx:id="fxAge" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Gill Sans MT" size="15.0" />
+                     </font></TextField>
+                  <TextField fx:id="fxHeight" layoutX="10.0" layoutY="12.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Gill Sans MT" size="15.0" />
+                     </font></TextField>
+                  <TextField fx:id="fxWeight" layoutX="110.0" layoutY="12.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Gill Sans MT" size="15.0" />
+                     </font></TextField>
+                  <ChoiceBox fx:id="fxGoalChoices" prefHeight="26.0" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                </children>
             </GridPane>
-            <Button fx:id="fxConfirmButton" layoutX="190.0" layoutY="219.0" mnemonicParsing="false" onAction="#confirmHandler" prefHeight="39.0" prefWidth="130.0" style="-fx-background-color: #fbbf77;" text="Confirm">
+            <Button fx:id="fxConfirmButton" layoutX="130.0" layoutY="317.0" mnemonicParsing="false" onAction="#confirmHandler" prefHeight="111.0" prefWidth="251.0" style="-fx-background-color: #fbbf77;" text="Confirm">
                <font>
-                  <Font name="Gill Sans MT" size="20.0" />
+                  <Font name="Gill Sans MT" size="40.0" />
                </font>
             </Button>
             <ImageView fx:id="fxUserImage" fitHeight="51.0" fitWidth="62.0" layoutX="224.0" pickOnBounds="true" preserveRatio="true" />
 
          </children>
       </Pane>
-      <Pane layoutY="-2.0" prefHeight="130.0" prefWidth="600.0" style="-fx-background-color: #F17829;">
+      <Pane layoutY="-2.0" prefHeight="186.0" prefWidth="800.0" style="-fx-background-color: #F17829;">
          <children>
-            <Button fx:id="fxGuestButton" layoutX="468.0" layoutY="14.0" mnemonicParsing="false" onAction="#guestHandler" text="Proceed as guest">
+            <Button fx:id="fxGuestButton" layoutX="630.0" layoutY="14.0" mnemonicParsing="false" onAction="#guestHandler" prefHeight="36.0" prefWidth="156.0" text="Proceed as guest">
                <font>
                   <Font name="Gill Sans MT" size="15.0" />
                </font>
             </Button>
-            <Label alignment="CENTER" layoutX="151.0" layoutY="49.0" prefHeight="51.0" prefWidth="298.0" text="Fit-U" textAlignment="CENTER">
+            <Label alignment="CENTER" layoutX="251.0" layoutY="32.0" prefHeight="51.0" prefWidth="298.0" text="Fit-U" textAlignment="CENTER">
                <font>
-                  <Font name="Rockwell" size="40.0" />
+                  <Font name="Rockwell" size="100.0" />
                </font>
             </Label>
-            <Label layoutX="236.0" layoutY="92.0" text="Workouts made for you.">
+            <Label layoutX="317.0" layoutY="144.0" text="Workouts made for you.">
                <font>
-                  <Font name="Gill Sans MT Italic" size="15.0" />
+                  <Font name="Gill Sans MT Italic" size="18.0" />
                </font>
             </Label>
          </children>

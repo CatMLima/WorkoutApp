@@ -29,6 +29,8 @@ public class CardioSessionController implements Initializable{
 
     public Button fxQuitButton;
 
+    public Label fxRound;
+
     @FXML
     public Label fxTimer;
     @FXML
@@ -55,6 +57,20 @@ public class CardioSessionController implements Initializable{
 
     ChangeScene changeScene;
 
+    public int getRound() {
+        return round.get();
+    }
+
+    public IntegerProperty roundProperty() {
+        return round;
+    }
+
+    public void setRound(int round) {
+        this.round.set(round);
+    }
+
+    IntegerProperty round = new SimpleIntegerProperty();
+
     final double TIME = 31.0;
 
     Timeline timeline;
@@ -74,6 +90,7 @@ public class CardioSessionController implements Initializable{
         exercises = new Exercises[selectedExercises.size()];
         selectedExercises.toArray(exercises);
         setNameGif(getCount());
+        setRound(0);
         countProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
@@ -83,6 +100,17 @@ public class CardioSessionController implements Initializable{
         fxPauseButton.disableProperty().bind(fxTimer.textProperty().isEmpty());
         fxNextButton.disableProperty().bind(countProperty().isEqualTo(exercises.length-1));
         createTooltips();
+        fxTimer.textProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observableValue, String s, String t1) {
+                if (t1.equals("Done") && !fxRound.getText().equals("3")){
+                    fxStartButton.disableProperty().set(false);
+                }
+                if (t1.equals("Done") && !fxRound.getText().equals("3")){
+                    fxTimer.setText("End");
+                }
+            }
+        });
     }
     /**
      * Creates the relevant Tool Tips for the FX tools.
@@ -138,6 +166,8 @@ public class CardioSessionController implements Initializable{
      * @param actionEvent
      */
     public void fxStartExerciseHandler(ActionEvent actionEvent){
+        setRound(getRound()+1);
+        fxRound.setText(String.valueOf(getRound()));
         setTime(TIME);
         timeline = new Timeline(
                 new KeyFrame(Duration.seconds(1), event ->{
@@ -155,6 +185,7 @@ public class CardioSessionController implements Initializable{
     }
 
     public void fxNextExerciseHandler(ActionEvent actionEvent) {
+        fxRound.setText("");
         setCount(getCount() + 1);
         /*
         In case a timeline was never begun because a user skipped an exercise, the exception is handled

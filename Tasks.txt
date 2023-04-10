@@ -12,5 +12,4 @@ COMPLETE
 (complete) add javadoc to explain what methods do
 (complete) all the workouts and exercises we are missing.
 INCOMPLETE
-(incomplete) create congratulations message when workout is finished
 (incomplete) figure out Scene Builder resizing issues

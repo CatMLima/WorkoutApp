@@ -11,7 +11,7 @@ import java.io.IOException;
 public class FitUApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(FitUApplication.class.getResource("/storverkefni3/hbv201gstortverkefni3/initial-page-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(FitUApplication.class.getResource(Scenes.INITIAL.getFileName()));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.setTitle("Fit-U Application");

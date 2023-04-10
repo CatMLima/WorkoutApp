@@ -8,64 +8,63 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="storverkefni3.hbv201gstortverkefni3.vidmot.StrengthSessionController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="storverkefni3.hbv201gstortverkefni3.vidmot.StrengthSessionController">
    <children>
-      <Pane layoutY="-2.0" prefHeight="130.0" prefWidth="600.0" style="-fx-background-color: #F17829;">
+      <Pane layoutY="-2.0" prefHeight="175.0" prefWidth="800.0" style="-fx-background-color: #F17829;">
          <children>
-            <Button fx:id="fxQuitButton" layoutX="7.0" layoutY="14.0" mnemonicParsing="false" onAction="#fxQuitWorkoutHandler" text="Quit">
+            <Button fx:id="fxQuitButton" layoutX="7.0" layoutY="14.0" mnemonicParsing="false" onAction="#fxQuitWorkoutHandler" prefHeight="36.0" prefWidth="110.0" text="Quit">
                <font>
-                  <Font name="Gill Sans MT" size="15.0" />
+                  <Font name="Gill Sans MT" size="20.0" />
                </font>
             </Button>
-            <Label fx:id="fxExerciseName" alignment="CENTER" layoutX="145.0" layoutY="37.0" prefHeight="47.0" prefWidth="313.0" text="Exercise Name" textAlignment="CENTER">
+            <Label fx:id="fxExerciseName" alignment="CENTER" layoutY="72.0" prefHeight="60.0" prefWidth="800.0" text="Exercise Name" textAlignment="CENTER">
                <font>
-                  <Font name="Gill Sans MT" size="30.0" />
+                  <Font name="Gill Sans MT" size="50.0" />
                </font>
             </Label>
-            <Label fx:id="fxWorkoutLabel" layoutX="251.0" layoutY="19.0" text="Strength Session">
+            <Label fx:id="fxWorkoutLabel" layoutX="316.0" layoutY="43.0" text="Strength Session">
                <font>
-                  <Font name="Gill Sans MT" size="15.0" />
+                  <Font name="Gill Sans MT" size="25.0" />
                </font>
             </Label>
          </children>
       </Pane>
-      <Pane layoutX="116.0" layoutY="78.0" prefHeight="348.0" prefWidth="395.0" style="-fx-background-color: #52B2BF;">
+      <Pane layoutX="125.0" layoutY="131.0" prefHeight="503.0" prefWidth="550.0" style="-fx-background-color: #52B2BF;">
          <children>
-            <Button fx:id="fxContinueButton" layoutX="130.0" layoutY="271.0" mnemonicParsing="false" onAction="#fxContinueExerciseHandler" prefHeight="57.0" prefWidth="138.0" text="Continue">
+            <Button fx:id="fxContinueButton" layoutX="206.0" layoutY="420.0" mnemonicParsing="false" onAction="#fxContinueExerciseHandler" prefHeight="57.0" prefWidth="138.0" text="Continue">
                <font>
                   <Font name="Gill Sans MT" size="25.0" />
                </font>
             </Button>
-            <VBox layoutX="42.0" layoutY="9.0" prefHeight="262.0" prefWidth="313.0">
+            <VBox layoutX="50.0" layoutY="30.0" prefHeight="378.0" prefWidth="450.0">
                <children>
-                  <Pane prefHeight="74.0" prefWidth="219.0">
+                  <Pane prefHeight="90.0" prefWidth="450.0">
                      <children>
-                        <Label layoutX="68.0" layoutY="5.0" text="Repetitions">
-                           <font>
-                              <Font name="Gill Sans MT" size="15.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="189.0" layoutY="5.0" text="Sets">
-                           <font>
-                              <Font name="Gill Sans MT" size="15.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="fxRepetitions" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="23.0" prefHeight="47.0" prefWidth="90.0" style="-fx-background-color: white;">
+                        <Label layoutX="114.0" layoutY="2.0" text="Repetitions">
                            <font>
                               <Font name="Gill Sans MT" size="20.0" />
                            </font>
                         </Label>
-                        <Label fx:id="fxSets" alignment="CENTER" contentDisplay="CENTER" layoutX="156.0" layoutY="23.0" prefHeight="47.0" prefWidth="90.0" style="-fx-background-color: white;">
+                        <Label layoutX="283.0" layoutY="2.0" text="Sets">
+                           <font>
+                              <Font name="Gill Sans MT" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fxRepetitions" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="26.0" prefHeight="57.0" prefWidth="110.0" style="-fx-background-color: white;">
+                           <font>
+                              <Font name="Gill Sans MT" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="fxSets" alignment="CENTER" contentDisplay="CENTER" layoutX="245.0" layoutY="26.0" prefHeight="57.0" prefWidth="110.0" style="-fx-background-color: white;">
                            <font>
                               <Font name="Gill Sans MT" size="20.0" />
                            </font>
                         </Label>
                      </children>
                   </Pane>
-                  <ImageView fx:id="fxExerciseView" fitHeight="175.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="fxExerciseView" fitHeight="253.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
                      <VBox.margin>
-                        <Insets left="65.0" top="5.0" />
+                        <Insets left="105.0" top="5.0" />
                      </VBox.margin>
                   </ImageView>
                </children>
