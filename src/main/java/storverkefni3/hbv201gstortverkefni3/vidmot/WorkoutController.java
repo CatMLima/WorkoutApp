@@ -218,7 +218,9 @@ public class WorkoutController implements Initializable {
         }
         ObservableList<Exercises> selectedExercises = fxExercisesListView.getItems();
         StoreWorkout.setSelectedExercises(selectedExercises);
-        StoreWorkout.addToLog(fxWorkoutsListView.getSelectionModel().getSelectedItem().toString());
+        if (!fxLogOutButton.getText().equals("Log in")) {
+            StoreWorkout.addToLog(fxWorkoutsListView.getSelectionModel().getSelectedItem().toString());
+        }
         assert file != null;
         changeScene.changeTo(actionEvent, file);
     }
