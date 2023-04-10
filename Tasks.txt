@@ -11,5 +11,7 @@ COMPLETE
 (complete) add the hovering message to the mouse
 (complete) add javadoc to explain what methods do
 (complete) all the workouts and exercises we are missing.
+(complete) figure out Scene Builder resizing issues
+
 INCOMPLETE
-(incomplete) figure out Scene Builder resizing issues
+
