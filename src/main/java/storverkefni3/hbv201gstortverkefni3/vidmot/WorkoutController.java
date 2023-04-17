@@ -170,7 +170,7 @@ public class WorkoutController implements Initializable {
      */
     public void testForGuestUser(){
         if (user.getName().equals("guest") && user.getAge() == -1 && user.getHeight() == -1 && user.getWeight() == -1){
-            fxLogOutButton.setText("Log in");
+            fxLogOutButton.setText("Register");
             fxProfileButton.setDisable(true);
         }
     }
@@ -218,7 +218,7 @@ public class WorkoutController implements Initializable {
         }
         ObservableList<Exercises> selectedExercises = fxExercisesListView.getItems();
         StoreWorkout.setSelectedExercises(selectedExercises);
-        if (!fxLogOutButton.getText().equals("Log in")) {
+        if (!fxLogOutButton.getText().equals("Register")) {
             StoreWorkout.addToLog(fxWorkoutsListView.getSelectionModel().getSelectedItem().toString());
         }
         assert file != null;
